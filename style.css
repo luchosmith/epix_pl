@@ -1,0 +1,9 @@
+#collections .collection .content li {
+    height: 240px;
+}
+
+/* the infinite scroll div */
+#collections #main_collection {
+    height: 500px;
+    overflow: auto;
+}
