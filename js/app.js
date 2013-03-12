@@ -21,11 +21,13 @@ var AppView = Backbone.View.extend({
     
     console.log("make an ajax call to get data...");
     
-    var url = "js/data/movie-data-1.json"
+    var url = "js/data/movie-data-1.json";
     
     $.ajax(url, {
       success: function(data){
-        console.log(data);
+        $.each(data.movies, function(index, value){
+          console.log(value.title);
+        });
       },
       dataType: 'json'
     });
