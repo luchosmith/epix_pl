@@ -5,6 +5,7 @@ var MovieView = Backbone.View.extend({
     template: _.template($('#movie-item-template').html()),
     
     events: {
+      "click"           : "clicked"
       /*"click .toggle"   : "toggleDone",
       "dblclick .view"  : "edit",
       "click a.destroy" : "clear",
@@ -13,17 +14,17 @@ var MovieView = Backbone.View.extend({
     },
     
     initialize: function() {
-      //this.listenTo(this.model, 'change', this.render);
-      //this.listenTo(this.model, 'destroy', this.remove);
+      this.listenTo(this.model, "change", this.render);
+      //this.listenTo(this.model, "destroy", this.remove);
     },
     
     render: function() {
       this.$el.html(this.template(this.model.toJSON()));
       return this;
     },
-
-    updateOnEnter: function(e) {
-      //if (e.keyCode == 13) this.close();
+    
+    clicked : function(){
+      console.log("movie item clicked");
     },
     
     clear: function() {

@@ -4,10 +4,6 @@ var MovieList = Backbone.Collection.extend({
 
    localStorage: new Backbone.LocalStorage("movies-backbone"),
 
-   comparator: function(item) {
-     //return todo.get('order');
-   }
-
  });
 
 var Movies = new MovieList;
