@@ -42,7 +42,7 @@ var AppView = Backbone.View.extend({
   },
   
   addOne: function(movie) {
-    //console.log('adding one...');
+    console.log('adding one...');
     var view = new MovieView({model: movie});
     //this.$("#scrolling-ul").append(view.render().el);
   }
