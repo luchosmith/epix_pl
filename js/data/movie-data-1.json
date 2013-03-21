@@ -3,184 +3,328 @@
     "page"           : "1",
     "movies"         : [
         {
-            "id"      : "5101",
-            "title"   : "Jay and Silent Bob Go Down Under",
-            "href"    : "/jay-and-silent-bob-go-down-under/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/5101/thumbs/Jay_and_Silent_Bob_Go_Down_Under_posters_185611.jpg"
+            "id"         : "5101",
+            "title"      : "Jay and Silent Bob Go Down Under",
+            "href"       : "/jay-and-silent-bob-go-down-under/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/5101/thumbs/Jay_and_Silent_Bob_Go_Down_Under_posters_185611.jpg",
+            "synopsis"   : "Filmmaker and comedian Kevin Smith returns to EPIX with an all new special, taped in front of a sell out audience in Sydney, Australia. Joined by his notorious cohort Jason Mewes, this off-the-cuff, uncensored hour is filled with ribald and cautionary tales about everything from Australian children's television to mythical Australian drop bears.",
+            "rating"     : "TV-MA",
+            "runtime"    : "60 mins",
+            "year"       : "2012",
+            "userRating" : "5",
+            "tags"       : ["Comedy", "Stand-Up", "EPIX Originals", "Recently Added"]
         },
         {
-            "id"      : "5090",
-            "title"   : "Coldplay Live 2012",
-            "href"    : "/coldplay-live-2012/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/5090/thumbs/Coldplay_Live_2012_posters_184344.jpg"
+            "id"         : "5090",
+            "title"      : "Coldplay Live 2012",
+            "href"       : "/coldplay-live-2012/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/5090/thumbs/Coldplay_Live_2012_posters_184344.jpg",
+            "synopsis"   : "The boys from Coldplay are putting it all on the table in their latest world tour, with an extravagant, jaw-dropping stage show that's a feast for both the eyes and ears. Enjoy a front row seat with this EPIX original concert special, as Britain's kings of alt-rock bring the house down with a setlist that includes tracks from their latest studio album Mylo Xyloto, as well as plenty of classic fan favorites like \"In My Place.\"",
+            "rating"     : "TV-14",
+            "runtime"    : "59 mins",
+            "year"       : "2012",
+            "userRating" : "5",
+            "tags"       : ["Concert", "Epix Originals", "Recently Added"]
         },
         {
-            "id"      : "4685",
-            "title"   : "A Liar's Autobiography",
-            "href"    : "/a-liars-autobiography/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/4685/thumbs/A_Liar_s_Autobiography_posters_118492.jpg"
+            "id"         : "4685",
+            "title"      : "A Liar's Autobiography",
+            "href"       : "/a-liars-autobiography/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4685/thumbs/A_Liar_s_Autobiography_posters_118492.jpg",
+            "synopsis"   : "A Liar's Autobiography is a film based on the memoir of the late Monty Python member, Graham Chapman, who died in 1989. This animated feature, made in association with Bill and Ben Productions Ltd., Trinity Films (UK) and Brainstorm Media, tells the story of Chapman's life in the famously atypical Python style. The EPIX original will feature recordings of Chapman that he made of his book in 1982 and reunites the Monty Python troupe that includes John Cleese, Terry Gilliam, Michael Palin and Terry Jones.",
+            "rating"     : "TV-MA",
+            "runtime"    : "85 mins",
+            "year"       : "2012",
+            "userRating" : "4",
+            "tags"       : ["Comedy", "Biography", "Recently Added"]
         },
         {
-            "id"      : "5100",
-            "title"   : "Jim Jefferies: Fully Functional",
-            "href"    : "/jim-jefferies-fully-functional/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/5100/thumbs/Jim_Jefferies:_Fully_Functional_posters_118393.jpg"
+            "id"         : "5100",
+            "title"      : "Jim Jefferies: Fully Functional",
+            "href"       : "/jim-jefferies-fully-functional/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/5100/thumbs/Jim_Jefferies:_Fully_Functional_posters_118393.jpg",
+            "synopsis"   : "There's something magical about an Australian accent that seems to make even the most caustic wit come off with good-natured charm. And that delicate blend of deviant behavior and good intentions has skyrocketed Aussie comic Jim Jefferies to international acclaim with critics and fans alike. In this new hour-long special, the man hailed by Q Magazine as \"Britain's most offensive stand-up comedian\" shares fresh tales from his life on the edge, including a menage a trois in Montreal and attending a party where God is on the guest list.",
+            "rating"     : "TV-MA",
+            "runtime"    : "60 mins",
+            "year"       : "2012",
+            "userRating" : "5",
+            "tags"       : ["Comedy", "Stand-Up", "Epix Originals", "Recently Added"]
         },
         {
-            "id"      : "5024",
-            "title"   : "Attack of the 50 Foot Cheerleader",
-            "href"    : "/attack-of-the-50-foot-cheerleader/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/5024/thumbs/Attack_of_the_50_Foot_Cheerleader_posters_117973.jpg"
+            "id"         : "5024",
+            "title"      : "Attack of the 50 Foot Cheerleader",
+            "href"       : "/attack-of-the-50-foot-cheerleader/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/5024/thumbs/Attack_of_the_50_Foot_Cheerleader_posters_117973.jpg",
+            "synopsis"   : "A modern day take on the great Roger Corman genre pictures and his first ever 3D film. Attack of the 50 Foot Cheerleader follows a college coed who uses an experimental drug to transform herself into a popular beauty - but at a huge price.",
+            "rating"     : "TV-MA",
+            "runtime"    : "83 mins",
+            "year"       : "2012",
+            "userRating" : "4",
+            "tags"       : ["Comedy", "Epix Originals"]
         },
         {
-            "id"      : "4913",
-            "title"   : "Jim Norton: Please Be Offended",
-            "href"    : "/jim-norton-please-be-offended/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/4913/thumbs/Jim_Norton:_Please_Be_Offended_maps_112917.jpg"
+            "id"         : "4913",
+            "title"      : "Jim Norton: Please Be Offended",
+            "href"       : "/jim-norton-please-be-offended/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4913/thumbs/Jim_Norton:_Please_Be_Offended_maps_112917.jpg",
+            "synopsis"   : "Caustic comedian and best-selling author Jim Norton pulls no punches in his first EPIX comedy special, going after jaw-dropping laughs not intended for the faint of heart. Among his targets: the national hypersensitivity epidemic - leading celebrities, talking heads and regular Joes alike to get offended by just about anything. Norton's got a message for those people, and it's in the title.",
+            "rating"     : "TV-MA",
+            "runtime"    : "60 mins",
+            "year"       : "2012",
+            "userRating" : "5",
+            "tags"       : ["Comedy", "Stand-Up", "Epix Originals"]
         },
         {
-            "id"      : "4852",
-            "title"   : "Kevin Smith: Burn in Hell",
-            "href"    : "/kevin-smith-burn-in-hell/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/4852/thumbs/Kevin_Smith:_Burn_in_Hell_stills_112526.jpg"
+            "id"         : "4852",
+            "title"      : "Kevin Smith: Burn in Hell",
+            "href"       : "/kevin-smith-burn-in-hell/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4852/thumbs/Kevin_Smith:_Burn_in_Hell_stills_112526.jpg",
+            "synopsis"   : "In this hour and a half special, writer/director/comedian/podcaster Kevin Smith conducts a riotous and outrageous Q&A session about the aftermath of his latest film, Red State. Topics include such misadventures as his pissing off the entire movie blogger community at the Sundance Film Festival and being followed around the country by the highly devout, and highly angered, Phelps Family.",
+            "rating"     : "TV-MA",
+            "runtime"    : "89 mins",
+            "year"       : "2012",
+            "userRating" : "5",
+            "tags"       : ["Comedy", "Stand-Up", "Epix Originals"]
         },
         {
-            "id"      : "4717",
-            "title"   : "Britney Spears: Femme Fatale Tour",
-            "href"    : "/britney-spears-femme-fatale-tour/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/4717/thumbs/Britney_Spears:_Femme_Fatale_Tour_stills_112556.jpg"
+            "id"         : "4717",
+            "title"      : "Britney Spears: Femme Fatale Tour",
+            "href"       : "/britney-spears-femme-fatale-tour/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4717/thumbs/Britney_Spears:_Femme_Fatale_Tour_stills_112556.jpg",
+            "synopsis"   : "Sexy. Slammin'. Outrageous. Hurl all the adjectives you want, but one word says it all: Britney. (Ms. Spears if you're nasty.) The Grammy-winning pop diva storms the stage with a fierce mix of fan-favorite hits and hot new tracks from her latest album, Femme Fatale, in this concert special taped before a sold-out crowd in Toronto. Whether you're in the market for bodacious dance moves, killer costume changes or that make-you-melt Louisiana drawl, Britney's bringing ‘em all - bigger and better than ever.",
+            "rating"     : "TV-PG",
+            "runtime"    : "86 mins",
+            "year"       : "2011",
+            "userRating" : "4",
+            "tags"       : ["Concert", "Epix Originals", "Music"]
         },
         {
-            "id"      : "4533",
-            "title"   : "Usher: Live from London",
-            "href"    : "/usher-live-from-london/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/4533/thumbs/Usher:_Live_from_London_stills_112557.jpg"
+            "id"         : "4533",
+            "title"      : "Usher: Live from London",
+            "href"       : "/usher-live-from-london/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4533/thumbs/Usher:_Live_from_London_stills_112557.jpg",
+            "synopsis"   : "A voice smooth as honey and the dance moves to match - what's not to love? Seven-time Grammy winner Usher hits the stage at the epic O2 Arena in London in this concert special, wowing a sold-out crowd with megahits from his albums Raymond v. Raymond, Versus and beyond. As he busts out killer steps on fan favorite songs like \"OMG\" and \"Hey Daddy,\" it's easy to see why this soulful Southerner was named Billboard Hot 100's Artist of the Decade.",
+            "rating"     : "TV-PG",
+            "runtime"    : "72 mins",
+            "year"       : "2011",
+            "userRating" : "5",
+            "tags"       : ["Concert", "Epix Originals", "Music"]
         },
         {
-            "id"      : "4695",
-            "title"   : "Tyler Perry's Good Deeds",
-            "href"    : "/tyler-perrys-good-deeds/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/4695/thumbs/Tyler_Perry_s_Good_Deeds_posters_188687.jpg"
+            "id"         : "4695",
+            "title"      : "Tyler Perry's Good Deeds",
+            "href"       : "/tyler-perrys-good-deeds/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4695/thumbs/Tyler_Perry_s_Good_Deeds_posters_188687.jpg",
+            "synopsis"   : "A successful, wealthy businessman, Wesley Deeds has always done what's expected of him, whether it's assuming the helm of his father's company, tolerating his brother's misbehavior at the office or planning to marry his beautiful but restless fiancée, Natalie. But Wesley is jolted out of his predictable routine when he meets Lindsey, a down-on-her-luck single mother who works as a cleaning person in his office building. Outspoken, impulsive and proud - and also recently evicted - Lindsey struggles to make ends meet for herself and her young daughter. But when Wesley offers to help her get back on her feet, his innocent good deed ignites an unexpected attraction - and suddenly Wesley finds himself caught between the life he thought he wanted and the powerful desires of his heart...",
+            "rating"     : "PG-13",
+            "runtime"    : "110 mins",
+            "year"       : "2012",
+            "userRating" : "5",
+            "tags"       : ["Drama"]
         },
         {
-            "id"      : "1657",
-            "title"   : "Warrior",
-            "href"    : "/warrior/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/1657/thumbs/Warrior_posters_188830.jpg"
+            "id"         : "1657",
+            "title"      : "Warrior",
+            "href"       : "/warrior/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/1657/thumbs/Warrior_posters_188830.jpg",
+            "synopsis"   : "Brother fighting against brother is a tale as old as time. Brother fighting against brother in a mixed martial arts arena? So current you could almost see it on tonight's sports highlight reel. Nick Nolte's Academy Award-nominated performance caps a powerhouse cast that deftly and hauntingly tells a story of family, duty, forgiveness and glory - and a mean left hook. Nick Nolte Oscar&#169; 2012 Nominee for Best Supporting Actor",
+            "rating"     : "PG-13",
+            "runtime"    : "140 mins",
+            "year"       : "2011",
+            "userRating" : "5",
+            "tags"       : ["Drama", "Action", "Sports Films"]
         },
         {
-            "id"      : "4629",
-            "title"   : "Footloose",
-            "href"    : "/footloose-2011/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/4629/thumbs/Footloose_posters_187831.jpg"
+            "id"         : "4629",
+            "title"      : "Footloose",
+            "href"       : "/footloose-2011/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4629/thumbs/Footloose_posters_187831.jpg",
+            "synopsis"   : "Big City Teen meets Small Town Girl. He'd ask her to the school dance, except for one thing: dancing's illegal. And that's when Big City Teen teaches the rest of the kids to fight for their right to boogie. Kenny Wormald and Julianne Hough star in this remake of the ‘80s favorite, updated with just the right blend of fresh moves and retro tunes.",
+            "rating"     : "PG-13",
+            "runtime"    : "113 mins",
+            "year"       : "2011",
+            "userRating" : "5",
+            "tags"       : ["Drama", "Comedy", "Musical"]
         },
         {
-            "id"      : "3330",
-            "title"   : "The Lincoln Lawyer",
-            "href"    : "/the-lincoln-lawyer/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/3330/thumbs/The_Lincoln_Lawyer_posters_39287.jpg"
+            "id"         : "3330",
+            "title"      : "The Lincoln Lawyer",
+            "href"       : "/the-lincoln-lawyer/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/3330/thumbs/The_Lincoln_Lawyer_posters_39287.jpg",
+            "synopsis"   : "Mickey Haller (Matthew McConaughey) is a Los Angeles criminal defense attorney who operates out of the back of his Lincoln sedan.  Haller has spent most of his career defending garden-variety criminals, until he lands the case of his career: defending Louis Roulet (Ryan Phillippe), a Beverly Hills playboy accused of rape and attempted murder.  But the seemingly straightforward case suddenly develops into a deadly game of survival for Haller.",
+            "rating"     : "R",
+            "runtime"    : "118 mins",
+            "year"       : "2011",
+            "userRating" : "5",
+            "tags"       : ["Drama", "Crime"]
         },
         {
-            "id"      : "4647",
-            "title"   : "The Whistleblower",
-            "href"    : "/the-whistleblower/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/4647/thumbs/The_Whistleblower_posters_48085.jpg"
+            "id"         : "4647",
+            "title"      : "The Whistleblower",
+            "href"       : "/the-whistleblower/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4647/thumbs/The_Whistleblower_posters_48085.jpg",
+            "synopsis"   : "Rachel Weisz stars in this harrowing drama based on the true story of Kathryn Bolkovac, a policewoman from Nebraska who takes a job in Bosnia as a peacekeeper for the U.N. and stumbles upon the makings of an international incident. And to her dismay, it's not just the perpetrators of a sex-trafficking ring she's up against; it's also the bureaucrats determined to cover it up. ",
+            "rating"     : "R",
+            "runtime"    : "112 mins",
+            "year"       : "2011",
+            "userRating" : "5",
+            "tags"       : ["Drama"]
         },
         {
-            "id"      : "2101",
-            "title"   : "True Grit",
-            "href"    : "/true-grit/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/2101/thumbs/True_Grit_posters_187849.jpg"
+            "id"         : "2101",
+            "title"      : "True Grit",
+            "href"       : "/true-grit/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/2101/thumbs/True_Grit_posters_187849.jpg",
+            "synopsis"   : "Jeff Bridges takes over for John Wayne in the Coen Brothers' adaptation of a Western classic, in which a plucky teenage girl hires gruff U.S. Marshal Rooster Cogburn to track down the man who killed her father. And whether Rooster likes it or not, young Mattie is determined to accompany him on the manhunt to make sure he gets the job done. Joined by a Texas Ranger (Matt Damon) looking for the same man, the trio ventures into the wilds of Indian Territory in search of justice, vengeance, and their own \"grit.\" Oscar&copy; 2011 Nominee for Best Picture",
+            "rating"     : "PG-13",
+            "runtime"    : "110 mins",
+            "year"       : "2010",
+            "userRating" : "5",
+            "tags"       : ["Drama", "Western"]
         },
         {
-            "id"      : "4583",
-            "title"   : "Everything Must Go",
-            "href"    : "/everything-must-go/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/4583/thumbs/Everything_Must_Go_posters_45825.jpg"
+            "id"         : "4583",
+            "title"      : "Everything Must Go",
+            "href"       : "/everything-must-go/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4583/thumbs/Everything_Must_Go_posters_45825.jpg",
+            "synopsis"   : "Everything Must Go tells the story of Nick Porter (Will Ferrell) a career salesman whose days of being on top are long gone. The same day Nick gets fired, for falling off the wagon one last time, he returns home to discover his wife has left him, changed the locks on their suburban home and dumped all his possessions out on the front yard. Faced with his life imploding, Nick puts it all on the line - or more properly, on the lawn - reluctantly holding a yard sale that becomes a unique strategy for survival. Everything Must Go also stars Rebecca Hall and Laura Dern.",
+            "rating"     : "R",
+            "runtime"    : "97 mins",
+            "year"       : "2011",
+            "userRating" : "5",
+            "tags"       : ["Drama", "Comedy"]
         },
         {
-            "id"      : "5137",
-            "title"   : "Flashdance",
-            "href"    : "/flashdance/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/5137/thumbs/Flashdance_posters_184005.jpg"
+            "id"         : "5137",
+            "title"      : "Flashdance",
+            "href"       : "/flashdance/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/5137/thumbs/Flashdance_posters_184005.jpg",
+            "synopsis"   : "A young woman works as a welder by day, an erotic dancer by night, while pursuing her dream of dancing with the Pittsburgh Ballet.",
+            "rating"     : "R",
+            "runtime"    : "95 mins",
+            "year"       : "1983",
+            "userRating" : "5",
+            "tags"       : ["Drama"]
         },
         {
-            "id"      : "5144",
-            "title"   : "Vanilla Sky",
-            "href"    : "/vanilla-sky/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/5144/thumbs/Vanilla_Sky_posters_184290.jpg"
+            "id"         : "5144",
+            "title"      : "Vanilla Sky",
+            "href"       : "/vanilla-sky/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/5144/thumbs/Vanilla_Sky_posters_184290.jpg",
+            "synopsis"   : "The tale of a young New York City publishing magnate who finds himself on an unexpected roller-coaster ride of romance, comedy, suspicion, love, sex and dreams in a mind-bending search for his soul.",
+            "rating"     : "R",
+            "runtime"    : "136 mins",
+            "year"       : "2001",
+            "userRating" : "5",
+            "tags"       : ["Drama"]
         },
         {
-            "id"      : "4870",
-            "title"   : "Friends With Kids",
-            "href"    : "/friends-with-kids/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/4870/thumbs/Friends_With_Kids_posters_109182.jpg"
+            "id"         : "4870",
+            "title"      : "Friends With Kids",
+            "href"       : "/friends-with-kids/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4870/thumbs/Friends_With_Kids_posters_109182.jpg",
+            "synopsis"   : "Friends With Kids, written and directed by Jennifer Westfeldt, is a daring and poignant ensemble comedy about a close-knit circle of friends at that moment in life when children arrive and everything changes. The last two singles in the group - Westfeldt and Adam Scott, observe the effect that kids have had on their friends' relationships and wonder if there's a better way. They decide to have a kid together - and date other people.",
+            "rating"     : "R",
+            "runtime"    : "107 mins",
+            "year"       : "2012",
+            "userRating" : "5",
+            "tags"       : ["Comedy", "Recently Added"]
         },
         {
-            "id"      : "4653",
-            "title"   : "Young Adult",
-            "href"    : "/young-adult/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/4653/thumbs/Young_Adult_posters_187848.jpg"
+            "id"         : "4653",
+            "title"      : "Young Adult",
+            "href"       : "/young-adult/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4653/thumbs/Young_Adult_posters_187848.jpg",
+            "synopsis"   : "Charlize Theron shines as sour Mavis Gary in this dark comedy from writer Diablo Cody and director Jason Reitman. Facing a divorce and the impending cancellation of her series of young adult novels, Mavis decides it's time to return to her hometown and reclaim her high school boyfriend (Patrick Wilson) - so what if he's happily married with a new baby? Along the way she forms an unlikely friendship with a former classmate, played with humor and grace by comedian Patton Oswalt.",
+            "rating"     : "R",
+            "runtime"    : "94 mins",
+            "year"       : "2011",
+            "userRating" : "4",
+            "tags"       : ["Comedy", "Drama"]
         },
         {
-            "id"      : "4653",
-            "title"   : "Young Adult",
-            "href"    : "/young-adult/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/4653/thumbs/Young_Adult_posters_187848.jpg"
+            "id"         : "3609",
+            "title"      : "Tyler Perry's Madea's Big Happy Family",
+            "href"       : "/tyler-perrys-madeas-big-happy-family/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/3609/thumbs/Tyler_Perry_s_Madea_s_Big_Happy_Family_posters_188132.jpg",
+            "synopsis"   : "Madea, everyone's favorite wise-cracking, take-no-prisoners grandma, jumps into action when her niece, Shirley, receives distressing news about her health. All Shirley wants is to gather her three adult children around her and share the news as a family. But Tammy, Kimberly and Byron are too distracted by their own problems: Tammy can't manage her unruly children or her broken marriage; Kimberly is gripped with anger and takes it out on her husband; and Byron, after spending two years in jail, is under pressure to deal drugs again. It's up to Madea, with the help of the equally rambunctious Aunt Bam, to gather the clan together and make things right the only way she knows how: with a lot of tough love, laughter...and the revelation of a long-buried family secret.",
+            "rating"     : "PG-13",
+            "runtime"    : "106 mins",
+            "year"       : "2011",
+            "userRating" : "5",
+            "tags"       : ["Comedy", "Drama"]
         },
         {
-            "id"      : "3609",
-            "title"   : "Tyler Perry's Madea's Big Happy Family",
-            "href"    : "/tyler-perrys-madeas-big-happy-family/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/3609/thumbs/Tyler_Perry_s_Madea_s_Big_Happy_Family_posters_188132.jpg"
+            "id"         : "2092",
+            "title"      : "Rango",
+            "href"       : "/rango/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/2092/thumbs/Rango_posters_187845.jpg",
+            "synopsis"   : "2012 Oscar&copy; Nominee for Best Animated Feature. ILM's first full-length animated feature stars Johnny Depp as the voice of a chameleon suffering an identity crisis, as he finds himself out of his comfy terrarium and desperately attempting to blend in to the wild world around him. Before he knows it, he's posing as sheriff in a rough and tumble frontier town called Dirt, where the life expectancy of a lawman is shorter than a sno-cone in July.",
+            "rating"     : "PG",
+            "runtime"    : "97 mins",
+            "year"       : "2011",
+            "userRating" : "5",
+            "tags"       : ["Comedy", "Family", "Animation", "Children"]
         },
         {
-            "id"      : "2092",
-            "title"   : "Rango",
-            "href"    : "/rango/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/2092/thumbs/Rango_posters_187845.jpg"
+            "id"         : "4743",
+            "title"      : "Jeff, Who Lives at Home",
+            "href"       : "/jeff-who-lives-at-home/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4743/thumbs/Jeff__Who_Lives_at_Home_posters_187855.jpg",
+            "synopsis"   : "Mothers and sons, husbands and wives, big brothers and little brothers - all precarious relationships examined through the sweetly soulful eyes of Jeff, a grown man who spends the bulk of his time getting high in his mom's basement and looking for answers in the not-so-random order of things. All it takes is one wrong number to set Jeff's day into glorious chaos, as his exasperated loved ones are dragged along for the ride.",
+            "rating"     : "R",
+            "runtime"    : "83 mins",
+            "year"       : "2012",
+            "userRating" : "5",
+            "tags"       : ["Comedy"]
         },
         {
-            "id"      : "4743",
-            "title"   : "Jeff, Who Lives at Home",
-            "href"    : "/jeff-who-lives-at-home/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/4743/thumbs/Jeff__Who_Lives_at_Home_posters_187855.jpg"
+            "id"         : "4706",
+            "title"      : "Jackass 3: The Director's Cut",
+            "href"       : "/jackass-3-the-directors-cut/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4706/thumbs/Jackass_3D_UNRATED_posters_48301.jpg",
+            "synopsis"   : "Mothers and sons, husbands and wives, big brothers and little brothers - all precarious relationships examined through the sweetly soulful eyes of Jeff, a grown man who spends the bulk of his time getting high in his mom's basement and looking for answers in the not-so-random order of things. All it takes is one wrong number to set Jeff's day into glorious chaos, as his exasperated loved ones are dragged along for the ride.",
+            "rating"     : "NR",
+            "runtime"    : "100 mins",
+            "year"       : "2012",
+            "userRating" : "5",
+            "tags"       : ["Comedy"]
         },
         {
-            "id"      : "4706",
-            "title"   : "Jackass 3: The Director's Cut",
-            "href"    : "/jackass-3-the-directors-cut/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/4706/thumbs/Jackass_3D_UNRATED_posters_48301.jpg"
+            "id"         : "4696",
+            "title"      : "One For the Money",
+            "href"       : "/one-for-the-money/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4696/thumbs/One_For_the_Money_posters_188139.jpg",
+            "synopsis"   : "Jersey girl Stephanie Plum needs a job - any job will do. So she turns to her less-than-upstanding bail bondsman cousin Vinnie, who sets her up with a promising opportunity as a bail enforcement agent. Armed with pepper spray and a gung-ho attitude, Stephanie sets out to get her man... who just so happens to be the same guy who wooed her, then dumped her, back in high school. Sparks fly in this action comedy based on the best-selling Janet Evanovich series of novels.",
+            "rating"     : "PG-13",
+            "runtime"    : "91 mins",
+            "year"       : "2012",
+            "userRating" : "5",
+            "tags"       : ["Comedy", "Action", "Crime", "Recently Added"]
         },
         {
-            "id"      : "4696",
-            "title"   : "One For the Money",
-            "href"    : "/one-for-the-money/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/4696/thumbs/One_For_the_Money_posters_188139.jpg"
+            "id"         : "1850",
+            "title"      : "Morning Glory",
+            "href"       : "/morning-glory/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/1850/thumbs/Morning_Glory_-_2010_posters_187837.jpg",
+            "synopsis"   : "From your bleary-eyed, pre-coffee perspective, the morning news may look like nothing more than pleasantries and traffic updates. But behind the scenes, it's a war zone - so discovers plucky producer Becky Fuller (Rachel McAdams), who's been tasked with hoisting national morning show \"Daybreak\" out of last place. Step one: convince her anchors (Harrison Ford and Diane Keaton) not to kill each other before the 7:57am weather report.",
+            "rating"     : "PG-13",
+            "runtime"    : "107 mins",
+            "year"       : "2010",
+            "userRating" : "5",
+            "tags"       : ["Drama", "Comedy", "Romance"]
         },
         {
-            "id"      : "1850",
-            "title"   : "Morning Glory",
-            "href"    : "/morning-glory/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/1850/thumbs/Morning_Glory_-_2010_posters_187837.jpg"
-        },
-        {
-            "id"      : "1850",
-            "title"   : "Morning Glory",
-            "href"    : "/morning-glory/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/1850/thumbs/Morning_Glory_-_2010_posters_187837.jpg"
-        },
-        {
-            "id"      : "2102",
-            "title"   : "From Prada To Nada",
-            "href"    : "/from-prada-to-nada/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/2102/thumbs/From_Prada_To_Nada_posters_37961.jpg"
-        },
-        {
-            "id"      : "4913",
-            "title"   : "Jim Norton: Please Be Offended",
-            "href"    : "/jim-norton-please-be-offended/",
-            "img"     : "http://content.epixhd.com/webassets/static/movies/images/4913/thumbs/Jim_Norton:_Please_Be_Offended_maps_112917.jpg"
+            "id"         : "2102",
+            "title"      : "From Prada To Nada",
+            "href"       : "/from-prada-to-nada/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/2102/thumbs/From_Prada_To_Nada_posters_37961.jpg",
+            "synopsis"   : "Jane Austen's romantic comedy classic gets a Latin infusion in this updated take on Sense & Sensibility starring Alexa Vega and Camilla Belle. When their father passes away unexpectedly, Mary and Nora see their posh Beverly Hills lifestyle evaporate before their eyes. It's goodbye 90210, hello East L.A. as the spoiled sisters move in with an estranged aunt, and discover the cultural roots they never knew they'd been missing.",
+            "rating"     : "PG-13",
+            "runtime"    : "107 mins",
+            "year"       : "2011",
+            "userRating" : "5",
+            "tags"       : ["Comedy", "Romance"]
         }
     ]
 }

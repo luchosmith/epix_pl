@@ -1,5 +1,6 @@
-#collections .collection .content li {
-    height: 240px;
+
+#main_collection.collection li {
+    height: 257px;
 }
 
 /* the infinite scroll div */

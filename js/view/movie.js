@@ -2,7 +2,7 @@ var MovieView = Backbone.View.extend({
 
     tagName:  "li",
     
-    //template: _.template($('#movie-item-template').html()),
+    template: _.template($('#movie-item-template').html()),
     
     events: {
       "click"           : "clicked"
@@ -19,7 +19,8 @@ var MovieView = Backbone.View.extend({
     },
     
     render: function() {
-      //this.$el.html(this.template(this.model.toJSON()));
+      console.log("rendering movie object");
+      this.$el.html(this.template(this.model.toJSON()));
       return this;
     },
     
@@ -28,7 +29,7 @@ var MovieView = Backbone.View.extend({
     },
     
     clear: function() {
-      //this.model.destroy();
+      this.model.destroy();
     }
 
   });

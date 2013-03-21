@@ -9,7 +9,6 @@
 <!-- <base href="http://www.epixhd.com/" /> -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
  
-        
         <link rel="stylesheet" href="http://www.epixhd.com/styleassets/css/epixhd-core.css?v=1904" type="text/css" media="screen" />
         <link rel="stylesheet" href="http://www.epixhd.com/styleassets/css/epixhd-moviepage.css?v=1904" type="text/css" media="screen" />
         <link rel="stylesheet" href="http://www.epixhd.com/styleassets/css/jquery-ui.css?v=1904" type="text/css" media="screen" />
@@ -18,14 +17,16 @@
         <link rel="stylesheet" href="http://www.epixhd.com/styleassets/css/all-movies.css?v=1904" type="text/css" media="screen" />
         <link rel="stylesheet" href="style.css" />
         
-        
-        <script id="movie-item-template" type="text/javascript">
+        <script id="movie-item-template" type="text/template">
           <div>
-            <a id="movie_<%= _id =>" href="<%= href %>"><img class="movie-img" src="<%= img %>"></a>
-            <a href="<%= href %>"><%= title %></a>
-          </div>
+					  <div>
+						  <a href="http://www.epixhd.com<%= href %>">
+						    <img src="<%= img %>" alt="" />
+						  </a>
+						</div>
+					  <a href="http://www.epixhd.com<%= href %>"><%= title %></a>
+				  </div>
         </script>
-        
         
         <script src="js/lib/jquery-1.9.1.min.js" type="text/javascript"></script>
         <!--
@@ -53,7 +54,6 @@
         <script src="js/collection/movies.js"></script>
         <script src="js/view/movie.js"></script>
         <script src="js/app.js"></script>
-        
 
         <!--[if IE 7]>
             <link rel="stylesheet" href="http://www.epixhd.com/styleassets/css/ie7.css?v=1904" type="text/css" media="screen" />
@@ -418,6 +418,7 @@
         </div>
     
     </div> <!-- body content -->
+		
     <div id="footer_wrapper">
 <div class="footer">
 <ul class="social-media">
