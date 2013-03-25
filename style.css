@@ -1,10 +1,16 @@
 
-#main_collection.collection li {
-    height: 257px;
-}
+
 
 /* the infinite scroll div */
 #collections #main_collection {
     height: 500px;
     overflow: auto;
+}
+
+#collections li.movie-item {
+    height: 257px;
+}
+
+.movie-item .movie-data {
+    display:none;
 }

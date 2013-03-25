@@ -31,10 +31,17 @@ var AppView = Backbone.View.extend({
   
   createMovieObject : function (data){
     var movie = new Movie({
-      _id : data.id,
-      title : data.title,
-      href : data.href,
-      img : data.img
+      _id        : data.id,
+      title      : data.title,
+      href       : data.href,
+      img        : data.img,
+      syn        : data.synopsis,
+      rating     : data.rating,
+      userRating : data.userRating,
+      runtime    : data.runtime,
+      year       : data.year,
+      tags       : data.tags,
+      
     });
     Movies.add(movie);
   },

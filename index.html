@@ -15,9 +15,11 @@
         <link rel="stylesheet" href="http://www.epixhd.com/styleassets/css/extras-thickbox.css?v=1904" type="text/css" media="screen" />
         <link rel="stylesheet" href="http://www.epixhd.com/styleassets/css/epixhd-screeningroom.css?v=1904" type="text/css" media="screen" />
         <link rel="stylesheet" href="http://www.epixhd.com/styleassets/css/all-movies.css?v=1904" type="text/css" media="screen" />
+				
         <link rel="stylesheet" href="style.css" />
         
         <script id="movie-item-template" type="text/template">
+						
           <div>
 					  <div>
 						  <a href="http://www.epixhd.com<%= href %>">
@@ -25,7 +27,16 @@
 						  </a>
 						</div>
 					  <a href="http://www.epixhd.com<%= href %>"><%= title %></a>
+						<div class="movie-data">
+						    <span class="rating"><%= rating %></span>
+								<span class="year"><%= year %></span>
+								<span><%= runtime %></span>
+								<!-- how to loop through arrays in a template? -->
+								<span class="userRating"></span>
+						    <p class="synopsis"><%= syn %></p>
+				    </div><!-- /movie-data --> 
 				  </div>
+					
         </script>
         
         <script src="js/lib/jquery-1.9.1.min.js" type="text/javascript"></script>
