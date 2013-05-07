@@ -1,14 +1,16 @@
 
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:tal="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
     <head xmlns:tal="http://www.w3.org/1999/xhtml">
         <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
         <title>EpixHD - All Movies</title>
         
 <!-- <base href="http://www.epixhd.com/" /> -->
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
+        <link rel="stylesheet" href="js/lib/bootstrap/css/bootstrap.css" type="text/css" media="screen" />
+
         <link rel="stylesheet" href="http://www.epixhd.com/styleassets/css/epixhd-core.css?v=1904" type="text/css" media="screen" />
         <link rel="stylesheet" href="http://www.epixhd.com/styleassets/css/epixhd-moviepage.css?v=1904" type="text/css" media="screen" />
         <link rel="stylesheet" href="http://www.epixhd.com/styleassets/css/jquery-ui.css?v=1904" type="text/css" media="screen" />
@@ -21,40 +23,27 @@
         <script id="movie-item-template" type="text/template">
 						
           <div>
-					  <div>
-						  <a href="http://www.epixhd.com<%= href %>">
-						    <img src="<%= img %>" alt="" />
-						  </a>
-						</div>
-					  <a href="http://www.epixhd.com<%= href %>"><%= title %></a>
-						<div class="movie-data">
-						    <span class="rating"><%= rating %></span>
-								<span class="year"><%= year %></span>
-								<span><%= runtime %></span>
-								<!-- how to loop through arrays in a template? -->
-								<span class="userRating"></span>
-						    <p class="synopsis"><%= syn %></p>
-				    </div><!-- /movie-data --> 
-				  </div>
+			  <div>
+				  <a href="http://www.epixhd.com<%= href %>">
+				    <img src="<%= img %>" alt="" />
+				  </a>
+				</div>
+			  <a href="http://www.epixhd.com<%= href %>"><%= title %></a>
+				<div class="movie-data">
+				    <span class="rating"><%= rating %></span>
+						<span class="year"><%= year %></span>
+						<span><%= runtime %></span>
+						<!-- how to loop through arrays in a template? -->
+						<span class="userRating"></span>
+				    <p class="synopsis"><%= syn %></p>
+		    </div><!-- /movie-data --> 
+		  </div>
 					
         </script>
         
         <script src="js/lib/jquery-1.9.1.min.js" type="text/javascript"></script>
-        <!--
-        <script src="http://www.epixhd.com/styleassets/js/jquery.ui.mod.js?v=1904" type="text/javascript"></script>
-        <script src="http://www.epixhd.com/styleassets/js/search-widget-test.js?v=1904" type="text/javascript"></script>
-        <script src="http://www.epixhd.com/styleassets/js/core.js?v=1904" type="text/javascript"></script>
-        <script src="http://www.epixhd.com/styleassets/js/swfobject.js?v=1904" type="text/javascript"></script>
-        <script src="http://www.epixhd.com/styleassets/js/screening.page.js?v=1904" type="text/javascript"></script>
-        <script src="http://www.epixhd.com/styleassets/js/player.js?v=1904" type="text/javascript"></script>
-        <script src="http://www.epixhd.com/styleassets/js/profile-tab.js?v=1904" type="text/javascript"></script>
-        <script src="http://www.epixhd.com/styleassets/js/reflection.js?v=1904" type="text/javascript"></script>
-        <script src="http://www.epixhd.com/styleassets/js/bgpos.js?v=1904" type="text/javascript"></script>
-        <script src="http://www.epixhd.com/styleassets/js/jquery.roundabout.js?v=1904" type="text/javascript"></script>
-        <script src="http://www.epixhd.com/styleassets/js/jquery.mCustomScrollbar.js" type="text/javascript"></script>
-        <script src="http://www.epixhd.com/styleassets/js/all-movies.js?v=1904" type="text/javascript"></script>
-        -->
-        <!-- <script src="jquery.infinitescroll.min.js"></script> -->
+        <script src="js/lib/bootstrap/js/bootstrap.js" type="text/javascript"></script>
+
         
         <script src="js/lib/json2.js"></script>
         <script src="js/lib/underscore.js"></script>
@@ -97,27 +86,34 @@
 
     </head>
     <body id="psr-landing" class="all-movies moviepage">
-            <div id="messagearea"></div>
-            <div id="navigation-wrapper">
-	<div id="navigation-menu" class="none">
-	    <a href="/" class="logo"></a>
-	    <ul>
-	        <li>
-	            <a href="#" title="Watch Movies">Watch Movies</a>
-	            <ul>
-	                <li><a href="http://www.epixhd.com/all-movies/" title="Most Popular">Most Popular</a></li>
+
+<div id="epx-top-nav" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#"><img src="http://content.epixhd.com/styleassets/movie-pages/logo.png" alt="Epix" /></a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active dropdown">
+              	<a href="#"  class="dropdown-toggle" data-toggle="dropdown">Watch Movies</a>
+              	<ul class="dropdown-menu">
+              		<li><a href="http://www.epixhd.com/all-movies/" title="Most Popular">Most Popular</a></li>
 	                <li><a href="http://www.epixhd.com/all-movies/" title="Movies by Genre">Movies by Genre</a></li>
 	                <li><a href="http://www.epixhd.com/all-movies/" title="Recently Added">Recently Added</a></li>
 	                <li><a href="http://www.epixhd.com/all-movies/" title="Movies A-Z">Movies A-Z</a></li>
 	                <li style="display:none;"><a href="/screening-room/" title="Watch With Friends">Watch With Friends</a></li>
 	                <li><a href="http://www.epixhd.com/staffpicks/" title="Staff Picks">Staff Picks</a></li>
 	                <li class="last"><a href="/extras/" title="Movie Extras">Movie Extras</a></li>
-	            </ul>
-	        </li>
-	        <li>
-	            <a href="#" title="Specials">Specials</a>
-	            <ul>
-	                <li><a href="/envelope-screening-series/" title="Envelope">Envelope Screening Series</a></li>
+              	</ul>
+			  </li>
+              <li class="dropdown">
+              	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Specials</a>
+                <ul class="dropdown-menu">
+                    <li><a href="/envelope-screening-series/" title="Envelope">Envelope Screening Series</a></li>
 	                <li><a href="/the-hunger-games-interactive/" title="The Hunger Games">The Hunger Games</a></li>
 	                <li><a href="/bellator/" title="Bellator">Bellator</a></li>
 	                <li><a href="/all-movies/?genre=21" title="Docs">Docs</a></li>
@@ -126,21 +122,37 @@
 	                <li><a href="/epix-live/" title="EPIX Live">EPIX Live</a></li>
 	                <li><a href="/all-movies/?genre=43" title="Comedy">Comedy</a></li>
 	                <li class="last"><a href="/all-movies/?genre=27" title="Concerts">Concerts</a></li>
-	            </ul>
-	        </li>
-	        <li><a href="/channel/schedule/" title="On TV">On TV</a></li>
-	        <li><a href="/devices/" title="EPIX Apps">EPIX Apps</a></li>
-	        <li>
-	            <a href="#" title="Get EPIX">Get EPIX</a>
-	            <ul>
+                </ul>
+              </li>
+              <li><a href="#contact">On TV</a></li>
+              <li><a href="#">EPIX Apps</a></li>
+              <li class="dropdown">
+              	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Get EPIX</a>
+                <ul class="dropdown-menu">
 	                <li><a href="/devices/" title="Devices">Devices</a></li>
 	                <li><a href="/freetrial" title="Get a Free Trial">Get a Free Trial</a></li>
 	                <li><a href="/epixprofile/?skipauth=1" title="Get EPIX Channel">Get Epix Channel</a></li>
 	                <li class="last"><a href="http://corp.epixhd.com/" title="What is EPIX / FAQ">What is EPIX / FAQ</a></li>
-	            </ul>
-	        </li>
-	        <li class="me hidden"><a href="/epixprofile" title="Me">Me</a></li>
-	    </ul>
+                </ul>
+              </li>
+              <li class="me hidden"><a href="/epixprofile" title="Me">Me</a></li>
+            </ul>
+            <form class="navbar-form pull-right">
+              <input class="span2" type="text" placeholder="Search">
+              <!-- <input class="span2" type="password" placeholder="Password">
+              <button type="submit" class="btn">Sign in</button> -->
+            </form>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+
+            <div id="messagearea"></div>
+            <div id="navigation-wrapper" style="display:none;">
+	<div id="navigation-menu" class="none">
+	    
+
 	    <div class="utilities">
 	        <ul id="userpresence" class="login">
 	         
