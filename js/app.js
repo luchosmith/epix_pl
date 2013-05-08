@@ -4,14 +4,12 @@ var AppView = Backbone.View.extend({
   
   initialize : function(){
     this.listenTo(Movies, 'add', this.addOne);
-    //this.lisenTo(Movies, 'all', this.render);
     this.fetchMovies();
   },
   
   fetchMovies : function(){
     Movies.fetch();
     if (!Movies.length) {
-      //console.log("no movies in local storage");
       this.fetchRemoteMovies();
     }
   },
@@ -56,6 +54,5 @@ var AppView = Backbone.View.extend({
 
 $(document).ready(function () {
   app = new AppView;
-  $('movie-item > div').popover({'trigger':'hover'});
 });
 

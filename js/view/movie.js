@@ -11,11 +11,6 @@ var MovieView = Backbone.View.extend({
     events: {
       "mouseenter"      : "mouseentered",
       "mouseleave"      : "mouseleft"
-      /*"click .toggle"   : "toggleDone",
-      "dblclick .view"  : "edit",
-      "click a.destroy" : "clear",
-      "keypress .edit"  : "updateOnEnter",
-      "blur .edit"      : "close"*/
     },
     
     mouseentered: function() {
@@ -39,7 +34,6 @@ var MovieView = Backbone.View.extend({
     },
     
     render: function() {
-      //console.log("rendering movie object");
       this.$el.html(this.template(this.model.toJSON()));
       return this;
     },
