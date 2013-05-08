@@ -35,7 +35,7 @@ var AppView = Backbone.View.extend({
       title      : data.title,
       href       : data.href,
       img        : data.img,
-      syn        : data.synopsis,
+      synopsis   : data.synopsis,
       rating     : data.rating,
       userRating : data.userRating,
       runtime    : data.runtime,
@@ -56,5 +56,6 @@ var AppView = Backbone.View.extend({
 
 $(document).ready(function () {
   app = new AppView;
+  $('movie-item > div').popover({'trigger':'hover'});
 });
 

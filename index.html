@@ -23,7 +23,7 @@
         <script id="movie-item-template" type="text/template">
 						
           <div>
-			  <div>
+			  <div data-content="<%= synopsis %>">
 				  <a href="http://www.epixhd.com<%= href %>">
 				    <img src="<%= img %>" alt="" />
 				  </a>
@@ -35,7 +35,7 @@
 						<span><%= runtime %></span>
 						<!-- how to loop through arrays in a template? -->
 						<span class="userRating"></span>
-				    <p class="synopsis"><%= syn %></p>
+				    <p class="synopsis"></p>
 		    </div><!-- /movie-data --> 
 		  </div>
 					
