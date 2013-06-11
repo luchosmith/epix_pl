@@ -12,6 +12,7 @@ body{ padding-top:60px;}
 }
 
 #body-content {
+    padding-top: 45px;
     width: 1000px;
 }
 
@@ -23,7 +24,8 @@ body{ padding-top:60px;}
 }
 
 #main-left {
-    width: 745px;
+    /*width: 1000px;*/
+    width:100%;
 }
 
 #most-watched { 
@@ -42,4 +44,8 @@ body{ padding-top:60px;}
 
 .movie-item .movie-data {
     display:none;
+}
+
+#collections .movie-item .movie-title {
+    display: none;
 }

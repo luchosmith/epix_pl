@@ -15,7 +15,7 @@
         <link rel="stylesheet" href="http://www.epixhd.com/styleassets/css/jquery-ui.css?v=1904" type="text/css" media="screen" />
         <link rel="stylesheet" href="http://www.epixhd.com/styleassets/css/extras-thickbox.css?v=1904" type="text/css" media="screen" />
         <link rel="stylesheet" href="http://www.epixhd.com/styleassets/css/epixhd-screeningroom.css?v=1904" type="text/css" media="screen" />
-        <link rel="stylesheet" href="http://www.epixhd.com/styleassets/css/all-movies.css?v=1904" type="text/css" media="screen" />
+        <link rel="stylesheet" href="css/all-movies.css" type="text/css" media="screen" />
 				
         <link rel="stylesheet" href="style.css" />
         
@@ -27,7 +27,7 @@
 				    <img src="<%= img %>" alt="" />
 				  </a>
 				</div>
-			  <a href="http://www.epixhd.com<%= href %>"><%= title %></a>
+			  <a class="movie-title" href="http://www.epixhd.com<%= href %>"><%= title %></a>
 				<div class="movie-data">
 				    <span class="rating"><%= rating %></span>
 						<span class="year"><%= year %></span>
@@ -173,48 +173,8 @@
             <li><a href="/small-soldiers/"><img src="http://content.epixhd.com/webassets/static/movies/images/5009/thumbs/Small_Soldiers_posters_114403.jpg" alt="Small Soldiers" title="Small Soldiers" /></a></li>
         </ul>
 </div></div>
-<div class="genres">
-<h3>By Genre</h3>
-<ul>
-<li class="genre_9"> <a href="all-movies/?genre=9">Action</a> </li>
-<li class="genre_18"> <a href="all-movies/?genre=18">Adventure</a> </li>
-<li class="genre_31"> <a href="all-movies/?genre=31">Animation</a> </li>
-<li class="genre_33"> <a href="all-movies/?genre=33">Biography</a> </li>
-<li class="genre_34"> <a href="all-movies/?genre=34">Children</a> </li>
-<li class="genre_2"> <a href="all-movies/?genre=2">Comedy</a> </li>
-<li class="genre_27"> <a href="all-movies/?genre=27">Concert</a> </li>
-<li class="genre_29"> <a href="all-movies/?genre=29">Crime</a> </li>
-<li class="genre_21"> <a href="all-movies/?genre=21">Documentary</a> </li>
-<li class="genre_1"> <a href="all-movies/?genre=1">Drama</a> </li>
-<li class="genre_50"> <a href="all-movies/?genre=50">EPIX Originals</a> </li>
-<li class="genre_35"> <a href="all-movies/?genre=35">Erotic</a> </li>
-<li class="genre_4"> <a href="all-movies/?genre=4">Family</a> </li>
-<li class="genre_37"> <a href="all-movies/?genre=37">Fantasy</a> </li>
-<li class="genre_38"> <a href="all-movies/?genre=38">Film Noir</a> </li>
-<li class="genre_24"> <a href="all-movies/?genre=24">Foreign</a> </li>
-</ul>
-<ul>
-<li class="genre_39"> <a href="all-movies/?genre=39">Historical</a> </li>
-<li class="genre_5"> <a href="all-movies/?genre=5">Horror</a> </li>
-<li class="genre_48"> <a href="all-movies/?genre=48">Independent</a> </li>
-<li class="genre_23"> <a href="all-movies/?genre=23">Musical</a> </li>
-<li class="genre_19"> <a href="all-movies/?genre=19">Mystery</a> </li>
-<li class="genre_41"> <a href="all-movies/?genre=41">Parody</a> </li>
-<li class="genre_46"> <a href="all-movies/?genre=46">Romance</a> </li>
-<li class="genre_3"> <a href="all-movies/?genre=3">Science Fiction</a> </li>
-<li class="genre_22"> <a href="all-movies/?genre=22">Sports</a> </li>
-<li class="genre_43"> <a href="all-movies/?genre=43">Stand-Up</a> </li>
-<li class="genre_44"> <a href="all-movies/?genre=44">Supernatural</a> </li>
-<li class="genre_45"> <a href="all-movies/?genre=45">Teen</a> </li>
-<li class="genre_30"> <a href="all-movies/?genre=30">Thriller</a> </li>
-<li class="genre_47"> <a href="all-movies/?genre=47">War</a> </li>
-<li class="genre_26"> <a href="all-movies/?genre=26">Western</a> </li>
-</ul>
-</div>
-<!--genres-->
-<div class="categories"><div id="newestMovies"><!--newestMovies--> </div><div id="popular"><!--popular--></div><a href="all-movies">
-<h2 id="see-all-movies">&gt; See All Movies</h2>
-</a></div>
+
+
 <!--catagories--></div>
 <!--movieTab-->
                         </div>
@@ -241,178 +201,14 @@
         <div id="main-left">
             
 <div id="collections">
-<div id="collection_21" class="collection">
-	<div class="customScrollBox">
-        <a class="collection-title">Featured Collections</a>
-	    <div class="horWrapper">
-	        <div class="container">
-	            <div class="content">	    
-	                <ul>
-	                    <li>
-	                        <a id="movie_4687" href="/mission-impossible-ghost-protocol/"><img class="movie-img" src="http://content.epixhd.com/webassets/static/movies/images/4687/thumbs/Mission:_Impossible_Ghost_Protocol_posters_187829.jpg"></a>
-	                        <a href="/mission-impossible-ghost-protocol/">Mission: Impossible Ghost Protocol</a>
-	                    </li>
-	                    <li>
-	                        <a id="movie_2589" href="/captain-america-the-first-avenger/"><img class="movie-img" src="http://content.epixhd.com/webassets/static/movies/images/2589/thumbs/Captain_America:_The_First_Avenger_posters_187843.jpg"></a>
-	                        <a href="/captain-america-the-first-avenger/">Captain America: The First Avenger</a>
-	                    </li>
-	                    <li>
-	                        <a id="movie_2188" href="/thor/"><img class="movie-img" src="http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_-_2011_posters_187841.jpg"></a>
-	                        <a href="/thor/">Thor</a>
-	                    </li>
-	                    <li>
-	                        <a id="movie_4584" href="/transformers-dark-of-the-moon/"><img class="movie-img" src="http://content.epixhd.com/webassets/static/movies/images/4584/thumbs/Transformers:_Dark_of_the_Moon_posters_187857.jpg"></a>
-	                        <a href="/transformers-dark-of-the-moon/">Transformers: Dark of the Moon</a>
-	                    </li>
-	                    <li>
-	                        <a id="movie_2547" href="/conan-the-barbarian/"><img class="movie-img" src="http://content.epixhd.com/webassets/static/movies/images/2547/thumbs/Conan_the_Barbarian_posters_47825.jpg"></a>
-	                        <a href="/conan-the-barbarian/">Conan the Barbarian</a>
-	                    </li>
-	                </ul>
-	            </div>
-	        </div>
-	    </div>
-	</div>
-</div>
-
-<div class="collection">
-    <a class="collection-title">Genre</a>
-</div>
-
     <div id="main_collection" class="collection">
         <ul id="scrolling-ul">
-            
+          <!-- dynamicly populated by view -->
         </ul>
     </div>
-
-
 </div>
         </div>
         <div id="main-right">
-            
-            
-<div id="most-watched">
-<div class="am-side-header"> <h3>Most Watched</h3> </div>
-    <div class="mw-movie"><a class="mw-item" href="/the-hunger-games/">The Hunger Games | 2012</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/mission-impossible-ghost-protocol/">Mission: Impossible Ghost Protocol | 2011</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/jay-and-silent-bob-go-down-under/">Jay and Silent Bob Go Down Under | 2012</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/tyler-perrys-good-deeds/">Tyler Perry's Good Deeds | 2012</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/captain-america-the-first-avenger/">Captain America: The First Avenger | 2011</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/jim-jefferies-fully-functional/">Jim Jefferies: Fully Functional | 2012</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/hugo/">Hugo | 2011</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/transformers-dark-of-the-moon/">Transformers: Dark of the Moon | 2011</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/young-adult/">Young Adult | 2011</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/one-for-the-money/">One For the Money | 2012</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/thor/">Thor | 2011</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/the-adventures-of-tintin/">The Adventures of Tintin | 2011</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/prison-girls/">Prison Girls | 1972</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/conan-the-barbarian/">Conan the Barbarian | 2011</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/rango/">Rango | 2011</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/no-strings-attached/">No Strings Attached | 2011</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/super-8/">Super 8 | 2011</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/abduction/">Abduction | 2011</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/attack-of-the-50-foot-cheerleader/">Attack of the 50 Foot Cheerleader | 2012</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/footloose-2011/">Footloose | 2011</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/warrior/">Warrior | 2011</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/the-devil-inside/">The Devil Inside | 2012</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/friends-with-kids/">Friends With Kids | 2012</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/lol/">LOL | 2012</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/the-expendables/">The Expendables | 2010</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/the-whistleblower/">The Whistleblower | 2011</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/tyler-perrys-madeas-big-happy-family/">Tyler Perry's Madea's Big Happy Family | 2011</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/coldplay-live-2012/">Coldplay Live 2012 | 2012</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/paranormal-activity-3/">Paranormal Activity 3 | 2011</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/the-lincoln-lawyer/">The Lincoln Lawyer | 2011</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/a-liars-autobiography/">A Liar's Autobiography | 2012</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/everything-or-nothing-the-untold-story-of-007/">Everything or Nothing: The Untold Story of 007 | 2012</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/jeff-who-lives-at-home/">Jeff, Who Lives at Home | 2012</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/the-teacher/">The Teacher | 1974</a><div class="mw-list-line"></div></div>
-    <div class="mw-movie"><a class="mw-item" href="/the-next-three-days/">The Next Three Days | 2010</a><div class="mw-list-line"></div></div>
-<div id="most-watched-more"></div>
-</div>
-            
-<div id="genres">
-<div class="am-side-header"> <h3>Genres</h3> </div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/9/?template=device/web/collection/allmovies/genre_collection">Action</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/18/?template=device/web/collection/allmovies/genre_collection">Adventure</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/31/?template=device/web/collection/allmovies/genre_collection">Animation</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/33/?template=device/web/collection/allmovies/genre_collection">Biography</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/34/?template=device/web/collection/allmovies/genre_collection">Children</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/2/?template=device/web/collection/allmovies/genre_collection">Comedy</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/27/?template=device/web/collection/allmovies/genre_collection">Concert</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/29/?template=device/web/collection/allmovies/genre_collection">Crime</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/21/?template=device/web/collection/allmovies/genre_collection">Documentary</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/1/?template=device/web/collection/allmovies/genre_collection">Drama</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/50/?template=device/web/collection/allmovies/genre_collection">EPIX Originals</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/54/?template=device/web/collection/allmovies/genre_collection">EPIX Sports</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/35/?template=device/web/collection/allmovies/genre_collection">Erotic</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/4/?template=device/web/collection/allmovies/genre_collection">Family</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/37/?template=device/web/collection/allmovies/genre_collection">Fantasy</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/38/?template=device/web/collection/allmovies/genre_collection">Film Noir</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/24/?template=device/web/collection/allmovies/genre_collection">Foreign</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/39/?template=device/web/collection/allmovies/genre_collection">Historical</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/5/?template=device/web/collection/allmovies/genre_collection">Horror</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/48/?template=device/web/collection/allmovies/genre_collection">Independent</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/51/?template=device/web/collection/allmovies/genre_collection">Music</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/23/?template=device/web/collection/allmovies/genre_collection">Musical</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/19/?template=device/web/collection/allmovies/genre_collection">Mystery</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/53/?template=device/web/collection/allmovies/genre_collection">Recently Added</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/46/?template=device/web/collection/allmovies/genre_collection">Romance</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/3/?template=device/web/collection/allmovies/genre_collection">Science Fiction</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/22/?template=device/web/collection/allmovies/genre_collection">Sports Films</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/43/?template=device/web/collection/allmovies/genre_collection">Stand-Up</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/44/?template=device/web/collection/allmovies/genre_collection">Supernatural</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/30/?template=device/web/collection/allmovies/genre_collection">Thriller</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/47/?template=device/web/collection/allmovies/genre_collection">War</a></div>
-	<div class="am-genre"><a class="genre" href="#" data-url="/epx/device/web/movies/genres/26/?template=device/web/collection/allmovies/genre_collection">Western</a></div>
-<div id="genres-more"></div>
-</div>
-            
-<div id="staff-fav">
-    <div class="am-side-header"> <h3>Staff Favorites</h3> </div>
-    <div class="favorite-item">
-    <a class="favorite" href="/starcrash/">Starcrash | 1978</a>
-    <br />
-    <a class="staff-name">Ben A.</a>
-    </div>
-    <div class="favorite-item">
-    <a class="favorite" href="/super-8/">Super 8 | 2011</a>
-    <br />
-    <a class="staff-name">Sarah B.</a>
-    </div>
-    <div class="favorite-item">
-    <a class="favorite" href="/everything-must-go/">Everything Must Go | 2011</a>
-    <br />
-    <a class="staff-name">Dylan C.</a>
-    </div>
-    <div class="favorite-item">
-    <a class="favorite" href="/the-expendables/">The Expendables | 2010</a>
-    <br />
-    <a class="staff-name">Michael R. </a>
-    </div>
-    <div class="favorite-item">
-    <a class="favorite" href="/sleeper/">Sleeper | 1973</a>
-    <br />
-    <a class="staff-name">Graham W. </a>
-    </div>
-    <div class="favorite-item">
-    <a class="favorite" href="/warrior/">Warrior | 2011</a>
-    <br />
-    <a class="staff-name">Pam J. </a>
-    </div>
-    <div class="favorite-item">
-    <a class="favorite" href="/margin-call/">Margin Call | 2011</a>
-    <br />
-    <a class="staff-name">Valerie B.</a>
-    </div>
-    <div class="favorite-item">
-    <a class="favorite" href="/jim-norton-please-be-offended/">Jim Norton: Please Be Offended | 2012</a>
-    <br />
-    <a class="staff-name">Matt S. </a>
-    </div>
-<div id="staff-fav-more"></div>  
-</div>
-            
             
         </div>
     

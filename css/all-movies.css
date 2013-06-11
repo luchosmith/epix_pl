@@ -1,0 +1,281 @@
+#psr-landing.all-movies #psr-content {
+     width: 1024px;
+ }
+ #global_ind {
+     height:100%;
+     left:0;
+     position:absolute;
+     top:0;
+     width:100%;
+     z-index:65000;
+ }
+
+ #global_ind_ind {
+     background:transparent url(http://content.epixhd.com/styleassets/js/ContentFlow/img/loader.gif) no-repeat center center;
+     height:100%;
+     padding:10px 0;
+     width:100%;
+ }
+
+ #psr-landing {
+     background: #000 url(http://content.epixhd.com/styleassets/images/screening-room/bg-iron-man.jpg) no-repeat center top;
+ }
+
+#body-content {
+width: 960px;
+margin: 0 auto;
+      
+  }
+  
+  .carousel {
+      margin: 0 auto;
+      height: 500px;
+      width: 600px;
+  }
+  #carousel-glow {
+      margin: -240px auto 0;
+      height: 200px;
+      width: 1072px;
+      background: url(http://content.epixhd.com/styleassets/images/screening-room/carousel-glow.png) no-repeat 0 0 scroll transparent;
+  }
+  .roundabout-holder {
+      list-style: none;
+      padding: 0 auto;
+      margin: 0 auto;
+      height: 480px;
+      width: 370px;
+      
+  }
+  .roundabout-moveable-item {
+      height: 360px;
+      width: 580px;
+      cursor: pointer;
+  }
+  .roundabout-moveable-item img {
+      width: 100%;
+      opacity: .2 !important;
+  }
+  .roundabout-in-focus img{
+	  opacity: 1 !important;
+  }
+  
+  #carousel-controls {
+      margin: 0 auto;
+      height: 20px;
+      margin: -120px auto;
+      position: relative;
+      z-index: 1000;
+  }
+  
+  #carousel-controls span {
+      width: 8px;
+      height: 8px;
+      float: left;
+      margin: 3px;
+      background: url(http://content.epixhd.com/styleassets/images/all-movies/slider-navi.png) no-repeat 0 0;
+      display: block;
+      font-size: 1px;
+  }
+  
+  #carousel-controls span:hover, #carousel-controls span.current {
+      background-position: 0 -8px;
+  }
+  
+  
+  
+  .collection-title {
+      background: url(http://content.epixhd.com/styleassets/images/all-movies/bg-movie-left-rail.png) no-repeat scroll transparent 50px 0;
+      height: 35px;
+      width: 696px;
+      float: left;
+      padding-top: 20px;
+      color: white;
+      font-size: 11pt;
+      font-family: Arial,Helvetica,sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-left: 10px;
+  }
+  
+  .am-side-header h3 {
+      font-family: Arial,Helvetica,sans-serif;
+      color: #FFFFFF;
+      font-size: 11pt;
+      margin: 0 auto;
+      text-transform: uppercase;
+      font-weight: bold;
+  }
+  
+  .mw-movie, .favorite-item, .genre {
+      margin: 10px 0 10px 60px;
+  }
+  
+  .mw-item {
+      text-decoration: none;
+      color: #d6d6d6;
+      font-size: 9pt;
+      font-family: Arial,Helvetica,sans-serif;
+      text-align: justify;
+  }
+  
+  .mw-item:hover, .favorite:hover, .genre:hover {
+      text-decoration: underline;
+      color:white;
+  }
+  #most-watched-more span:hover, #staff-fav-more span:hover, #genres-more span:hover {
+      color:white;
+  }
+  
+  #main-left {
+      width: 730px;
+      float: left;
+  }
+  
+  #main-right {
+      width: 230px;
+      margin: 0 auto;
+      float: left;
+  }
+  
+  #most-watched {
+      
+      margin: 0 0 15px;
+      padding: 20px 0 0 0;
+      position: relative;
+      background: url(http://content.epixhd.com/styleassets/images/all-movies/bg-movie-right-rail.png) no-repeat scroll center top transparent;
+      
+  }
+  
+  #most-watched-more, #staff-fav-more, #genres-more {
+      color: #646464;
+      font-size: 8pt;
+      cursor: pointer;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 15px 0 0 60px;
+  }
+  
+  .am-side-header {
+      margin: 0 0 20px 60px;
+      
+  }
+  
+  .mw-list-line {
+      width: 133px;
+      height: 1px;
+      margin: 10px 0;
+      background: url(http://content.epixhd.com/styleassets/images/all-movies/am-list-line.png) no-repeat scroll transparent 0 0;
+  }
+  
+  #staff-fav {
+      margin: 0 0 75px;
+      padding: 20px 0;
+      position: relative;
+      background: url(http://content.epixhd.com/styleassets/images/all-movies/bg-movie-right-rail.png) no-repeat scroll center top transparent;
+  }
+  
+  .favorite {
+      text-decoration: none;
+      color: #d6d6d6;
+      font-size: 9pt;
+      font-family: Arial,Helvetica,sans-serif;
+      text-align: justify;
+      
+  }
+  
+  .staff-name {
+      color: #646464;
+      font-family: Arial,Helvetica,sans-serif;
+      font-size: 9pt;
+  }
+  
+  #genres {
+      margin: 0 auto;
+      padding: 20px 0;
+      position: relative;
+      background: url(http://content.epixhd.com/styleassets/images/all-movies/bg-movie-right-rail.png) no-repeat scroll center top transparent;
+  }
+  
+  .genre {
+      color: #646464;
+      font-family: Arial,Helvetica,sans-serif;
+      font-size: 9pt;
+      text-decoration: none;
+      margin: 5px 0 5px 60px;
+      display: block;
+  }
+  
+  #collections .dragger_container {
+      position:relative;
+      width: 716px;
+      height: 8px;
+      float:left;
+      margin: 10px 0 0;
+      background:#000;
+      cursor:pointer;
+      background: url(http://content.epixhd.com/styleassets/images/all-movies/slider-scrollbar-collection.png) no-repeat;
+  }
+  #collections .dragger {
+      position:absolute;
+      height: 8px;
+      width: 162px;
+      background:#999;
+      text-align:center;
+      line-height:60px;
+      color:#666;
+      overflow:hidden;
+      cursor:pointer;
+      background: url(http://content.epixhd.com/styleassets/images/all-movies/slider-scrollbar-scroller.png) no-repeat;
+  }
+  
+  #collections li {
+      list-style: none outside none;
+      float: left;
+      height: auto;
+      margin: 0 8px 0;
+      /*width: 130px;*/
+      display: block;
+  }
+  
+  #collections li img {
+      font-size: 12px;
+      width: 120px;
+      /*height: 189px;*/
+      margin: 0 0 10px 0;
+      padding: 0 auto
+  }
+  
+
+  
+  #collections .customScrollBox { position:relative; width:100%; overflow:hidden;}
+  #collections .customScrollBox .container{position:relative; top:0; float:left; height: auto;}
+  #collections .customScrollBox .content{clear:both;}
+  #collections > div {
+      width: 100%;
+      margin-bottom: 40px;
+      overflow: hidden;
+  }
+  
+  #collections ul {
+      padding: 0;
+      margin: 0;
+  }
+  
+  #collections li a{
+      display: block;
+      width: auto;
+      height: auto;
+      font-size: 10pt;
+      color: #646464;
+      text-decoration: none;
+  }
+  #collections li a:hover{
+      color: white;
+      text-decoration: underline;
+  }
+
+  .customScrollBox a:hover, .staff-name:hover{
+      text-decoration: none;
+  }
+  .all-movies-loader{background: url(http://content.epixhd.com/styleassets/loadingAnimation.gif) center center no-repeat; float: left; height: 300px; position: absolute; width: 780px; z-index: 100000;}
+  
