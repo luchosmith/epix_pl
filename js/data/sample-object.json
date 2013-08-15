@@ -1,0 +1,71 @@
+        {
+            "id"         : "5101",
+            "title"      : "Jay and Silent Bob Go Down Under",
+            "href"       : "/jay-and-silent-bob-go-down-under/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/5101/thumbs/Jay_and_Silent_Bob_Go_Down_Under_posters_185611.jpg",
+            "synopsis"   : "Filmmaker and comedian Kevin Smith returns to EPIX with an all new special, taped in front of a sell out audience in Sydney, Australia. Joined by his notorious cohort Jason Mewes, this off-the-cuff, uncensored hour is filled with ribald and cautionary tales about everything from Australian children's television to mythical Australian drop bears.",
+            "rating"     : "TV-MA",
+            "runtime"    : "60 mins",
+            "year"       : "2012",
+            "userRating" : "5",
+            "tags"       : ["Comedy", "Stand-Up", "EPIX Originals", "Recently Added"]
+        },
+        
+        
+        
+{
+    "movie_id": 2188,
+    "movie_title": "Thor",
+    "movie_release_year": 2011,
+    "movie_rating": "PG-13",
+    "movie_url": "/thor/",
+    "user_rating": 5,
+    "runtime": 115,
+    "movie_synopsis": "When the god of thunder angers his father, he is cast out of the fantastical realm of Asgard and banished to a life among the lowly humans on Earth. (Wait, should we be offended?) But Thor soon discovers the 21st century is pretty fantastical, too, from first loves to Facebook. As his newfound home is threatened by Asgard's most ominous villain, Thor must use his courage - and his mighty hammer - to become the noble warrior he's destined to be.",
+    "tags": [
+        "Action",
+        "Adventure",
+        "Fantasy"
+    ],
+    "movie_images" : [
+      {
+        "image_id" : 123,
+        "image_num_type": 2,
+        "image_category": 1,
+        "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_31573.jpg"
+      },
+      {
+        "image_id" : 456,
+        "image_num_type": 2,
+        "image_category": 1,
+        "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_31574.jpg"
+      }
+    ],
+    "movie_extras_clips": [
+        {
+            "extra_video_id": 4311,
+            "extra_video_title": "Becoming a God",
+            "extra_num_type": 2,
+            "extra_video_thumburl": "http: //content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45808.jpg"
+        },
+        {
+            "extra_video_id": 4321,
+            "extra_video_title": "You're Thor!",
+            "extra_num_type": 2,
+            "extra_video_thumburl": "http: //content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
+        }
+    ],
+    "movie_extras_stills": [],
+    "playerposter": {
+        "thumb": "http: //content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_playerposters_32069.jpg",
+        "url": "http: //content.epixhd.com/webassets/static/movies/images/2188/Thor_playerposters_32069.jpg"
+    },
+    "window": {
+        "in_window": true,
+        "message": "Watch on Epix",
+        "start_date": "2012-03-1120: 00: 00"
+    },
+    "daysuntil": 116.43135416667,
+    "is_viewable": true,
+    "customnotplayingmessage": ""
+}
