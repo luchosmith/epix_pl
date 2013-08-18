@@ -307,23 +307,208 @@
       },
       
     ],
-    "movie_videos": [ //should be ordered by category, type, etc or 'ordering' column
-    //better yet, make sub arrays by category
+    "movie_videos": [ //should be ordered by category and then 'ordering' column
         {
-            "extra_video_id": 4311,
-            "extra_video_title": "Becoming a God",
-            "extra_video_description" : "lorem ipsum dolor",
-            //"extra_num_type": 2, redundant, based on type
-            "extra_videoposter_thumburl": "http: //content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45808.jpg"
+          category: "extras",
+          type: 2,
+          videos: [
+              {
+                "video_id" : 45814,
+                "video_title" : "You're Thor",
+                "video_description" : "Chris Hemsworth talks to EPIX about the big shoes he had to fill...",
+                "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
+              },
+              {
+                "video_id" : 45814,
+                "video_title" : "The Costumes of Thor",
+                "video_description" : "Chris Hemsworth talks to EPIX about the big shoes he had to fill...",
+                "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
+              },
+              {
+                "video_id" : 45814,
+                "video_title" : "Thor's Banishment",
+                "video_description" : "Chris Hemsworth talks to EPIX about the big shoes he had to fill...",
+                "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
+              },
+              {
+                "video_id" : 45814,
+                "video_title" : "The Sets of Thor",
+                "video_description" : "Chris Hemsworth talks to EPIX about the big shoes he had to fill...",
+                "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
+              },
+              {
+                "video_id" : 45814,
+                "video_title" : "Intro to Thor",
+                "video_description" : "Chris Hemsworth talks to EPIX about the big shoes he had to fill...",
+                "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
+              },
+              {
+                "video_id" : 45814,
+                "video_title" : "What God Would You Be?",
+                "video_description" : "Chris Hemsworth talks to EPIX about the big shoes he had to fill...",
+                "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
+              },
+              {
+                "video_id" : 45814,
+                "video_title" : "Gods and Marvels",
+                "video_description" : "Chris Hemsworth talks to EPIX about the big shoes he had to fill...",
+                "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
+              },
+              {
+                "video_id" : 45814,
+                "video_title" : "Hammer Time",
+                "video_description" : "Chris Hemsworth talks to EPIX about the big shoes he had to fill...",
+                "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
+              },
+              {
+                "video_id" : 45814,
+                "video_title" : "Behind the Scenes of Thor",
+                "video_description" : "Chris Hemsworth talks to EPIX about the big shoes he had to fill...",
+                "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
+              },
+              {
+                "video_id" : 45814,
+                "video_title" : "Sir Anthony Hopkins",
+                "video_description" : "Chris Hemsworth talks to EPIX about the big shoes he had to fill...",
+                "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
+              },
+              {
+                "video_id" : 45814,
+                "video_title" : "A Star Has Arrived",
+                "video_description" : "Chris Hemsworth talks to EPIX about the big shoes he had to fill...",
+                "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
+              },
+              {
+                "video_id" : 45814,
+                "video_title" : "Stan the Man",
+                "video_description" : "Chris Hemsworth talks to EPIX about the big shoes he had to fill...",
+                "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
+              },
+              {
+                "video_id" : 45814,
+                "video_title" : "Agent Coulson",
+                "video_description" : "Chris Hemsworth talks to EPIX about the big shoes he had to fill...",
+                "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
+              },
+              {
+                "video_id" : 45814,
+                "video_title" : "Becoming a God",
+                "video_description" : "Chris Hemsworth talks to EPIX about the big shoes he had to fill...",
+                "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
+              },
+              {
+                "video_id" : 45814,
+                "video_title" : "The Avengers",
+                "video_description" : "Chris Hemsworth talks to EPIX about the big shoes he had to fill...",
+                "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
+              },
+              {
+                "video_id" : 45814,
+                "video_title" : "Thor's Marvelous Premiere",
+                "video_description" : "Chris Hemsworth talks to EPIX about the big shoes he had to fill...",
+                "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
+              },
+              {
+                "video_id" : 45814,
+                "video_title" : "Meet the Destroyer",
+                "video_description" : "Chris Hemsworth talks to EPIX about the big shoes he had to fill...",
+                "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
+              },
+              {
+                "video_id" : 45814,
+                "video_title" : "Avengers Mash Up",
+                "video_description" : "Chris Hemsworth talks to EPIX about the big shoes he had to fill...",
+                "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
+              },
+              {
+                "video_id" : 45814,
+                "video_title" : "Thors Lifelike Portrayal",
+                "video_description" : "Chris Hemsworth talks to EPIX about the big shoes he had to fill...",
+                "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
+              },
+              {
+                "video_id" : 45814,
+                "video_title" : "All About Jane",
+                "video_description" : "Chris Hemsworth talks to EPIX about the big shoes he had to fill...",
+                "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
+              }
+          ]
         },
         {
-            "extra_video_id": 4321,
-            "extra_video_title": "You're Thor!",
-            "extra_video_description" : "lorem ipsum dolor",
-            "extra_video_thumburl": "http: //content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
+          category: "trailers",
+          type: 1,
+          videos: [
+            {
+              "video_id" : 38399,
+              "video_title" : "Thor Trailer",
+              "video_description" : "",
+              "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_38399.jpg"
+            },
+            {
+              "video_id" : 38399,
+              "video_title" : "Thor TV Spot 1",
+              "video_description" : "",
+              "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_38399.jpg"
+            },
+            {
+              "video_id" : 38399,
+              "video_title" : "Thor Trailer 2",
+              "video_description" : "",
+              "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_38399.jpg"
+            }
+          ]
+        },
+        {
+          category: "clips",
+          type: 3,
+          videos: [
+            {
+              "video_id" : 38399,
+              "video_title" : "Taser",
+              "video_description" : "",
+              "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_38399.jpg"
+            },
+            {
+              "video_id" : 38399,
+              "video_title" : "You're Big",
+              "video_description" : "",
+              "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_38399.jpg"
+            },
+            {
+              "video_id" : 38399,
+              "video_title" : "In The Hospital",
+              "video_description" : "",
+              "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_38399.jpg"
+            },
+            {
+              "video_id" : 38399,
+              "video_title" : "Heroes",
+              "video_description" : "",
+              "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_38399.jpg"
+            },
+            {
+              "video_id" : 38399,
+              "video_title" : "Hammer",
+              "video_description" : "",
+              "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_38399.jpg"
+            },
+            {
+              "video_id" : 38399,
+              "video_title" : "Myth",
+              "video_description" : "",
+              "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_38399.jpg"
+            },
+            {
+              "video_id" : 38399,
+              "video_title" : "Cast You Out",
+              "video_description" : "",
+              "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_38399.jpg"
+            }
+          ]
         }
+      
     ],
-    //these items below should be in the arrays above.
+   
     /*"movie_extras_stills": [],
     "playerposter": {
         "thumb": "http: //content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_playerposters_32069.jpg",
