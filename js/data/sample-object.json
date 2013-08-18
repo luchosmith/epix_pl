@@ -21,25 +21,61 @@
     ],
     "movie_images" : [ //should be ordered by category, then by 'ordering' column
       {
-        category:posters //poster vs still vs. player poster vs hero image //we may not need player poster or hero image - need to get category number
-        type:1 
+        // categories:  //poster vs still vs. player poster vs hero image 
+        //we may not need player poster or hero image - need to get category number
+        category : "posters",
+        type : 1 
         images:[
           {
-            "image_id" : 123,
+            "image_id" : 358667,
             "image_title" : "fdafad",
-            //also, omit video posters from this array, as it's redundant.
-            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_31573.jpg"
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_-_2011_posters_358667.jpg"
           },
           {
-            "image_id" : 456,
+            "image_id" : 38400,
             "image_title" : "ofojfeaf",
-            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_31574.jpg"
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_posters_38400.jpg"
+          },
+          {
+            "image_id" : 44757,
+            "image_title" : "ofojfeaf",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_posters_44757.jpg"
+          },
+          {
+            "image_id" : 44813,
+            "image_title" : "ofojfeaf",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_posters_44813.jpg"
+          },
+          {
+            "image_id" : 44814,
+            "image_title" : "ofojfeaf",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_posters_44814.jpg"
+          },
+          {
+            "image_id" : 44815,
+            "image_title" : "ofojfeaf",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_posters_44815.jpg"
+          },
+          {
+            "image_id" : 44816,
+            "image_title" : "ofojfeaf",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_posters_44816.jpg"
+          },
+          {
+            "image_id" : 44817,
+            "image_title" : "ofojfeaf",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_posters_44817.jpg"
+          },
+          {
+            "image_id" : 44834,
+            "image_title" : "ofojfeaf",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_posters_44834.jpg"
           }
         ]
       },
       {
-        category:stills //poster vs still vs. player poster vs hero image //we may not need player poster or hero image - need to get category number
-        type:1
+        category : "stills",
+        type : 1,
         images:[
           {
             "image_id" : 123,
