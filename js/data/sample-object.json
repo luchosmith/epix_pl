@@ -1,18 +1,10 @@
-        {
-            "id"         : "5101",
-            "title"      : "Jay and Silent Bob Go Down Under",
-            "href"       : "/jay-and-silent-bob-go-down-under/",
-            "img"        : "http://content.epixhd.com/webassets/static/movies/images/5101/thumbs/Jay_and_Silent_Bob_Go_Down_Under_posters_185611.jpg",
-            "synopsis"   : "Filmmaker and comedian Kevin Smith returns to EPIX with an all new special, taped in front of a sell out audience in Sydney, Australia. Joined by his notorious cohort Jason Mewes, this off-the-cuff, uncensored hour is filled with ribald and cautionary tales about everything from Australian children's television to mythical Australian drop bears.",
-            "rating"     : "TV-MA",
-            "runtime"    : "60 mins",
-            "year"       : "2012",
-            "userRating" : "5",
-            "tags"       : ["Comedy", "Stand-Up", "EPIX Originals", "Recently Added"]
-        },
-        
-        
-        
+      
+/*
+ *
+ * Each movie object should be it's own endpoint, so that it is cacheable with ESI
+ * example: /epx/movie/2188/?template=movie/json
+ * 
+ */
 {
     "movie_id": 2188,
     "movie_title": "Thor",
@@ -27,8 +19,7 @@
         "Adventure",
         "Fantasy"
     ],
-    "movie_images" : [ //should be in orderd by 'ordering column'
-    //better yet, make sub arrays by category
+    "movie_images" : [ //should be ordered by category, then by 'ordering' column
       {
         category:posters //poster vs still vs. player poster vs hero image //we may not need player poster or hero image - need to get category number
         type:1 
@@ -48,19 +39,234 @@
       },
       {
         category:stills //poster vs still vs. player poster vs hero image //we may not need player poster or hero image - need to get category number
-        type:2 
+        type:1
         images:[
           {
             "image_id" : 123,
             "image_title" : "fdafad",
-            //also, omit video posters from this array, as it's redundant.
             "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_31573.jpg"
           },
           {
-            "image_id" : 456,
+            "image_id" : 31574,
             "image_title" : "ofojfeaf",
             "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_31574.jpg"
+          },
+          { 
+            "image_id" : 31575,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_31575.jpg"
+          },
+          { 
+            "image_id" : 31577,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_31577.jpg"
+          },
+          { 
+            "image_id" : 31936,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_31936.jpg"
+          },
+          { 
+            "image_id" : 41146,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_41146.jpg"
+          },
+          { 
+            "image_id" : 44864,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_44864.jpg"
+          },
+          { 
+            "image_id" : 44865,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_44865.jpg"
+          },
+          { 
+            "image_id" : 44866,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_44866.jpg"
+          },
+          { 
+            "image_id" : 45311,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45311.jpg"
+          },
+          { 
+            "image_id" : 45312,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45312.jpg"
+          },
+          { 
+            "image_id" : 45313,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45313.jpg"
+          },
+          { 
+            "image_id" : 45315,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45315.jpg"
+          },
+          { 
+            "image_id" : 45316,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45316.jpg"
+          },
+          { 
+            "image_id" : 45317,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45317.jpg"
+          },
+          { 
+            "image_id" : 45318,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45318.jpg"
+          },
+          { 
+            "image_id" : 45319,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45319.jpg"
+          },
+          { 
+            "image_id" : 45320,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45320.jpg"
+          },
+          { 
+            "image_id" : 45321,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45321.jpg"
+          },
+          { 
+            "image_id" : 45322,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45322.jpg"
+          },
+          { 
+            "image_id" : 45323,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45323.jpg"
+          },
+          { 
+            "image_id" : 45324,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45324.jpg"
+          },
+          { 
+            "image_id" : 45535,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45535.jpg"
+          },
+          { 
+            "image_id" : 45536,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45536.jpg"
+          },
+          { 
+            "image_id" : 45537,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45537.jpg"
+          },
+          { 
+            "image_id" : 45538,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45538.jpg"
+          },
+          { 
+            "image_id" : 45539,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45539.jpg"
+          },
+          { 
+            "image_id" : 45540,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45540.jpg"
+          },
+          { 
+            "image_id" : 45541,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45541.jpg"
+          },
+          { 
+            "image_id" : 45542,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45542.jpg"
+          },
+          { 
+            "image_id" : 45543,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_455543.jpg"
+          },
+          { 
+            "image_id" : 45544,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45544.jpg"
+          },
+          { 
+            "image_id" : 45545,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45545.jpg"
+          },
+          { 
+            "image_id" : 45546,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45546.jpg"
+          },
+          { 
+            "image_id" : 45547,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45547.jpg"
+          },
+          { 
+            "image_id" : 45548,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45548.jpg"
+          },
+          { 
+            "image_id" : 45549,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45549.jpg"
+          },
+          { 
+            "image_id" : 45550,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45550.jpg"
+          },
+          { 
+            "image_id" : 45551,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45551.jpg"
+          },
+          { 
+            "image_id" : 45552,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45552.jpg"
+          },
+          { 
+            "image_id" : 45553,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45553.jpg"
+          },
+          { 
+            "image_id" : 45554,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45554.jpg"
+          },
+          { 
+            "image_id" : 45555,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45555.jpg"
+          },
+          { 
+            "image_id" : 45869,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45869.jpg"
+          },
+          { 
+            "image_id" : 45875,
+            "image_title" : "xxxxxx",
+            "image_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_stills_45875.jpg"
           }
+          // at some point the stills become 'behind the scenes' is there some way to distinguish?
         ]
       },
       
