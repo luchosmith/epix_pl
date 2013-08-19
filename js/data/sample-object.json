@@ -307,11 +307,11 @@
       },
       
     ],
-    "movie_videos": [ //should be ordered by category and then 'ordering' column
-        {
-          category: "extras",
-          type: 2,
-          videos: [
+    
+    "movie_video_categories": {
+      extras : {
+        type: 2,
+        videos : [
               {
                 "video_id" : 45814,
                 "video_title" : "You're Thor",
@@ -433,11 +433,10 @@
                 "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_45814.jpg"
               }
           ]
-        },
-        {
-          category: "trailers",
-          type: 1,
-          videos: [
+      },
+      trailers : {
+        type: 2,
+        videos : [
             {
               "video_id" : 38399,
               "video_title" : "Thor Trailer",
@@ -457,11 +456,10 @@
               "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_38399.jpg"
             }
           ]
-        },
-        {
-          category: "clips",
-          type: 3,
-          videos: [
+      }
+      clips : {
+        type: 2,
+        videos : [
             {
               "video_id" : 38399,
               "video_title" : "Taser",
@@ -505,9 +503,8 @@
               "video_thumb_url" : "http://content.epixhd.com/webassets/static/movies/images/2188/thumbs/Thor_videoposters_38399.jpg"
             }
           ]
-        }
-      
-    ],
+      }
+    },
    
     /*"movie_extras_stills": [],
     "playerposter": {
