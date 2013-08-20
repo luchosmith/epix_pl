@@ -12,12 +12,12 @@
 <meta property="og:url" content="http://www.epixhd.com//" />
 <meta property="fb:app_id" content="181959295162917" />
 
-<title>EpixHD - Sports</title>
+<title>EpixHD - Comedy</title>
 <base href="http://www.epixhd.com/" />
 
     <link rel="stylesheet" type="text/css" href="/styleassets/css/epixhd-core.css?v=1917" />
     <link rel="stylesheet" type="text/css" href="/styleassets/css/epixhd-moviepage.css" />
-    <link rel="stylesheet" type="text/css" href="/styleassets/css/epixhd-movie-updates.css?v=1917" />
+    <!--  <link rel="stylesheet" type="text/css" href="/styleassets/css/epixhd-movie-updates.css?v=1917" />  -->
     <link rel="stylesheet" type="text/css" href="/styleassets/css/extras-thickbox.css?v=1917" />
     <!-- <link rel="stylesheet" type="text/css" href="/styleassets/css/sports-page-boxing-iframe.css?v=1917" />   -->
 
@@ -25,7 +25,7 @@
        <link rel="stylesheet" type="text/css" href="/styleassets/css/epixhd-ie7.css?v=1917" />
     <![endif]-->
 
-    <script src="file:///Users/luissmith/git/EpixStyle/js/jquery.min.js" type="text/javascript"> </script>
+    <script src="/styleassets/js/jquery.min.js" type="text/javascript"> </script>
     <script src="/styleassets/js/jquery.ui.mod.js?v=1917" type="text/javascript"></script>
     <!--  <script src="/styleassets/js/search-widget-test.js?v=1917" type="text/javascript"></script>  -->
     <script src="/styleassets/js/core.js?v=1917" type="text/javascript"></script>
@@ -36,7 +36,10 @@
     <script src="/styleassets/js/EpixPopup.js?v=1917" type="text/javascript"></script>
     <script src="/styleassets/js/bgpos.js?v=1917" type="text/javascript"></script>
     <script src="/styleassets/js/jquery.mCustomScrollbar.js" type="text/javascript"></script>
+    
 <style>
+
+
 .ui-widget-overlay {height: 100%; left: 0; position: absolute; top: 0; width: 100%; background: #000; opacity: .5;}
 .moviepage .get_more .posters { height: auto; }
 .moviepage .more-videos img { max-height: 135px; max-width: 255px; }
@@ -47,52 +50,59 @@
 
 
 /******* new styles*******/
-.movie-collection h1 {
-  font-size:35px;
-  margin-bottom:20px;
-}
-#movie-collection-content {width:920px;margin:0 auto;}
-.movie-row {height:270px;clear:both;margin-bottom:50px;}
-.movie-row h4 {
-  margin-bottom:7px;
-}
-.movie-row-poster-wrapper {
-  float:left;margin-right:20px;
-}
-.movie-collection-page .movie-row .movie-row-poster {
- 
-}
-.movie-row-poster img {
-    width:196px;
-    height:280px;
-}
-.movie-row .trailers-and-clips {
-    width: 715px !important;
-    float: left;
-    margin-left: 0px;
-    margin-top: 13px;
-}
-.movie-row-right {
-    float:left;
-    width:700px;
-}
-.movierow-synopsis {
-  font-size:13px;
-  line-height:13px;
-}
-    .trailers-and-clips li { float: left; margin: 0 13px 0 0; width:220px; }
-    .trailers-and-clips li img { font-size:12px;width:220px;margin: 0 0 0.833em 0; }
-    .trailers-and-clips li a { display: block; clear: both; color: #b3b3b3; margin: 0 0 6px 0;}
-    
-    .trailers-and-clips .customScrollBox { position:relative; overflow:hidden;}
-    .trailers-and-clips .customScrollBox .container{position:relative; top:0; float:left;}
-    .trailers-and-clips .customScrollBox .content {clear:both;}
-    .trailers-and-clips .customScrollBox .content span.title {display:block;}
-    
-    .trailers-and-clips .video-popup{  }
 
-    .trailers-and-clips li a .title{ color: #B3B3B3; font-size: 8pt; margin: 0 0 10px 0;}
-    .trailers-and-clips .customScrollBox { width: 700px; }
+#movie-collection-content {width:970px;margin:0 auto;}
+
+.movie-collection h1 {font-size:35px;margin-bottom:20px;}
+.movie-row {min-height:281px;clear:both;margin-bottom:50px;}
+.movie-row h4 {margin-bottom:7px;font-size:20px;}
+.movie-row-poster-wrapper {float:left;margin-right:20px;}
+.movie-collection-page .movie-row .movie-row-poster { }
+.movie-row-poster img {width:196px;height:280px;}
+.movie-row .trailers-and-clips {width: 702px !important; float: left; margin-left: 0px; margin-top: 41px;}
+.movie-row-right {float:left;width:702px;}
+ 
+
+/* synopsis */
+.movie-row .movierow-synopsis {
+  font-size:17px;
+  line-height:19px;
+  max-height:38px;
+  overflow:hidden;
+  -webkit-transition: max-height .5s ease-in-out;
+  transition: max-height .5s ease-in-out;
+}
+
+.movierow-expanded .movierow-synopsis {
+  max-height: 200px;
+}
+.movierow-synopsis .more-text {
+  opacity:0;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+}
+
+.movierow-synopsis a.less, .movierow-synopsis a.more {margin-left:5px;text-decoration:none;}
+.movierow-synopsis a.less {display:none;}
+.movierow-synopsis a.more {display:inline}
+
+.movierow-expanded .more-text {opacity:1;}
+.movierow-expanded a.more {display:none;}
+.movierow-expanded a.less {display:inline;}
+
+.movie-row .trailers-and-clips li { float: left; margin: 0 14px 0 0; width:220px; }
+.movie-row .trailers-and-clips li img { font-size:12px;width:220px;margin: 0 0 0.833em 0; }
+.movie-row .trailers-and-clips li a { display: block; clear: both; color: #b3b3b3; margin: 0 0 6px 0;}
+
+.movie-row .trailers-and-clips .customScrollBox { position:relative; overflow:hidden;}
+.movie-row .trailers-and-clips .customScrollBox .container{position:relative; top:0; float:left;height:159px}
+.movie-row .trailers-and-clips .customScrollBox .content {clear:both;}
+.movie-row .trailers-and-clips .customScrollBox .content span.title {display:block;}
+
+.movie-row .trailers-and-clips .video-popup{  }
+
+.movie-row .trailers-and-clips li a .title{ color: #B3B3B3; font-size: 8pt; margin: 0 0 10px 0;}
+.movie-row .trailers-and-clips .customScrollBox { width: 702px; }
 
 
 /**** end new styles****/
@@ -114,8 +124,6 @@
     #footer_wrapper .footer #footer-divider {background-image: url('http://content.epixhd.com/styleassets/images/footer/footer-divider-white-NEW.png') !important;}
     #movie-extras-options #psr-invite{ display: none;}
     .xtras-video-clip .buttons {display: none !important;}
-    
-    
     
     #lse-stills {height:178px;width:775px; margin:0 auto;padding-left:10px;}
 
@@ -155,7 +163,7 @@
     .row-1 .header { padding: 25px 0 20px 0; }
     
 
-    .trailers-and-clips .dragger_container { position:relative; width: 480px; height: 8px; float:left; margin: 0px 0 0 0; background:#000; cursor:pointer; background: url('http://content.epixhd.com/styleassets/images/slider-scrollbar-wider.png') no-repeat scroll transparent;}
+    .trailers-and-clips .dragger_container { position:relative; width: 700px; height: 8px; float:left; margin: 0px 0 0 0; background:#000; cursor:pointer; background: url('http://content.epixhd.com/styleassets/images/slider-scrollbar-wider.png') no-repeat scroll transparent;}
     .trailers-and-clips .dragger { position:absolute; height: 8px; width: 157px; background:#999; text-align:center; line-height:60px; color:#666; overflow:hidden; cursor:pointer; background: url(http://content.epixhd.com/styleassets/movie-pages/slider-scrollbar-scroller.png) no-repeat !important;}
     
     .row-1{ display: block; width: auto; height: auto; }
@@ -287,6 +295,7 @@
 </head>
 <body class="moviepage movie-collection">
 
+  <!--  <img src="http://posters.epixhd.com/thor/196x280" alt="" />   -->
   <!--  <div id="messagearea"></div>   -->
 
   <div id="navigation-wrapper">
@@ -372,7 +381,6 @@
             var plus_on = false;
             var csa_movie_id = "movie_";
             var setMovieRecs = false;
-
             var movieShortName = '';
             var movieTitle = '';
            
@@ -389,8 +397,6 @@
     <div class="moviepage" id="movie-collection-content">
     
     <h1>COMEDY</h1>
-    
-
         
         <div id="movie-1" class="movie-row">
             <div id="lse-movie-details-13168" data-movieid="13168"  class="movie-row-poster-wrapper" 
@@ -409,8 +415,12 @@
         <!-- VIDEOS -->
         <div class="row clearfix movie-row-right" data-movieid="13168">
           <div class="">
-                      <h4>Skyfall</h4>
-            <p class="movierow-synopsis">007 is missing, presumed dead. MI6 is under cyberterror attack. M is against the ropes with her country's highest authorities, and there's a supervillain out there who looks an awful lot like Javier Bardem with a platinum blond dye job. In other words, things are getting serious. Sam Mendes directs this latest addition to the James Bond franchise, striking a perfect balance of action, intrigue and sexy good times while plumbing emotional new depths to reveal what makes 007 tick.</p>
+            <h4>Skyfall</h4>
+            <p class="movierow-synopsis">007 is missing, presumed dead. MI6 is under cyberterror attack. M is against the ropes with her country's highest authorities, and there's a supervillain out there who looks an 
+              <a href="#" class="more">more</a><span class="more-text">awful lot like Javier Bardem with a platinum blond dye job. In other words, things are getting serious. 
+              Sam Mendes directs this latest addition to the James Bond franchise, striking a perfect balance of action, intrigue and sexy good times while plumbing emotional new depths to reveal what makes 007 tick.</span>
+              <a href="#" class="less">less</a>
+            </p>
             <div class="trailers-and-clips" id="tac-13168">
               <div class="customScrollBox">
                 <div class="horWrapper">
@@ -507,11 +517,10 @@
         </div>
         <!--  /.row-2 -->
         <!-- END VIDEOS -->
-
+        <div style="clear:both;"></div>
       </div>
-        
-        
-                  <div id="movie-0" class="movie-row">
+
+          <div id="movie-0" class="movie-row">
             <!--  poster -->
             <div id="lse-movie-details-13240" class="movie-row-poster-wrapper" data-movieid="13240"
               data-movie-shortname="klitschko-vs-pianeta"
@@ -527,10 +536,8 @@
             <!-- end movie poster -->
           <div class="row clearfix movie-row-right" data-movieid="13240">
           <div class="">
-            <h4>Movie Title Here</h4>
-            <p class="movierow-synopsis">When the god of thunder angers his father, he is cast out of the fantastical realm of Asgard and banished to a life among the lowly humans on Earth.
-              (Wait, should we be offended?) But Thor soon discovers the 21st century is pretty fantastical, too, from first loves to Facebook. 
-              As his newfound home is threatened by Asgard's most ominous villain, Thor must use his courage - and his mighty hammer - to become the noble warrior he's destined to be.</p>
+            <h4>Thor</h4>
+            <p class="movierow-synopsis">When the god of thunder angers his father, he is cast out of the fantastical realm of Asgard and banished to a life among the lowly humans on Earth.<span class="more-text"> (Wait, should we be offended?) But Thor soon discovers the 21st century is pretty fantastical, too, from first loves to Facebook. As his newfound home is threatened by Asgard's most ominous villain, Thor must use his courage - and his mighty hammer - to become the noble warrior he's destined to be.</span><a href="#" class="more-less"><span class="more">more</span><span class="less">less</span></a></p>
             <div class="trailers-and-clips" id="tac-13240">
               <div class="container">
                 <div class="content">
@@ -553,772 +560,263 @@
           </div>
           <!-- /.left-rail -->
         </div>
+        <div style="clear:both;"></div>
         </div><!--  /.movie row-1 -->
         
         
         
+        <!--  movie row -->
+        <div id="movie-1" class="movie-row">
+            <div id="lse-movie-details-13168" data-movieid="13168"  class="movie-row-poster-wrapper" 
+              data-movie-shortname="boxing-best-of-britain"
+              data-movie-title="Best of Britain"
+              data-hero="http://content.epixhd.com/webassets/static/movies/images/13168/Best_of_Britain_web-hero-new-960x640_352683.jpg"
+              data-thumb="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_playerposters_355884.jpg">
+                <a href="/boxing-best-of-britain/">
+                  <div class="movie-row-poster">
+                    <img src="http://content.epixhd.com/webassets/static/movies/images/websized/4826/The_Expendables_2_posters_211560.jpg" alt="" />
+                  </div>
+                </a>
+            </div>
+            <!-- end movie poster -->
+        <!--  /.row-1 -->
+        <!-- VIDEOS -->
+        <div class="row clearfix movie-row-right" data-movieid="13168">
+          <div class="">
+            <h4>The Expendables 2</h4>
+            <p class="movierow-synopsis">Barney Ross, Lee Christmas, Yin Yang, Gunnar Jensen, Toll Road, and Hale Caesar - with newest members Billy the Kid and Maggie aboard - are reunited  <span class="more-text">when Mr. Church enlists the Expendables to take on a seemingly simple job. The task looks like an easy paycheck for Barney and his band of old-school mercenaries. But when things go wrong and one of their own is viciously killed, the Expendables are compelled to seek revenge in hostile territory where the odds are stacked against them. Hell-bent on payback, the crew cuts a swath of destruction through opposing forces, wreaking havoc and shutting down an unexpected threat in the nick of time - six pounds of weapons-grade plutonium; enough to change the balance of power in the world. But that's nothing compared to the justice they serve against the villainous adversary who savagely murdered their brother. That is done the Expendables way...</span><a href="#" class="more-less"><span class="more">more</span><span class="less">less</span></a></p>
+              <div class="trailers-and-clips" id="tac-13168">
+              <div class="customScrollBox">
+                <div class="horWrapper">
+                  <div class="container">
+                    <div class="content">
+                      <ul>
+                        <li><a href="/epixassets/asset/13168/2/7646/movie/" class="video-popup" id="spotlight7646"><img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355531.jpg" class="spotlight7646" alt="" /><span class="title">A Little Bit More</span> </a></li>
+                        <li><a href="/epixassets/asset/13168/2/7647/movie/" class="video-popup" id="spotlight7647"><img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355527.jpg" class="spotlight7647" alt="" /><span class="title">Fighting Vitali</span> </a></li>
+                        <li> <a href="/epixassets/asset/13168/2/7648/movie/" class="video-popup" id="spotlight7648"> <img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355530.jpg" class="spotlight7648" alt="" /> <span class="title">I Want Everything</span> </a></li>
+                        <li style="display: none;"> <a href="/epixassets/asset/13168/2/7649/movie/" class="video-popup" id="spotlight7649"><img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355528.jpg" class="spotlight7649" alt="" /><span class="title">Becoming World Champion</span></a></li>
+                        <li style="display: none;">
+                          <a href="/epixassets/asset/13168/2/7650/movie/" class="video-popup" id="spotlight7650">
+                          <img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355529.jpg" class="spotlight7650" alt="" />
+                          <span class="title">Preparing for the Fight</span> </a></li>
+                        <li style="display: none;">
+                          <a href="/epixassets/asset/13168/2/7670/movie/" class="video-popup" id="spotlight7670">
+                          <img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355852.jpg" class="spotlight7670" alt="" />
+                          <span class="title">Nathan Cleverly Interview</span>
+                          </a>
+                        </li>
+                        <li style="display: none;">
+                          <a href="/epixassets/asset/13168/2/7671/movie/" class="video-popup" id="spotlight7671">
+                          <img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355854.jpg" class="spotlight7671" alt="" />
+                          <span class="title">Robin Krasniqi Interview</span>
+                          </a>
+                        </li>
+                        <li style="display: none;">
+                          <a href="/epixassets/asset/13168/2/7672/movie/" class="video-popup" id="spotlight7672">
+                            <img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355853.jpg" class="spotlight7672" alt="" />
+                            <span class="title">Vince Cleverly</span>
+                          </a>
+                        </li>
+                        <li style="display: none;">
+                          <a href="/epixassets/asset/13168/2/7651/movie/" class="video-popup" id="spotlight7651">
+                            <img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355532.jpg" class="spotlight7651" alt="" />
+                            <span class="title">A Life of Fight: Nathan Cleverly & Dereck Chisora</span>
+                          </a>
+                        </li>
+                        <li style="display: none;">
+                          <a href="/epixassets/asset/13168/2/7657/movie/" class="video-popup" id="spotlight7657">
+                          <img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355816.jpg" class="spotlight7657" alt="" />
+                          <span class="title">Robin Krasniqi Montage</span>
+                        </a></li>
+                        <li style="display: none;">
+                          <a href="/epixassets/asset/13168/2/7658/movie/" class="video-popup" id="spotlight7658"><img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355817.jpg" class="spotlight7658" alt="" />
+                          <span class="title">Nathan Cleverly Montage</span> </a>
+                        </li>
+                        <li style="display: none;"><a
+                          href="/epixassets/asset/13168/2/7659/movie/"
+                          class="video-popup" id="spotlight7659"><img
+                            src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355815.jpg"
+                            class="spotlight7659" alt="" /><span class="title">The
+                              Comeback of Dereck Chisora</span> </a></li>
+                        <li style="display: none;"><a
+                          href="/epixassets/asset/13168/2/7678/movie/"
+                          class="video-popup" id="spotlight7678"><img
+                            src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355855.jpg"
+                            class="spotlight7678" alt="" /><span class="title">London
+                              Mashup</span> </a></li>
+                        <li style="display: none;"><a
+                          href="/epixassets/asset/13168/2/7682/movie/"
+                          class="video-popup" id="spotlight7682"><img
+                            src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355860.jpg"
+                            class="spotlight7682" alt="" /><span class="title">Chisora
+                              vs. Avila Weigh-In</span> </a></li>
+                        <li style="display: none;"><a
+                          href="/epixassets/asset/13168/2/7683/movie/"
+                          class="video-popup" id="spotlight7683"><img
+                            src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355861.jpg"
+                            class="spotlight7683" alt="" /><span class="title">Krasniqi
+                              vs. Cleverly Weigh-In</span> </a></li>
+                        <li style="display: none;"><a
+                          href="/epixassets/asset/13168/2/7613/movie/"
+                          class="video-popup" id="spotlight7613"><img
+                            src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355343.jpg"
+                            class="spotlight7613" alt="" /><span class="title">Best
+                              of Britain Trailer</span> </a></li>
+                      </ul>
+                    </div>
+                    <!--  /.content  -->
+                  </div>
+                  <!--  /.container -->
+                  <div class="dragger_container">
+                    <div class="dragger" data-id="tac-13168"></div>
+                  </div>
+                </div>
+                <!--  /.horWrapper -->
+              </div>
+              <!-- ./customScrollBox -->
+            </div>
+            <!--  ./trailers-and-clips  -->
+          </div>
+          <!-- /.left-rail -->
+        </div>
+        <!--  /.row-2 -->
+        <!-- END VIDEOS -->
+      <div style="clear:both;"></div>
+      </div>
         
-<div style="clear:both"></div>
+        <!--  /.movie row -->
+        
+        
+        <!--  movie row -->
+        <div id="movie-1" class="movie-row">
+            <div id="lse-movie-details-13168" data-movieid="13168"  class="movie-row-poster-wrapper" 
+              data-movie-shortname="boxing-best-of-britain"
+              data-movie-title="Best of Britain"
+              data-hero="http://content.epixhd.com/webassets/static/movies/images/13168/Best_of_Britain_web-hero-new-960x640_352683.jpg"
+              data-thumb="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_playerposters_355884.jpg">
+                <a href="/boxing-best-of-britain/">
+                  <div class="movie-row-poster">
+                    <img src="http://content.epixhd.com/webassets/static/movies/images/websized/4687/Mission:_Impossible_Ghost_Protocol_posters_187829.jpg" alt="" />
+                  </div>
+                </a>
+            </div>
+            <!-- end movie poster -->
+        <!--  /.row-1 -->
+        <!-- VIDEOS -->
+        <div class="row clearfix movie-row-right" data-movieid="13168">
+          <div class="">
+            <h4>Mission: Impossible Ghost Protocol</h4>
+            <p class="movierow-synopsis">This is not just another mission. The IMF is shut down when it's implicated in a global terrorist bombing plot. Ghost Protocol is initiated and Ethan Hunt and his rogue new team must <span class="more-text">go undercover to clear their organization's name. No help, no contact, off the grid. You have never seen a mission grittier and more intense than this.</span><a href="#" class="more-less"><span class="more">more</span><span class="less">less</span></a></p>
+            <div class="trailers-and-clips" id="tac-13168">
+              <div class="customScrollBox">
+                <div class="horWrapper">
+                  <div class="container">
+                    <div class="content">
+                      <ul>
+                        <li><a href="/epixassets/asset/13168/2/7646/movie/" class="video-popup" id="spotlight7646"><img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355531.jpg" class="spotlight7646" alt="" /><span class="title">A Little Bit More</span> </a></li>
+                        <li><a href="/epixassets/asset/13168/2/7647/movie/" class="video-popup" id="spotlight7647"><img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355527.jpg" class="spotlight7647" alt="" /><span class="title">Fighting Vitali</span> </a></li>
+                        <li> <a href="/epixassets/asset/13168/2/7648/movie/" class="video-popup" id="spotlight7648"> <img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355530.jpg" class="spotlight7648" alt="" /> <span class="title">I Want Everything</span> </a></li>
+                        <li style="display: none;"> <a href="/epixassets/asset/13168/2/7649/movie/" class="video-popup" id="spotlight7649"><img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355528.jpg" class="spotlight7649" alt="" /><span class="title">Becoming World Champion</span></a></li>
+                        <li style="display: none;">
+                          <a href="/epixassets/asset/13168/2/7650/movie/" class="video-popup" id="spotlight7650">
+                          <img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355529.jpg" class="spotlight7650" alt="" />
+                          <span class="title">Preparing for the Fight</span> </a></li>
+                        <li style="display: none;">
+                          <a href="/epixassets/asset/13168/2/7670/movie/" class="video-popup" id="spotlight7670">
+                          <img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355852.jpg" class="spotlight7670" alt="" />
+                          <span class="title">Nathan Cleverly Interview</span>
+                          </a>
+                        </li>
+                        <li style="display: none;">
+                          <a href="/epixassets/asset/13168/2/7671/movie/" class="video-popup" id="spotlight7671">
+                          <img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355854.jpg" class="spotlight7671" alt="" />
+                          <span class="title">Robin Krasniqi Interview</span>
+                          </a>
+                        </li>
+                        <li style="display: none;">
+                          <a href="/epixassets/asset/13168/2/7672/movie/" class="video-popup" id="spotlight7672">
+                            <img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355853.jpg" class="spotlight7672" alt="" />
+                            <span class="title">Vince Cleverly</span>
+                          </a>
+                        </li>
+                        <li style="display: none;">
+                          <a href="/epixassets/asset/13168/2/7651/movie/" class="video-popup" id="spotlight7651">
+                            <img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355532.jpg" class="spotlight7651" alt="" />
+                            <span class="title">A Life of Fight: Nathan Cleverly & Dereck Chisora</span>
+                          </a>
+                        </li>
+                        <li style="display: none;">
+                          <a href="/epixassets/asset/13168/2/7657/movie/" class="video-popup" id="spotlight7657">
+                          <img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355816.jpg" class="spotlight7657" alt="" />
+                          <span class="title">Robin Krasniqi Montage</span>
+                        </a></li>
+                        <li style="display: none;">
+                          <a href="/epixassets/asset/13168/2/7658/movie/" class="video-popup" id="spotlight7658"><img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355817.jpg" class="spotlight7658" alt="" />
+                          <span class="title">Nathan Cleverly Montage</span> </a>
+                        </li>
+                        <li style="display: none;"><a
+                          href="/epixassets/asset/13168/2/7659/movie/"
+                          class="video-popup" id="spotlight7659"><img
+                            src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355815.jpg"
+                            class="spotlight7659" alt="" /><span class="title">The
+                              Comeback of Dereck Chisora</span> </a></li>
+                        <li style="display: none;"><a
+                          href="/epixassets/asset/13168/2/7678/movie/"
+                          class="video-popup" id="spotlight7678"><img
+                            src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355855.jpg"
+                            class="spotlight7678" alt="" /><span class="title">London
+                              Mashup</span> </a></li>
+                        <li style="display: none;"><a
+                          href="/epixassets/asset/13168/2/7682/movie/"
+                          class="video-popup" id="spotlight7682"><img
+                            src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355860.jpg"
+                            class="spotlight7682" alt="" /><span class="title">Chisora
+                              vs. Avila Weigh-In</span> </a></li>
+                        <li style="display: none;"><a
+                          href="/epixassets/asset/13168/2/7683/movie/"
+                          class="video-popup" id="spotlight7683"><img
+                            src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355861.jpg"
+                            class="spotlight7683" alt="" /><span class="title">Krasniqi
+                              vs. Cleverly Weigh-In</span> </a></li>
+                        <li style="display: none;"><a
+                          href="/epixassets/asset/13168/2/7613/movie/"
+                          class="video-popup" id="spotlight7613"><img
+                            src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355343.jpg"
+                            class="spotlight7613" alt="" /><span class="title">Best
+                              of Britain Trailer</span> </a></li>
+                      </ul>
+                    </div>
+                    <!--  /.content  -->
+                  </div>
+                  <!--  /.container -->
+                  <div class="dragger_container">
+                    <div class="dragger" data-id="tac-13168"></div>
+                  </div>
+                </div>
+                <!--  /.horWrapper -->
+              </div>
+              <!-- ./customScrollBox -->
+            </div>
+            <!--  ./trailers-and-clips  -->
+          </div>
+          <!-- /.left-rail -->
+        </div>
+        <!--  /.row-2 -->
+        <!-- END VIDEOS -->
+      <div style="clear:both;"></div>
+      </div>
+        
+        <!--  /.movie row -->
+        
+      <div style="clear:both"></div>
     </div>
 
-
-
-
-      <div id="movie-2"  class="movie-row">
-        <div class="row clearfix row-1">
-          <div class="left-rail">
-
-            <div id="lse-movie-details-13173" data-movieid="13173"
-              data-movie-shortname="abraham-vs-stieglitz"
-              data-movie-title="Arthur Abraham vs. Robert Stieglitz"
-              data-hero="http://content.epixhd.com/webassets/static/movies/images/13173/Arthur_Abraham_vs._Robert_Stieglitz_web-hero-new-960x640_211742.jpg"
-              data-thumb="http://content.epixhd.com/webassets/static/movies/images/13173/thumbs/Arthur_Abraham_vs._Robert_Stieglitz_playerposters_211745.jpg">
-              <div id="lse-movie-nowplaying">
-                <a href="/abraham-vs-stieglitz/">
-                  <div id="lse-movie-image" class="lse-movie-image">
-                    <img
-                      src="http://content.epixhd.com/webassets/static/movies/images/13173/thumbs/Arthur_Abraham_vs._Robert_Stieglitz_playerposters_211745.jpg"
-                      alt="" />
-                  </div>
-                </a>
-                <div id="lse-movie-words">
-                  <h1 class="movie_title" id="detail">Arthur Abraham vs.
-                    Robert Stieglitz</h1>
-                </div>
-              </div>
-            </div>
-            <!-- end movie details -->
-          </div>
-        </div>
-        <!--  /.row-1 -->
-        <!-- VIDEOS -->
-        <div class="row clearfix row-2 movie-13173" data-movieid="13173">
-          <div class="left-rail">
-            <div class="trailers-and-clips" id="tac-13173">
-              <div class="customScrollBox">
-                <div class="horWrapper">
-                  <div class="container">
-                    <div class="content">
-                      <ul>
-                        <li><a href="/epixassets/asset/13173/2/7558/movie/"
-                          class="video-popup" id="spotlight7558"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/13173/thumbs/Arthur_Abraham_vs._Robert_Stieglitz_videoposters_306396.jpg"
-                            class="spotlight7558" alt="" /><span class="title">Arthur
-                              Abraham Interview</span> </a></li>
-                        <li><a href="/epixassets/asset/13173/2/7559/movie/"
-                          class="video-popup" id="spotlight7559"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/13173/thumbs/Arthur_Abraham_vs._Robert_Stieglitz_videoposters_351922.jpg"
-                            class="spotlight7559" alt="" /><span class="title">Robert
-                              Stieglitz Interview</span> </a></li>
-                        <li><a href="/epixassets/asset/13173/2/7565/movie/"
-                          class="video-popup" id="spotlight7565"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/13173/thumbs/Arthur_Abraham_vs._Robert_Stieglitz_videoposters_352074.jpg"
-                            class="spotlight7565" alt="" /><span class="title">Robert
-                              Helenius Interview</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/13173/2/7536/movie/"
-                          class="video-popup" id="spotlight7536"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/13173/thumbs/Arthur_Abraham_vs._Robert_Stieglitz_videoposters_211869.jpg"
-                            class="spotlight7536" alt="" /><span class="title">Arthur
-                              Abraham vs. Robert Stieglitz</span> </a></li>
-                      </ul>
-                    </div>
-                    <!--  /.content  -->
-                  </div>
-                  <!--  /.container -->
-                  <div class="dragger_container">
-                    <div class="dragger" data-id="tac-13173"></div>
-                  </div>
-                </div>
-                <!--  /.horWrapper -->
-              </div>
-              <!-- ./customScrollBox -->
-            </div>
-            <!--  ./trailers-and-clips  -->
-          </div>
-          <!-- /.left-rail -->
-        </div>
-        <!--  /.row-2 -->
-        <!-- END VIDEOS -->
-
-      </div>
-      <div id="movie-3" class="movie-row">
-        <div class="row clearfix row-1">
-          <div class="left-rail">
-
-            <div id="lse-movie-details-5095" data-movieid="5095"
-              data-movie-shortname="povetkin-vs-rahman"
-              data-movie-title="Alexander Povetkin vs. Hasim Rahman"
-              data-hero="http://content.epixhd.com/webassets/static/movies/images/5095/Alexander_Povetkin_vs._Hasim_Rahman_web-hero-new-960x640_182755.jpg"
-              data-thumb="http://content.epixhd.com/webassets/static/movies/images/5095/thumbs/Alexander_Povetkin_vs._Hasim_Rahman_playerposters_182756.jpg">
-              <div id="lse-movie-nowplaying">
-                <a href="/povetkin-vs-rahman/">
-                  <div id="lse-movie-image" class="lse-movie-image">
-                    <img
-                      src="http://content.epixhd.com/webassets/static/movies/images/5095/thumbs/Alexander_Povetkin_vs._Hasim_Rahman_playerposters_182756.jpg"
-                      alt="" />
-                  </div>
-                </a>
-                <div id="lse-movie-words">
-                  <h1 class="movie_title" id="detail">Alexander Povetkin vs.
-                    Hasim Rahman</h1>
-                </div>
-              </div>
-            </div>
-            <!-- end movie details -->
-          </div>
-        </div>
-        <!--  /.row-1 -->
-        <!-- VIDEOS -->
-        <div class="row clearfix row-2 movie-5095" data-movieid="5095">
-          <div class="left-rail">
-            <div class="trailers-and-clips" id="tac-5095">
-              <div class="customScrollBox">
-                <div class="horWrapper">
-                  <div class="container">
-                    <div class="content">
-                      <ul>
-                        <li><a href="/epixassets/asset/5095/2/6859/movie/"
-                          class="video-popup" id="spotlight6859"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/5095/thumbs/Alexander_Povetkin_vs._Hasim_Rahman_videoposters_182034.jpg"
-                            class="spotlight6859" alt="" /><span class="title">Hasim
-                              Rahman Interview</span> </a></li>
-                        <li><a href="/epixassets/asset/5095/2/6860/movie/"
-                          class="video-popup" id="spotlight6860"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/5095/thumbs/Alexander_Povetkin_vs._Hasim_Rahman_videoposters_182035.jpg"
-                            class="spotlight6860" alt="" /><span class="title">Alexander
-                              Povetkin Interview</span> </a></li>
-                        <li><a href="/epixassets/asset/5095/2/6871/movie/"
-                          class="video-popup" id="spotlight6871"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/5095/thumbs/Alexander_Povetkin_vs._Hasim_Rahman_videoposters_182121.jpg"
-                            class="spotlight6871" alt="" /><span class="title">Pulev
-                              vs. Ustinov Press Conference</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/5095/2/6872/movie/"
-                          class="video-popup" id="spotlight6872"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/5095/thumbs/Alexander_Povetkin_vs._Hasim_Rahman_videoposters_182120.jpg"
-                            class="spotlight6872" alt="" /><span class="title">Kostya
-                              Tszyu Interview</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/5095/2/6873/movie/"
-                          class="video-popup" id="spotlight6873"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/5095/thumbs/Alexander_Povetkin_vs._Hasim_Rahman_videoposters_182122.jpg"
-                            class="spotlight6873" alt="" /><span class="title">Povetkin
-                              vs. Rahman Press Conference</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/5095/2/6867/movie/"
-                          class="video-popup" id="spotlight6867"><img src=""
-                            class="spotlight6867" alt="" /><span class="title">POVETKIN
-                              Interview</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/5095/2/6868/movie/"
-                          class="video-popup" id="spotlight6868"><img src=""
-                            class="spotlight6868" alt="" /><span class="title">RAHMAN
-                              Interview</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/5095/2/6869/movie/"
-                          class="video-popup" id="spotlight6869"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/5095/thumbs/Alexander_Povetkin_vs._Hasim_Rahman_videoposters_182098.jpg"
-                            class="spotlight6869" alt="" /><span class="title">POVETKIN
-                              Interview</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/5095/2/6870/movie/"
-                          class="video-popup" id="spotlight6870"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/5095/thumbs/Alexander_Povetkin_vs._Hasim_Rahman_videoposters_182099.jpg"
-                            class="spotlight6870" alt="" /><span class="title">RAHMAN
-                              Interview</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/5095/2/6881/movie/"
-                          class="video-popup" id="spotlight6881"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/5095/thumbs/Alexander_Povetkin_vs._Hasim_Rahman_videoposters_182753.jpg"
-                            class="spotlight6881" alt="" /><span class="title">Povetkin
-                              vs. Rahman Weigh-In</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/5095/2/6882/movie/"
-                          class="video-popup" id="spotlight6882"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/5095/thumbs/Alexander_Povetkin_vs._Hasim_Rahman_videoposters_182752.jpg"
-                            class="spotlight6882" alt="" /><span class="title">Pulev
-                              vs. Ustinov Weigh-In</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/5095/2/6826/movie/"
-                          class="video-popup" id="spotlight6826"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/5095/thumbs/Alexander_Povetkin_vs._Hasim_Rahman_videoposters_181613.jpg"
-                            class="spotlight6826" alt="" /><span class="title">Alexander
-                              Povetkin vs. Hasim Rahman</span> </a></li>
-                      </ul>
-                    </div>
-                    <!--  /.content  -->
-                  </div>
-                  <!--  /.container -->
-                  <div class="dragger_container">
-                    <div class="dragger" data-id="tac-5095"></div>
-                  </div>
-                </div>
-                <!--  /.horWrapper -->
-              </div>
-              <!-- ./customScrollBox -->
-            </div>
-            <!--  ./trailers-and-clips  -->
-          </div>
-          <!-- /.left-rail -->
-        </div>
-        <!--  /.row-2 -->
-        <!-- END VIDEOS -->
-
-      </div>
-      <div id="movie-4" class="movie-row">
-        <div class="row clearfix row-1">
-          <div class="left-rail">
-            <div id="lse-movie-details-4861" data-movieid="4861"
-              data-movie-shortname="povetkin-vs-huck"
-              data-movie-title="Alexander Povetkin vs. Marco Huck"
-              data-hero="http://content.epixhd.com/webassets/static/movies/images/4861/Alexander_Povetkin_vs._Marco_Huck_web-hero-new-960x640_117774.jpg"
-              data-thumb="http://content.epixhd.com/webassets/static/movies/images/4861/thumbs/Alexander_Povetkin_vs._Marco_Huck_playerposters_109557.jpg">
-              <div id="lse-movie-nowplaying">
-                <a href="/povetkin-vs-huck/">
-                  <div id="lse-movie-image" class="lse-movie-image">
-                    <img
-                      src="http://content.epixhd.com/webassets/static/movies/images/4861/thumbs/Alexander_Povetkin_vs._Marco_Huck_playerposters_109557.jpg"
-                      alt="" />
-                  </div>
-                </a>
-                <div id="lse-movie-words">
-                  <h1 class="movie_title" id="detail">Alexander Povetkin vs.
-                    Marco Huck</h1>
-                </div>
-              </div>
-            </div>
-            <!-- end movie details -->
-          </div>
-        </div>
-        <!--  /.row-1 -->
-        <!-- VIDEOS -->
-        <div class="row clearfix row-2 movie-4861" data-movieid="4861">
-          <div class="left-rail">
-            <div class="trailers-and-clips" id="tac-4861">
-              <div class="customScrollBox">
-                <div class="horWrapper">
-                  <div class="container">
-                    <div class="content">
-                      <ul>
-                        <li><a href="/epixassets/asset/4861/2/5771/movie/"
-                          class="video-popup" id="spotlight5771"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4861/thumbs/Alexander_Povetkin_vs._Marco_Huck_videoposters_109509.jpg"
-                            class="spotlight5771" alt="" /><span class="title">Povetkin
-                              vs. Huck Press Conference</span> </a></li>
-                        <li><a href="/epixassets/asset/4861/2/5793/movie/"
-                          class="video-popup" id="spotlight5793"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4861/thumbs/Alexander_Povetkin_vs._Marco_Huck_videoposters_109552.jpg"
-                            class="spotlight5793" alt="" /><span class="title">Huck
-                              Workout Interview</span> </a></li>
-                        <li><a href="/epixassets/asset/4861/2/5794/movie/"
-                          class="video-popup" id="spotlight5794"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4861/thumbs/Alexander_Povetkin_vs._Marco_Huck_videoposters_109551.jpg"
-                            class="spotlight5794" alt="" /><span class="title">Povetkin
-                              Museum Trip</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/4861/2/5796/movie/"
-                          class="video-popup" id="spotlight5796"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4861/thumbs/Alexander_Povetkin_vs._Marco_Huck_videoposters_109558.jpg"
-                            class="spotlight5796" alt="" /><span class="title">Povetkin
-                              Interview</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/4861/2/5797/movie/"
-                          class="video-popup" id="spotlight5797"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4861/thumbs/Alexander_Povetkin_vs._Marco_Huck_videoposters_109559.jpg"
-                            class="spotlight5797" alt="" /><span class="title">Huck
-                              Interview</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/4861/2/5772/movie/"
-                          class="video-popup" id="spotlight5772"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4861/thumbs/Alexander_Povetkin_vs._Marco_Huck_videoposters_109510.jpg"
-                            class="spotlight5772" alt="" /><span class="title">Povetkin
-                              Workout</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/4861/2/5773/movie/"
-                          class="video-popup" id="spotlight5773"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4861/thumbs/Alexander_Povetkin_vs._Marco_Huck_videoposters_109508.jpg"
-                            class="spotlight5773" alt="" /><span class="title">Huck
-                              Workout</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/4861/2/5795/movie/"
-                          class="video-popup" id="spotlight5795"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4861/thumbs/Alexander_Povetkin_vs._Marco_Huck_videoposters_109550.jpg"
-                            class="spotlight5795" alt="" /><span class="title">Povetkin
-                              vs. Huck Weigh-In</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/4861/2/5742/movie/"
-                          class="video-popup" id="spotlight5742"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4861/thumbs/Alexander_Povetkin_vs._Marco_Huck_videoposters_109406.jpg"
-                            class="spotlight5742" alt="" /><span class="title">Alexander
-                              Povetkin vs. Marco Huck</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/4861/2/5743/movie/"
-                          class="video-popup" id="spotlight5743"><img src=""
-                            class="spotlight5743" alt="" /><span class="title">Alexander
-                              Povetkin vs. Marco Huck</span> </a></li>
-                      </ul>
-                    </div>
-                    <!--  /.content  -->
-                  </div>
-                  <!--  /.container -->
-                  <div class="dragger_container">
-                    <div class="dragger" data-id="tac-4861"></div>
-                  </div>
-                </div>
-                <!--  /.horWrapper -->
-              </div>
-              <!-- ./customScrollBox -->
-            </div>
-            <!--  ./trailers-and-clips  -->
-          </div>
-          <!-- /.left-rail -->
-        </div>
-        <!--  /.row-2 -->
-        <!-- END VIDEOS -->
-
-      </div>
-      <div id="movie-5" class="movie-row">
-        <div class="row clearfix row-1">
-          <div class="left-rail">
-            <div id="lse-movie-details-4920" data-movieid="4920"
-              data-movie-shortname="froch-vs-bute"
-              data-movie-title="Carl Froch vs. Lucian Bute"
-              data-hero="http://content.epixhd.com/webassets/static/movies/images/4920/Carl_Froch_vs._Lucian_Bute_web-hero-new-960x640_117775.jpg"
-              data-thumb="http://content.epixhd.com/webassets/static/movies/images/4920/thumbs/Carl_Froch_vs._Lucian_Bute_stills_112786.jpg">
-              <div id="lse-movie-nowplaying">
-                <a href="/froch-vs-bute/">
-                  <div id="lse-movie-image" class="lse-movie-image">
-                    <img
-                      src="http://content.epixhd.com/webassets/static/movies/images/4920/thumbs/Carl_Froch_vs._Lucian_Bute_stills_112786.jpg"
-                      alt="" />
-                  </div>
-                </a>
-                <div id="lse-movie-words">
-                  <h1 class="movie_title" id="detail">Carl Froch vs. Lucian
-                    Bute</h1>
-                </div>
-              </div>
-            </div>
-            <!-- end movie details -->
-          </div>
-        </div>
-        <!--  /.row-1 -->
-        <!-- VIDEOS -->
-        <div class="row clearfix row-2 movie-4920" data-movieid="4920">
-          <div class="left-rail">
-            <div class="trailers-and-clips" id="tac-4920">
-              <div class="customScrollBox">
-                <div class="horWrapper">
-                  <div class="container">
-                    <div class="content">
-                      <ul>
-                        <li><a href="/epixassets/asset/4920/2/6400/movie/"
-                          class="video-popup" id="spotlight6400"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4920/thumbs/Carl_Froch_vs._Lucian_Bute_videoposters_112724.jpg"
-                            class="spotlight6400" alt="" /><span class="title">Freddie
-                              Roach's Keys to Victory: Froch vs. Bute</span> </a></li>
-                        <li><a href="/epixassets/asset/4920/2/6407/movie/"
-                          class="video-popup" id="spotlight6407"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4920/thumbs/Carl_Froch_vs._Lucian_Bute_videoposters_112732.jpg"
-                            class="spotlight6407" alt="" /><span class="title">When
-                              Worlds Collide</span> </a></li>
-                        <li><a href="/epixassets/asset/4920/2/6431/movie/"
-                          class="video-popup" id="spotlight6431"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4920/thumbs/Carl_Froch_vs._Lucian_Bute_videoposters_112773.jpg"
-                            class="spotlight6431" alt="" /><span class="title">Lucian
-                              Bute Interview</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/4920/2/6432/movie/"
-                          class="video-popup" id="spotlight6432"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4920/thumbs/Carl_Froch_vs._Lucian_Bute_videoposters_112772.jpg"
-                            class="spotlight6432" alt="" /><span class="title">Froch
-                              vs. Bute Press Conference</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/4920/2/6442/movie/"
-                          class="video-popup" id="spotlight6442"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4920/thumbs/Carl_Froch_vs._Lucian_Bute_videoposters_112771.jpg"
-                            class="spotlight6442" alt="" /><span class="title">Carl
-                              Froch Interview</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/4920/2/6443/movie/"
-                          class="video-popup" id="spotlight6443"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4920/thumbs/Carl_Froch_vs._Lucian_Bute_videoposters_112785.jpg"
-                            class="spotlight6443" alt="" /><span class="title">Froch
-                              vs. Bute Weigh In</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/4920/2/6367/movie/"
-                          class="video-popup" id="spotlight6367"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4920/thumbs/Carl_Froch_vs._Lucian_Bute_videoposters_112572.jpg"
-                            class="spotlight6367" alt="" /><span class="title">Froch
-                              vs. Bute</span> </a></li>
-                      </ul>
-                    </div>
-                    <!--  /.content  -->
-                  </div>
-                  <!--  /.container -->
-                  <div class="dragger_container">
-                    <div class="dragger" data-id="tac-4920"></div>
-                  </div>
-                </div>
-                <!--  /.horWrapper -->
-              </div>
-              <!-- ./customScrollBox -->
-            </div>
-            <!--  ./trailers-and-clips  -->
-          </div>
-          <!-- /.left-rail -->
-        </div>
-        <!--  /.row-2 -->
-        <!-- END VIDEOS -->
-
-      </div>
-      <div id="movie-6" class="movie-row">
-        <div class="row clearfix row-1">
-          <div class="left-rail">
-            <div id="lse-movie-details-4995" data-movieid="4995"
-              data-movie-shortname="haye-vs-chisora"
-              data-movie-title="David Haye vs. Dereck Chisora"
-              data-hero="http://content.epixhd.com/webassets/static/movies/images/4995/David_Haye_vs._Dereck_Chisora_web-hero-new-960x640_117773.jpg"
-              data-thumb="http://content.epixhd.com/webassets/static/movies/images/4995/thumbs/David_Haye_vs._Dereck_Chisora_playerposters_114233.jpg">
-              <div id="lse-movie-nowplaying">
-                <a href="/haye-vs-chisora/">
-                  <div id="lse-movie-image" class="lse-movie-image">
-                    <img
-                      src="http://content.epixhd.com/webassets/static/movies/images/4995/thumbs/David_Haye_vs._Dereck_Chisora_playerposters_114233.jpg"
-                      alt="" />
-                  </div>
-                </a>
-                <div id="lse-movie-words">
-                  <h1 class="movie_title" id="detail">David Haye vs. Dereck
-                    Chisora</h1>
-                </div>
-              </div>
-            </div>
-            <!-- end movie details -->
-          </div>
-        </div>
-        <!--  /.row-1 -->
-        <!-- VIDEOS -->
-        <div class="row clearfix row-2 movie-4995" data-movieid="4995">
-          <div class="left-rail">
-            <div class="trailers-and-clips" id="tac-4995">
-              <div class="customScrollBox">
-                <div class="horWrapper">
-                  <div class="container">
-                    <div class="content">
-                      <ul>
-                        <li><a href="/epixassets/asset/4995/2/6610/movie/"
-                          class="video-popup" id="spotlight6610"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4995/thumbs/David_Haye_vs._Dereck_Chisora_videoposters_114131.jpg"
-                            class="spotlight6610" alt="" /><span class="title">Press
-                              Conference</span> </a></li>
-                        <li><a href="/epixassets/asset/4995/2/6611/movie/"
-                          class="video-popup" id="spotlight6611"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4995/thumbs/David_Haye_vs._Dereck_Chisora_videoposters_114136.jpg"
-                            class="spotlight6611" alt="" /><span class="title">David
-                              Haye Interview</span> </a></li>
-                        <li><a href="/epixassets/asset/4995/2/6612/movie/"
-                          class="video-popup" id="spotlight6612"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4995/thumbs/David_Haye_vs._Dereck_Chisora_videoposters_114135.jpg"
-                            class="spotlight6612" alt="" /><span class="title">Dereck
-                              Chisora Interview</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/4995/2/6616/movie/"
-                          class="video-popup" id="spotlight6616"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4995/thumbs/David_Haye_vs._Dereck_Chisora_videoposters_114232.jpg"
-                            class="spotlight6616" alt="" /><span class="title">Dereck
-                              Chisora Sit Down Interview</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/4995/2/6617/movie/"
-                          class="video-popup" id="spotlight6617"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4995/thumbs/David_Haye_vs._Dereck_Chisora_videoposters_114234.jpg"
-                            class="spotlight6617" alt="" /><span class="title">Post-Fight
-                              Press Conference</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/4995/2/6614/movie/"
-                          class="video-popup" id="spotlight6614"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4995/thumbs/David_Haye_vs._Dereck_Chisora_videoposters_114159.jpg"
-                            class="spotlight6614" alt="" /><span class="title">Weigh-In</span>
-                        </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/4995/2/6600/movie/"
-                          class="video-popup" id="spotlight6600"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4995/thumbs/David_Haye_vs._Dereck_Chisora_videoposters_114056.jpg"
-                            class="spotlight6600" alt="" /><span class="title">Haye
-                              vs. Chisora</span> </a></li>
-                      </ul>
-                    </div>
-                    <!--  /.content  -->
-                  </div>
-                  <!--  /.container -->
-                  <div class="dragger_container">
-                    <div class="dragger" data-id="tac-4995"></div>
-                  </div>
-                </div>
-                <!--  /.horWrapper -->
-              </div>
-              <!-- ./customScrollBox -->
-            </div>
-            <!--  ./trailers-and-clips  -->
-          </div>
-          <!-- /.left-rail -->
-        </div>
-        <!--  /.row-2 -->
-        <!-- END VIDEOS -->
-
-      </div>
-      <div id="movie-7" class="movie-row">
-        <div class="row clearfix row-1">
-          <div class="left-rail">
-            <div id="lse-movie-details-5131" data-movieid="5131"
-              data-movie-shortname="helenius-vs-williams"
-              data-movie-title="Robert Helenius vs. Sherman Williams"
-              data-hero="http://content.epixhd.com/webassets/static/movies/images/5131/Robert_Helenius_vs._Sherman_Williams_web-hero-new-960x640_183811.jpg"
-              data-thumb="http://content.epixhd.com/webassets/static/movies/images/5131/thumbs/Robert_Helenius_vs._Sherman_Williams_playerposters_183818.jpg">
-              <div id="lse-movie-nowplaying">
-                <a href="/helenius-vs-williams/">
-                  <div id="lse-movie-image" class="lse-movie-image">
-                    <img
-                      src="http://content.epixhd.com/webassets/static/movies/images/5131/thumbs/Robert_Helenius_vs._Sherman_Williams_playerposters_183818.jpg"
-                      alt="" />
-                  </div>
-                </a>
-                <div id="lse-movie-words">
-                  <h1 class="movie_title" id="detail">Robert Helenius vs.
-                    Sherman Williams</h1>
-                </div>
-              </div>
-            </div>
-            <!-- end movie details -->
-          </div>
-        </div>
-        <!--  /.row-1 -->
-        <!-- VIDEOS -->
-        <div class="row clearfix row-2 movie-5131" data-movieid="5131">
-          <div class="left-rail">
-            <div class="trailers-and-clips" id="tac-5131">
-              <div class="header">
-                <h2>Robert Helenius vs. Sherman Williams</h2>
-              </div>
-              <div class="container">
-                <div class="content">
-                  <ul>
-                    <li><a href="/epixassets/asset/5131/2/7034/movie/"
-                      class="video-popup" id="spotlight7034"><img
-                        src="http://content.epixhd.com/webassets/static/movies/images/5133/thumbs/Klitschko_vs._Wach_and_Helenius_vs._Williams_videoposters_183797.jpg"
-                        class="spotlight7034" alt="" /><span class="title">Klitschko
-                          vs. Wach and Helenius vs. Williams Trailer</span> </a></li>
-                  </ul>
-                </div>
-                <!--  /.content  -->
-              </div>
-              <!--  /.container -->
-            </div>
-            <!--  ./trailers-and-clips -->
-          </div>
-          <!-- /.left-rail -->
-        </div>
-        <!--  /.row-2 -->
-        <!-- END VIDEOS -->
-
-      </div>
-      <div id="movie-8" class="movie-row">
-        <div class="row clearfix row-1">
-          <div class="left-rail">
-            <div id="lse-movie-details-5130" data-movieid="5130"
-              data-movie-shortname="klitschko-vs-wach"
-              data-movie-title="Wladimir Klitschko vs. Mariusz Wach"
-              data-hero="http://content.epixhd.com/webassets/static/movies/images/5133/Klitschko_vs._Wach_and_Helenius_vs._Williams_web-hero-new-960x640_183800.jpg"
-              data-thumb="http://content.epixhd.com/webassets/static/movies/images/5130/thumbs/Wladimir_Klitschko_vs._Mariusz_Wach_playerposters_183801.jpg">
-              <div id="lse-movie-nowplaying">
-                <a href="/klitschko-vs-wach/">
-                  <div id="lse-movie-image" class="lse-movie-image">
-                    <img
-                      src="http://content.epixhd.com/webassets/static/movies/images/5130/thumbs/Wladimir_Klitschko_vs._Mariusz_Wach_playerposters_183801.jpg"
-                      alt="" />
-                  </div>
-                </a>
-                <div id="lse-movie-words">
-                  <h1 class="movie_title" id="detail">Wladimir Klitschko vs.
-                    Mariusz Wach</h1>
-                </div>
-              </div>
-            </div>
-            <!-- end movie details -->
-          </div>
-        </div>
-        <!--  /.row-1 -->
-        <!-- VIDEOS -->
-        <div class="row clearfix row-2 movie-5130" data-movieid="5130">
-          <div class="left-rail">
-            <div class="trailers-and-clips" id="tac-5130">
-              <div class="customScrollBox">
-                <div class="horWrapper">
-                  <div class="container">
-                    <div class="content">
-                      <ul>
-                        <li><a href="/epixassets/asset/5130/2/7053/movie/"
-                          class="video-popup" id="spotlight7053"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/5133/thumbs/Klitschko_vs._Wach_and_Helenius_vs._Williams_videoposters_183927.jpg"
-                            class="spotlight7053" alt="" /><span class="title">Wach
-                              Interview</span> </a></li>
-                        <li><a href="/epixassets/asset/5130/2/7057/movie/"
-                          class="video-popup" id="spotlight7057"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/5133/thumbs/Klitschko_vs._Wach_and_Helenius_vs._Williams_videoposters_183931.jpg"
-                            class="spotlight7057" alt="" /><span class="title">Klitschko
-                              Interview</span> </a></li>
-                        <li><a href="/epixassets/asset/5130/2/7054/movie/"
-                          class="video-popup" id="spotlight7054"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/5133/thumbs/Klitschko_vs._Wach_and_Helenius_vs._Williams_videoposters_183926.jpg"
-                            class="spotlight7054" alt="" /><span class="title">Wach
-                              Public Workout</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/5130/2/7055/movie/"
-                          class="video-popup" id="spotlight7055"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/5133/thumbs/Klitschko_vs._Wach_and_Helenius_vs._Williams_videoposters_183925.jpg"
-                            class="spotlight7055" alt="" /><span class="title">Klitschko
-                              Public Workout</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/5130/2/7065/movie/"
-                          class="video-popup" id="spotlight7065"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/5133/thumbs/Klitschko_vs._Wach_and_Helenius_vs._Williams_videoposters_183949.jpg"
-                            class="spotlight7065" alt="" /><span class="title">Klitschko
-                              vs. Wach Weigh In</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/5130/2/7016/movie/"
-                          class="video-popup" id="spotlight7016"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/5133/thumbs/Klitschko_vs._Wach_and_Helenius_vs._Williams_videoposters_183797.jpg"
-                            class="spotlight7016" alt="" /><span class="title">Klitschko
-                              vs. Wach and Helenius vs. Williams Trailer</span> </a></li>
-                      </ul>
-                    </div>
-                    <!--  /.content  -->
-                  </div>
-                  <!--  /.container -->
-                  <div class="dragger_container">
-                    <div class="dragger" data-id="tac-5130"></div>
-                  </div>
-                </div>
-                <!--  /.horWrapper -->
-              </div>
-              <!-- ./customScrollBox -->
-            </div>
-            <!--  ./trailers-and-clips  -->
-          </div>
-          <!-- /.left-rail -->
-        </div>
-        <!--  /.row-2 -->
-        <!-- END VIDEOS -->
-
-      </div>
-      <div id="movie-9" class="movie-row">
-        <div class="row clearfix row-1">
-          <div class="left-rail">
-            <div id="lse-movie-details-4957" data-movieid="4957"
-              data-movie-shortname="klitschko-vs-thompson"
-              data-movie-title="Wladimir Klitschko vs. Tony Thompson"
-              data-hero="http://content.epixhd.com/webassets/static/movies/images/4957/Wladimir_Klitschko_vs._Tony_Thompson_web-hero-new-960x640_117780.jpg"
-              data-thumb="http://content.epixhd.com/webassets/static/movies/images/4957/thumbs/Wladimir_Klitschko_vs._Tony_Thompson_playerposters_114046.jpg">
-              <div id="lse-movie-nowplaying">
-                <a href="/klitschko-vs-thompson/">
-                  <div id="lse-movie-image" class="lse-movie-image">
-                    <img
-                      src="http://content.epixhd.com/webassets/static/movies/images/4957/thumbs/Wladimir_Klitschko_vs._Tony_Thompson_playerposters_114046.jpg"
-                      alt="" />
-                  </div>
-                </a>
-                <div id="lse-movie-words">
-                  <h1 class="movie_title" id="detail">Wladimir Klitschko vs.
-                    Tony Thompson</h1>
-                </div>
-              </div>
-            </div>
-            <!-- end movie details -->
-          </div>
-        </div>
-        <!--  /.row-1 -->
-        <!-- VIDEOS -->
-        <div class="row clearfix row-2 movie-4957" data-movieid="4957">
-          <div class="left-rail">
-            <div class="trailers-and-clips" id="tac-4957">
-              <div class="customScrollBox">
-                <div class="horWrapper">
-                  <div class="container">
-                    <div class="content">
-                      <ul>
-                        <li><a href="/epixassets/asset/4957/2/6574/movie/"
-                          class="video-popup" id="spotlight6574"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4957/thumbs/Wladimir_Klitschko_vs._Tony_Thompson_videoposters_114017.jpg"
-                            class="spotlight6574" alt="" /><span class="title">Freddie
-                              Roach's Keys to Victory: Klitschko vs. Thompson</span> </a></li>
-                        <li><a href="/epixassets/asset/4957/2/6575/movie/"
-                          class="video-popup" id="spotlight6575"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4957/thumbs/Wladimir_Klitschko_vs._Tony_Thompson_videoposters_114018.jpg"
-                            class="spotlight6575" alt="" /><span class="title">Press
-                              Conference</span> </a></li>
-                        <li><a href="/epixassets/asset/4957/2/6584/movie/"
-                          class="video-popup" id="spotlight6584"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4957/thumbs/Wladimir_Klitschko_vs._Tony_Thompson_videoposters_114036.jpg"
-                            class="spotlight6584" alt="" /><span class="title">Tony
-                              Thompson Interview</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/4957/2/6586/movie/"
-                          class="video-popup" id="spotlight6586"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4957/thumbs/Wladimir_Klitschko_vs._Tony_Thompson_videoposters_114037.jpg"
-                            class="spotlight6586" alt="" /><span class="title">Wladimir
-                              Klitschko Interview</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/4957/2/6585/movie/"
-                          class="video-popup" id="spotlight6585"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4957/thumbs/Wladimir_Klitschko_vs._Tony_Thompson_videoposters_114038.jpg"
-                            class="spotlight6585" alt="" /><span class="title">Tony
-                              Thompson Public Workout</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/4957/2/6587/movie/"
-                          class="video-popup" id="spotlight6587"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4957/thumbs/Wladimir_Klitschko_vs._Tony_Thompson_videoposters_114039.jpg"
-                            class="spotlight6587" alt="" /><span class="title">Wladimir
-                              Klitschko Public Workout</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/4957/2/6589/movie/"
-                          class="video-popup" id="spotlight6589"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/-1/thumbs/_videoposters_114041.jpg"
-                            class="spotlight6589" alt="" /><span class="title">Weigh-In</span>
-                        </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/4957/2/6547/movie/"
-                          class="video-popup" id="spotlight6547"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/4957/thumbs/Wladimir_Klitschko_vs._Tony_Thompson_videoposters_113920.jpg"
-                            class="spotlight6547" alt="" /><span class="title">Klitschko
-                              vs. Thompson</span> </a></li>
-                      </ul>
-                    </div>
-                    <!--  /.content  -->
-                  </div>
-                  <!--  /.container -->
-                  <div class="dragger_container">
-                    <div class="dragger" data-id="tac-4957"></div>
-                  </div>
-                </div>
-                <!--  /.horWrapper -->
-              </div>
-              <!-- ./customScrollBox -->
-            </div>
-            <!--  ./trailers-and-clips  -->
-          </div>
-          <!-- /.left-rail -->
-        </div>
-        <!--  /.row-2 -->
-        <!-- END VIDEOS -->
-
-      </div>
 
     </div>
 
   </div>
 
-  <script src="file:///Users/luissmith/git/epix_pl/tmp/sports-page-boxing-iframe.js?v=1917"
+  <script src="file:///Users/smithlu/git/epix_pl/tmp/sports-page-boxing-iframe.js?v=1917"
     type="text/javascript"></script>
 
   <script type="text/javascript">
