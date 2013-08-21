@@ -69,24 +69,31 @@
   line-height:19px;
   max-height:38px;
   overflow:hidden;
-  -webkit-transition: max-height .5s ease-in-out;
-  transition: max-height .5s ease-in-out;
+  -webkit-transition: max-height .5s ease;
+  transition: max-height .5s ease;
 }
 
 .movierow-expanded .movierow-synopsis {
   max-height: 200px;
+  -webkit-transition: max-height .7s ease;
+  transition: max-height .7s ease;
 }
+
 .movierow-synopsis .more-text {
   opacity:0;
-  transition: opacity 1s;
-  -webkit-transition: opacity 1s;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s;
 }
 
 .movierow-synopsis a.less, .movierow-synopsis a.more {margin-left:5px;text-decoration:none;}
 .movierow-synopsis a.less {display:none;}
 .movierow-synopsis a.more {display:inline}
 
-.movierow-expanded .more-text {opacity:1;}
+.movierow-expanded .more-text {
+  opacity:1;
+  transition: opacity 1s;
+  -webkit-transition: opacity 1s;
+}
 .movierow-expanded a.more {display:none;}
 .movierow-expanded a.less {display:inline;}
 
@@ -142,11 +149,9 @@
     #lse-stills .stills .customScrollBox .content{clear:both;}
     #lse-stills .stills .dragger_container { position:relative; width: 750px; height: 8px; float:left; margin: 0px 0 0 0; background:#000; cursor:pointer; background: url('http://content.epixhd.com/styleassets/images/slider-scrollbar-wider.png') no-repeat scroll transparent; }
     #lse-stills .stills .dragger { position:absolute; height: 8px; width: 157px; background:#999; text-align:center; line-height:60px; color:#666; overflow:hidden; cursor:pointer; background: url(http://content.epixhd.com/styleassets/movie-pages/slider-scrollbar-scroller.png) no-repeat !important; }
-  
 
     #extras-social-widgets{ display:none; }
     
-
     .ui-widget-overlay { height: 100%; left: 0; position: absolute; top: 0; width: 100%; background:#000; opacity:.5; }  
     .moviepage .get_more .posters {height:auto;}
     .moviepage .more-videos img {max-height: 135px; max-width: 255px;}
@@ -399,14 +404,14 @@
     <h1>COMEDY</h1>
         
         <div id="movie-1" class="movie-row">
-            <div id="lse-movie-details-13168" data-movieid="13168"  class="movie-row-poster-wrapper" 
+            <div id="lse-movie-details-13168" data-movieid="13168"  class="movie-data movie-row-poster-wrapper" 
               data-movie-shortname="boxing-best-of-britain"
               data-movie-title="Best of Britain"
               data-hero="http://content.epixhd.com/webassets/static/movies/images/13168/Best_of_Britain_web-hero-new-960x640_352683.jpg"
               data-thumb="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_playerposters_355884.jpg">
-                <a href="/boxing-best-of-britain/">
+                <a href="/tom-papa-freaked-out/">
                   <div class="movie-row-poster">
-                    <img src="http://content.epixhd.com/webassets/static/movies/images/4908/thumbs/Skyfall_posters_364058.jpg" alt="" />
+                    <img src="http://content.epixhd.com/webassets/static/movies/images/websized/13169/Tom_Papa:_Freaked_Out_posters_357525.jpg" alt="" />
                   </div>
                 </a>
             </div>
@@ -415,10 +420,11 @@
         <!-- VIDEOS -->
         <div class="row clearfix movie-row-right" data-movieid="13168">
           <div class="">
-            <h4>Skyfall</h4>
-            <p class="movierow-synopsis">007 is missing, presumed dead. MI6 is under cyberterror attack. M is against the ropes with her country's highest authorities, and there's a supervillain out there who looks an 
-              <a href="#" class="more">more</a><span class="more-text">awful lot like Javier Bardem with a platinum blond dye job. In other words, things are getting serious. 
-              Sam Mendes directs this latest addition to the James Bond franchise, striking a perfect balance of action, intrigue and sexy good times while plumbing emotional new depths to reveal what makes 007 tick.</span>
+            <h4>Tom Papa: Freaked Out</h4>
+            <p class="movierow-synopsis">
+               Some people see the glass half empty, but comedian Tom Papa has built a career on seeing it hilariously half-full. With a uniquely optimistic take on the crazy world
+               <a href="#" class="more">more<br/></a> 
+               <span>around him, Papa's first EPIX comedy special tackles everything from Chinese grocery stores to grown men wearing shorts. Bonus: when was the last time you watched a comedy special executive produced by Rob Zombie?</span>
               <a href="#" class="less">less</a>
             </p>
             <div class="trailers-and-clips" id="tac-13168">
@@ -427,77 +433,58 @@
                   <div class="container">
                     <div class="content">
                       <ul>
-                        <li><a href="/epixassets/asset/13168/2/7646/movie/" class="video-popup" id="spotlight7646"><img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355531.jpg" class="spotlight7646" alt="" /><span class="title">A Little Bit More</span> </a></li>
-                        <li><a href="/epixassets/asset/13168/2/7647/movie/" class="video-popup" id="spotlight7647"><img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355527.jpg" class="spotlight7647" alt="" /><span class="title">Fighting Vitali</span> </a></li>
-                        <li> <a href="/epixassets/asset/13168/2/7648/movie/" class="video-popup" id="spotlight7648"> <img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355530.jpg" class="spotlight7648" alt="" /> <span class="title">I Want Everything</span> </a></li>
-                        <li style="display: none;"> <a href="/epixassets/asset/13168/2/7649/movie/" class="video-popup" id="spotlight7649"><img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355528.jpg" class="spotlight7649" alt="" /><span class="title">Becoming World Champion</span></a></li>
-                        <li style="display: none;">
-                          <a href="/epixassets/asset/13168/2/7650/movie/" class="video-popup" id="spotlight7650">
-                          <img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355529.jpg" class="spotlight7650" alt="" />
-                          <span class="title">Preparing for the Fight</span> </a></li>
-                        <li style="display: none;">
-                          <a href="/epixassets/asset/13168/2/7670/movie/" class="video-popup" id="spotlight7670">
-                          <img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355852.jpg" class="spotlight7670" alt="" />
-                          <span class="title">Nathan Cleverly Interview</span>
-                          </a>
+                        <li>
+                            <a href="/epixassets/asset/13169/2/7852/movie/" class="video-popup" id="spotlight7852"><img src="http://content.epixhd.com/webassets/static/movies/images/13169/thumbs/Tom_Papa:_Freaked_Out_videoposters_358611.jpg" class="spotlight7852"></a>
+                            <span> Tom Gets a Little Freaky </span>
                         </li>
-                        <li style="display: none;">
-                          <a href="/epixassets/asset/13168/2/7671/movie/" class="video-popup" id="spotlight7671">
-                          <img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355854.jpg" class="spotlight7671" alt="" />
-                          <span class="title">Robin Krasniqi Interview</span>
-                          </a>
+                        <li>
+                            <a href="/epixassets/asset/13169/2/7853/movie/" class="video-popup cboxElement" id="spotlight7853"><img src="http://content.epixhd.com/webassets/static/movies/images/13169/thumbs/Tom_Papa:_Freaked_Out_videoposters_358609.jpg" class="spotlight7853"></a>
+                            <span> Tom's Fans Come to Papa </span>
                         </li>
-                        <li style="display: none;">
-                          <a href="/epixassets/asset/13168/2/7672/movie/" class="video-popup" id="spotlight7672">
-                            <img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355853.jpg" class="spotlight7672" alt="" />
-                            <span class="title">Vince Cleverly</span>
-                          </a>
+                        <li>
+                            <a href="/epixassets/asset/13169/2/7854/movie/" class="video-popup cboxElement" id="spotlight7854"><img src="http://content.epixhd.com/webassets/static/movies/images/13169/thumbs/Tom_Papa:_Freaked_Out_videoposters_358610.jpg" class="spotlight7854"></a>
+                            <span> A United Front </span>
                         </li>
-                        <li style="display: none;">
-                          <a href="/epixassets/asset/13168/2/7651/movie/" class="video-popup" id="spotlight7651">
-                            <img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355532.jpg" class="spotlight7651" alt="" />
-                            <span class="title">A Life of Fight: Nathan Cleverly & Dereck Chisora</span>
-                          </a>
+                        <li style="display:none">
+                            <a href="/epixassets/asset/13169/2/7855/movie/" class="video-popup cboxElement" id="spotlight7855"><img src="http://content.epixhd.com/webassets/static/movies/images/13169/thumbs/Tom_Papa:_Freaked_Out_videoposters_358613.jpg" class="spotlight7855"></a>
+                            <span> Redneck Rover </span>
                         </li>
-                        <li style="display: none;">
-                          <a href="/epixassets/asset/13168/2/7657/movie/" class="video-popup" id="spotlight7657">
-                          <img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355816.jpg" class="spotlight7657" alt="" />
-                          <span class="title">Robin Krasniqi Montage</span>
-                        </a></li>
-                        <li style="display: none;">
-                          <a href="/epixassets/asset/13168/2/7658/movie/" class="video-popup" id="spotlight7658"><img src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355817.jpg" class="spotlight7658" alt="" />
-                          <span class="title">Nathan Cleverly Montage</span> </a>
+                        <li style="display:none">
+                            <a href="/epixassets/asset/13169/2/7856/movie/" class="video-popup cboxElement" id="spotlight7856"><img src="http://content.epixhd.com/webassets/static/movies/images/13169/thumbs/Tom_Papa:_Freaked_Out_videoposters_358612.jpg" class="spotlight7856"></a>
+                            <span> The Post Office </span>
                         </li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/13168/2/7659/movie/"
-                          class="video-popup" id="spotlight7659"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355815.jpg"
-                            class="spotlight7659" alt="" /><span class="title">The
-                              Comeback of Dereck Chisora</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/13168/2/7678/movie/"
-                          class="video-popup" id="spotlight7678"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355855.jpg"
-                            class="spotlight7678" alt="" /><span class="title">London
-                              Mashup</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/13168/2/7682/movie/"
-                          class="video-popup" id="spotlight7682"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355860.jpg"
-                            class="spotlight7682" alt="" /><span class="title">Chisora
-                              vs. Avila Weigh-In</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/13168/2/7683/movie/"
-                          class="video-popup" id="spotlight7683"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355861.jpg"
-                            class="spotlight7683" alt="" /><span class="title">Krasniqi
-                              vs. Cleverly Weigh-In</span> </a></li>
-                        <li style="display: none;"><a
-                          href="/epixassets/asset/13168/2/7613/movie/"
-                          class="video-popup" id="spotlight7613"><img
-                            src="http://content.epixhd.com/webassets/static/movies/images/13168/thumbs/Best_of_Britain_videoposters_355343.jpg"
-                            class="spotlight7613" alt="" /><span class="title">Best
-                              of Britain Trailer</span> </a></li>
+                        <li style="display:none">
+                            <a href="/epixassets/asset/13169/2/7952/movie/" class="video-popup cboxElement" id="spotlight7952"><img src="http://content.epixhd.com/webassets/static/movies/images/13169/thumbs/Tom_Papa:_Freaked_Out_videoposters_362726.jpg" class="spotlight7952"></a>
+                            <span> Tom Papa: Freaked Out Trailer </span>
+                        </li>
+                        <li style="display:none">
+                            <a href="/epixassets/asset/13169/2/7960/movie/" class="video-popup cboxElement" id="spotlight7960"><img src="http://content.epixhd.com/webassets/static/movies/images/13169/thumbs/Tom_Papa:_Freaked_Out_videoposters_362744.jpg" class="spotlight7960"></a>
+                            <span> Evil Alcohol </span>
+                        </li>
+                        <li style="display:none">
+                            <a href="/epixassets/asset/13169/2/7961/movie/" class="video-popup cboxElement" id="spotlight7961"><img src="http://content.epixhd.com/webassets/static/movies/images/13169/thumbs/Tom_Papa:_Freaked_Out_videoposters_362743.jpg" class="spotlight7961"></a>
+                            <span> Gay Men </span>
+                        </li>
+                        <li style="display:none">
+                            <a href="/epixassets/asset/13169/2/7962/movie/" class="video-popup cboxElement" id="spotlight7962"><img src="http://content.epixhd.com/webassets/static/movies/images/13169/thumbs/Tom_Papa:_Freaked_Out_videoposters_362745.jpg" class="spotlight7962"></a>
+                            <span> The 99% </span>
+                        </li>
+                        <li style="display:none">
+                            <a href="/epixassets/asset/13169/2/7963/movie/" class="video-popup cboxElement" id="spotlight7963"><img src="http://content.epixhd.com/webassets/static/movies/images/13169/thumbs/Tom_Papa:_Freaked_Out_videoposters_362746.jpg" class="spotlight7963"></a>
+                            <span> The Economy </span>
+                        </li>
+                        <li style="display:none">
+                            <a href="/epixassets/asset/13169/2/7973/movie/" class="video-popup cboxElement" id="spotlight7973"><img src="http://content.epixhd.com/webassets/static/movies/images/13169/thumbs/Tom_Papa:_Freaked_Out_videoposters_363015.jpg" class="spotlight7973"></a>
+                            <span> Tom Realizes Comedy is His Calling </span>
+                        </li>
+                        <li style="display:none">
+                            <a href="/epixassets/asset/13169/2/7974/movie/" class="video-popup cboxElement" id="spotlight7974"><img src="http://content.epixhd.com/webassets/static/movies/images/13169/thumbs/Tom_Papa:_Freaked_Out_videoposters_363014.jpg" class="spotlight7974"></a>
+                            <span> When Tom Met Rob Zombie </span>
+                        </li>
+                        <li style="display:none">
+                            <a href="/epixassets/asset/13169/2/8003/movie/" class="video-popup cboxElement" id="spotlight8003"><img src="http://content.epixhd.com/webassets/static/movies/images/13169/thumbs/Tom_Papa:_Freaked_Out_videoposters_364037.jpg" class="spotlight8003"></a>
+                            <span> Lying to Kids </span>
+                        </li>
                       </ul>
                     </div>
                     <!--  /.content  -->

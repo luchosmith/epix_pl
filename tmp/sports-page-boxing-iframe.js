@@ -2,14 +2,14 @@
 
 $(document).ready(function() {
 	
+	
     // show /hide more text on movie synopsis
 	$('.movie-row').delegate('a.more, a.less', 'click', function(e){
 		e.preventDefault();
 		$(this).parents('.movie-row').toggleClass('movierow-expanded');
 	});
 	
-	
-            
+	/*
     $('.video-popup').colorbox({width:"600px", height: "500px", rel:"video-gallery", current: "{current} of {total}", title: function(){
         var titleCaption = $(this).find('.title').text();
         return titleCaption;
@@ -18,18 +18,26 @@ $(document).ready(function() {
             return clipID;
         }
     });
+    */
     
-    $("#lse-currentlyplaying #lse-movie-image").html("<div class='nowplaying'></div>");
+    
+    //$("#lse-currentlyplaying #lse-movie-image").html("<div class='nowplaying'></div>");
     
     $(".fb-like").click(function(){
         var fbimage = $("#cp-moviethumb").val();
         window.open("http://www.facebook.com/sharer.php?s=100&p[url]=http://www.epixhd.com/sports&p[images][0]="+fbimage+"&p[title]=See The Action On EPIX Sports&p[summary]=Watch Live Boxing Events on EpixHD","sharer","toolbar=0,status=0,width=626,height=436");
         return false;
     });
+    
+    
+    
     $('.video-popup').click(function(){
-        var clipParentThumb = $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().parent().find("#lse-movie-nowplaying").parent().attr("data-thumb");
-        $("#fb-thumb").val(clipParentThumb);
+    	var datathumb = $(this).parents('.movie-row').find(".movie-data").attr("data-thumb");
+        //var clipParentThumb = $(this).parent().parent().parent().parent().parent().parent().parent().parent().parent().parent().find("#lse-movie-nowplaying").parent().attr("data-thumb");
+        $("#fb-thumb").val(dataThumb);
+    	//console.log(datathumb);
     });
+
     
     $(document).bind('cbox_complete', function(){
         $('#cboxBottomCenter').html('<div class="social"><span class="twitter"></span><span class="facebook"></span></div>');
@@ -40,27 +48,18 @@ $(document).ready(function() {
             window.open("http://www.facebook.com/sharer.php?s=100&p[url]=http://www.epixhd.com/sports&p[images][0]="+fbimage+"&p[title]=See The Action On EPIX Sports&p[summary]=Watch the latest fights, plus see photos, videos and more on EPIX Sports.","sharer","toolbar=0,status=0,width=626,height=436");
         });
         
-        // twitter button 
-        $(document).delegate(".social .twitter", "click", function() {
-            var twitterText   = "Get front row access to the latest fights on @EpixSports: ";
-            var tweetURL = 'http://twitter.com/share?via=EpixHD&url=http://epx.ms/108teuQ&text=' + twitterText;
-            window.open(tweetURL, 'twitter', 'toolbar=0,status=1,width=575,height=400');
-            return false;
-        });
-        
+	    /*
+	    // twitter button 
+	    $(document).delegate(".social .twitter", "click", function() {
+	        var twitterText   = "Get front row access to the latest fights on @EpixSports: ";
+	        var tweetURL = 'http://twitter.com/share?via=EpixHD&url=http://epx.ms/108teuQ&text=' + twitterText;
+	        window.open(tweetURL, 'twitter', 'toolbar=0,status=1,width=575,height=400');
+	        return false;
+	    });
+	    */
     });
             
-    /*
-        have to fix the current of total bug
-    */
-    $('.video-popup').colorbox({width:"600px", height: "500px", rel:"video-gallery", current: "{current} of {total}", title: function(){
-        var titleCaption = $(this).find('.title').text();
-        return titleCaption;
-        }, cid: function(){
-            var clipID = $(this).attr("id");
-            return clipID;
-        }
-    });
+
             
     /* 
         load a new movie when clicked on
@@ -93,56 +92,65 @@ $(document).ready(function() {
         }
     }
             
+    /*
     $("#lse-content > div").each(function(counter) {
         if($(this).find('li').length < 4){
             $(this).find('.dragger_container').hide();
         }
     });
+      */      
             
-            
-    $("#lse-content > div").addClass("movie-row");
-				$("#lse-currentlyplaying .row-2").addClass("movie-row");
-				$("#lse-currentlyplaying .row-2").attr("id","currently-playing-video-row");
+    //$("#lse-content > div").addClass("movie-row");
+		//		$("#lse-currentlyplaying .row-2").addClass("movie-row");
+			//	$("#lse-currentlyplaying .row-2").attr("id","currently-playing-video-row");
 
-	$('.trailers-and-clips .video-popup').bind("click", showSlidePlayer);
+				
+				
+				
+	$('.trailers-and-clips').delegate(".video-popup", "click", showSlidePlayer);
 
-        function showSlidePlayer(e) {
-        	
-        	e.preventDefault();
-						
-          $('.slidePlayerContainer').animate({height: '0px'}, 500, 'jswing', function() {
-    		    $(this).remove();
-    	    });
-        	
-						
-        	//get the asset ID from the href
-        	var href = $(this).attr("href");
-        	href = href.replace("/epixassets/asset/","");
-        	href = href.replace("/movie/","");
-        	var assetId = href.substring(href.lastIndexOf('/')+1);
+    function showSlidePlayer(e) {
+    	
+    	e.preventDefault();
 
+        $('.slidePlayerContainer').animate({height: '0px'}, 500, 'jswing', function() {
+		    $(this).remove();
+	    });
+        
+    	//get the asset ID from the href
+    	var href = $(this).attr("href");
+    	href = href.replace("/epixassets/asset/","");
+    	href = href.replace("/movie/","");    	
+    	
+    	var assetId = href.substring(href.lastIndexOf('/')+1);
 
-        	var parentDiv = $(this).parents('.movie-row');
-    	    var divId = parentDiv.attr('id');
+    	//so far, so good
+    	
+    	
+    	var parentDiv = $(this).parents('.movie-row');
+	    var divId = parentDiv.attr('id');
 
-            slidePlayerContainer = $('<div class="slidePlayerContainer"></div>');
-            slidePlayer = $('<div id="slidePlayer-'+divId+'"></div>');
-            
-            parentDiv.after(slidePlayerContainer);
-           
-            slidePlayerContainer.append(slidePlayer);
-            contentDiv = $('<div class="slide-clip-content"></div>');
-            slidePlayerContainer.prepend(contentDiv);
-            
-            showExtrasPlayer(assetId, 'slidePlayer-'+divId, contentDiv, "bottom");
-            
-            extrasPlayerEffectOpen(slidePlayerContainer);
-    	                
-    	    return false;
-    	}
-            
+        slidePlayerContainer = $('<div class="slidePlayerContainer"></div>');
+        slidePlayer = $('<div id="slidePlayer-'+divId+'"></div>');
+        
+        parentDiv.after(slidePlayerContainer);
+       
+        slidePlayerContainer.append(slidePlayer);
+        contentDiv = $('<div class="slide-clip-content"></div>');
+        slidePlayerContainer.prepend(contentDiv);
+        
+        showExtrasPlayer(assetId, 'slidePlayer-'+divId, contentDiv, "bottom");
+        
+        extrasPlayerEffectOpen(slidePlayerContainer);
+	                
+	    return false;
+	    
+	}    
             
             function showExtrasPlayer(item, clipDiv, clipContentDiv, type) {
+            	
+                console.log('show extras player...');
+                console.log(clipContentDiv);
 
          
                 var assetID = item;
