@@ -126,7 +126,6 @@ $(document).ready(function() {
 
     	//so far, so good
     	
-    	
     	var parentDiv = $(this).parents('.movie-row');
 	    var divId = parentDiv.attr('id');
 
@@ -148,11 +147,7 @@ $(document).ready(function() {
 	}    
             
             function showExtrasPlayer(item, clipDiv, clipContentDiv, type) {
-            	
-                console.log('show extras player...');
-                console.log(clipContentDiv);
-
-         
+                    
                 var assetID = item;
 
                 divID=clipDiv;

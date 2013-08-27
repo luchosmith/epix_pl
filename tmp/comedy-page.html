@@ -38,7 +38,7 @@
     <script src="/styleassets/js/jquery.mCustomScrollbar.js" type="text/javascript"></script>
     
 <style>
-
+  {literal}
 
 .ui-widget-overlay {height: 100%; left: 0; position: absolute; top: 0; width: 100%; background: #000; opacity: .5;}
 .moviepage .get_more .posters { height: auto; }
@@ -279,7 +279,7 @@
 
  /****************************************/
  
-
+{/literal}
 </style>
 
 <script type="text/javascript">              
@@ -803,11 +803,14 @@
 
   </div>
 
-  <script src="file:///Users/smithlu/git/epix_pl/tmp/sports-page-boxing-iframe.js?v=1917"
+  <script src="/styleassets/js/special-pages.js?v=1917"
     type="text/javascript"></script>
 
   <script type="text/javascript">
+  {literal}
+  // TODO: can this be moved
   $('.lse-movie-image').parent().attr('target','_blank');
+  {/literal}
 </script>
 
   <!-- / sports event content block -->
@@ -862,18 +865,20 @@
 
     <script type="text/javascript"><!--
 //Async GA code
+  {literal}
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+  {/literal}
 // --></script>
 
   </div>
   <!-- footer wrapper -->
 
   <script type="text/javascript">
-
+{literal}
 $(document).ready(function(){
   window.playerWidthInterval = window.setInterval(function(){
     if ( $('object#live_event_player').size() ) {
@@ -882,7 +887,7 @@ $(document).ready(function(){
     }
   },5000);  
 });
-
+{/literal}
 </script>
 
 
