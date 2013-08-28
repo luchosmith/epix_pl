@@ -77,7 +77,7 @@ $(document).ready(function () {
   
   //search widgets
   $('body').simplicityState();
-  $('#initialReleaseYearMin,#initialReleaseYearMax').simplicityInputs();
+  $('#genre,#initialReleaseYearMin,#initialReleaseYearMax').simplicityInputs();
   var currentYear = new Date().getFullYear();
   $('#initialReleaseYearSlider').simplicitySlider({
       input: ['#initialReleaseYearMin', '#initialReleaseYearMax'],
@@ -108,7 +108,6 @@ $(document).ready(function () {
     template: ''
   });
   $('body')
-  .simplicityState('mergeQueryParams')
   .simplicityDiscoverySearch({
       url: '#',
       controllerCallback: app.searchController
