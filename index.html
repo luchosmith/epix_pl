@@ -10,6 +10,11 @@
  
         <link rel="stylesheet" href="js/lib/bootstrap/css/bootstrap.css" type="text/css" media="screen" />
 
+        <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/themes/base/jquery-ui.css" rel="stylesheet">
+        <link href="http://cdn.transparensee.com/simplicity/4.0/simplicity.min.css" rel="stylesheet">
+        
+        <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400' rel='stylesheet' type='text/css'>
+
         <link rel="stylesheet" href="http://www.epixhd.com/styleassets/css/epixhd-core.css?v=1904" type="text/css" media="screen" />
         <link rel="stylesheet" href="http://www.epixhd.com/styleassets/css/epixhd-moviepage.css?v=1904" type="text/css" media="screen" />
         <link rel="stylesheet" href="http://www.epixhd.com/styleassets/css/jquery-ui.css?v=1904" type="text/css" media="screen" />
@@ -21,26 +26,17 @@
         
         <script id="movie-item-template" type="text/template">
 						
-          <div>
-			  <div data-content="<%= synopsis %>">
+        <div>
 				  <a href="http://www.epixhd.com<%= href %>">
 				    <img src="<%= img %>" alt="" />
 				  </a>
-				</div>
-			  <a class="movie-title" href="http://www.epixhd.com<%= href %>"><%= title %></a>
-				<div class="movie-data">
-				    <span class="rating"><%= rating %></span>
-						<span class="year"><%= year %></span>
-						<span><%= runtime %></span>
-						<!-- how to loop through arrays in a template? -->
-						<span class="userRating"></span>
-				    <p class="synopsis"></p>
-		    </div><!-- /movie-data --> 
-		  </div>
+		    </div>
 					
         </script>
         
         <script src="js/lib/jquery-1.9.1.min.js" type="text/javascript"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
+        <script src="http://cdn.transparensee.com/simplicity/4.0/simplicity.min.js"></script>
         <script src="js/lib/bootstrap/js/bootstrap.js" type="text/javascript"></script>
 
         
@@ -196,20 +192,113 @@
     </div>
     <!--psr content-->
     
-    <div id="body-content">
-        <div class="all-movies-loader" style="display:none"></div>
-        <div id="main-left">
-            
-<div id="collections">
-    <div id="main_collection" class="collection">
-        <ul id="scrolling-ul">
-          <!-- dynamicly populated by view -->
-        </ul>
+    <div id="all-movies-page">
+    <div class="a-to-z">
+      <a href="#" class="selected az-all">ALL</a>
+      <a href="#" class="az-numeric">0-9</a>
+      <a href="#">A</a>
+      <a href="#">B</a>
+      <a href="#">C</a>
+      <a href="#">D</a>
+      <a href="#">E</a>
+      <a href="#">F</a>
+      <a href="#">G</a>
+      <a href="#">H</a>
+      <a href="#">I</a>
+      <a href="#">J</a>
+      <a href="#">K</a>
+      <a href="#">L</a>
+      <a href="#">M</a>
+      <a href="#">N</a>
+      <a href="#">O</a>
+      <a href="#">P</a>
+      <a href="#">Q</a>
+      <a href="#">R</a>
+      <a href="#">S</a>
+      <a href="#">T</a>
+      <a href="#">U</a>
+      <a href="#">V</a>
+      <a href="#">W</a>
+      <a href="#">X</a>
+      <a href="#">Y</a>
+      <a href="#">Z</a>
+      
     </div>
-</div>
-        </div>
-        <div id="main-right">
-            
+        <div class="all-movies-loader" style="display:none"></div>
+		<div id="main-left">
+
+			<form>
+				<fieldset>
+					<label>Genre
+            <select id="genre" name="genre" multiple="multiple" style="display:none;">
+              <option value="">Select</option>
+              <option value="Action">Action</option>
+              <option value="Adventure">Adventure</option>
+              <option value="Animation">Animation</option>
+              <option value="Biography">Biography</option>
+              <option value="Children">Children</option>
+              <option value="Comedy">Comedy</option>
+              <option value="Concert">Concert</option>
+              <option value="Crime">Crime</option>
+              <option value="Documentary">Documentary</option>
+              <option value="Drama">Drama</option>
+              <option value="EPIX Originals">EPIX Originals</option>
+              <option value="Erotic">Erotic</option>
+              <option value="Family">Family</option>
+              <option value="Fantasy">Fantasy</option>
+              <option value="Film Noir">Film Noir</option>
+              <option value="Foreign">Foreign</option>
+              <option value="Historical">Historical</option>
+              <option value="Holiday">Holiday</option>
+              <option value="Horror">Horror</option>
+              <option value="Independent">Independent</option>
+              <option value="LGBT">LGBT</option>
+              <option value="Music">Music</option>
+              <option value="Musical">Musical</option>
+              <option value="Mystery">Mystery</option>
+              <option value="Period">Period</option>
+              <option value="Recently Added">Recently Added</option>
+              <option value="Romance">Romance</option>
+              <option value="Science Fiction">Science Fiction</option>
+              <option value="Sports Films">Sports Films</option>
+              <option value="Stand-Up">Stand-Up</option>
+              <option value="Supernatural">Supernatural</option>
+              <option value="Thriller">Thriller</option>
+              <option value="War">War</option>
+              <option value="Western">Western</option>
+           </select>
+					</label>
+					<div id="genreFancy">
+		        <ul class="ui-simplicity-fancy-select-options">
+		            <li class="ui-simplicity-fancy-select-option">
+		                <label>
+		                    <input type="checkbox" name="example" class="ui-simplicity-fancy-select-checkbox" />
+		                    <span class="ui-simplicity-fancy-select-label"></span>
+		                </label>
+		            </li>
+		        </ul>
+					</div>
+					<label>Year</label>
+					<div id="initialReleaseYear">
+						
+						<div id="initialReleaseYearSlider"></div>
+						<input id="initialReleaseYearMin" name="initialReleaseYearMin" type="hidden" />
+						<input id="initialReleaseYearMax" name="initialReleaseYearMax" type="hidden" />
+						<span id="initialReleaseYearCriteriaDesc"></span>
+					</div>
+
+				</fieldset>
+			</form>
+
+		</div>
+		<div id="main-right">
+				<div id="collections">
+				    <div id="main_collection" class="collection">
+				        <ul id="scrolling-ul">
+				          <!-- dynamicly populated by view -->
+				        </ul>
+				    </div>
+				</div>            
         </div>
     
     </div> <!-- body content -->
@@ -237,7 +326,7 @@
 <li><a href="http://corp.epixhd.com/contact/" target="_blank">Contact</a></li>
 <li><a href="http://corp.epixhd.com/" target="_blank">Corporate Info</a></li>
 </ul>
-<div class="copyright-info">© 2009 Studio 3 Partners LLC. EPIX and all related titles and logos are trademarks of Studio 3 Partners LLC. All Rights Reserved.</div>
+<div class="copyright-info">ï¿½ 2009 Studio 3 Partners LLC. EPIX and all related titles and logos are trademarks of Studio 3 Partners LLC. All Rights Reserved.</div>
 <ul id="copyright">
 <li><a href="http://corp.epixhd.com/copyright-infringement/" target="_blank">Copyright Compliance Policy</a></li>
 <li><a href="http://corp.epixhd.com/terms-of-use/" target="_blank">Terms of Use</a></li>

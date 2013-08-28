@@ -1,0 +1,525 @@
+{
+    "movies" : 
+    [
+        {
+            "id"         : "5101",
+            "title"      : "Jay and Silent Bob Go Down Under",
+            "href"       : "/jay-and-silent-bob-go-down-under/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/5101/thumbs/Jay_and_Silent_Bob_Go_Down_Under_posters_185611.jpg",
+            "rating"     : "TV-MA",
+            "closed_captions"    : 0,
+            "year"       : 2012,
+            "genres"       : ["Comedy", "Stand-Up", "EPIX Originals", "Recently Added"]
+        },
+        {
+            "id"         : "5090",
+            "title"      : "Coldplay Live 2012",
+            "href"       : "/coldplay-live-2012/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/5090/thumbs/Coldplay_Live_2012_posters_184344.jpg",
+            "rating"     : "TV-14",
+            "closed_captions"    : 1,
+            "year"       : 2012,
+            "genres"       : ["Concert", "Epix Originals", "Recently Added"]
+        },
+        {
+            "id"         : "4685",
+            "title"      : "A Liar's Autobiography",
+            "href"       : "/a-liars-autobiography/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4685/thumbs/A_Liar_s_Autobiography_posters_118492.jpg",
+            "rating"     : "TV-MA",
+            "closed_captions"    : 0,
+            "year"       : 2012,
+            "genres"       : ["Comedy", "Biography", "Recently Added"]
+        },
+        {
+            "id"         : "5100",
+            "title"      : "Jim Jefferies: Fully Functional",
+            "href"       : "/jim-jefferies-fully-functional/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/5100/thumbs/Jim_Jefferies:_Fully_Functional_posters_118393.jpg",
+            "rating"     : "TV-MA",
+            "closed_captions"    : 0,
+            "year"       : 2012,
+            "genres"       : ["Comedy", "Stand-Up", "Epix Originals", "Recently Added"]
+        },
+        {
+            "id"         : "5024",
+            "title"      : "Attack of the 50 Foot Cheerleader",
+            "href"       : "/attack-of-the-50-foot-cheerleader/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/5024/thumbs/Attack_of_the_50_Foot_Cheerleader_posters_117973.jpg",
+            "rating"     : "TV-MA",
+            "closed_captions"    : 0,
+            "year"       : 2012,
+            "genres"       : ["Comedy", "Epix Originals"]
+        },
+        {
+            "id"         : "4913",
+            "title"      : "Jim Norton: Please Be Offended",
+            "href"       : "/jim-norton-please-be-offended/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4913/thumbs/Jim_Norton:_Please_Be_Offended_maps_112917.jpg",
+            "rating"     : "TV-MA",
+            "closed_captions"    : 1,
+            "year"       : 2012,
+            "genres"       : ["Comedy", "Stand-Up", "Epix Originals"]
+        },
+        {
+            "id"         : "4852",
+            "title"      : "Kevin Smith: Burn in Hell",
+            "href"       : "/kevin-smith-burn-in-hell/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4852/thumbs/Kevin_Smith:_Burn_in_Hell_stills_112526.jpg",
+            "rating"     : "TV-MA",
+            "closed_captions"    : 0,
+            "year"       : 2012,
+            "genres"       : ["Comedy", "Stand-Up", "Epix Originals"]
+        },
+        {
+            "id"         : "4717",
+            "title"      : "Britney Spears: Femme Fatale Tour",
+            "href"       : "/britney-spears-femme-fatale-tour/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4717/thumbs/Britney_Spears:_Femme_Fatale_Tour_stills_112556.jpg",
+            "rating"     : "TV-PG",
+            "closed_captions"    : 0,
+            "year"       : 2011,
+            "genres"       : ["Concert", "Epix Originals", "Music"]
+        },
+        {
+            "id"         : "4533",
+            "title"      : "Usher: Live from London",
+            "href"       : "/usher-live-from-london/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4533/thumbs/Usher:_Live_from_London_stills_112557.jpg",
+            "rating"     : "TV-PG",
+            "closed_captions"    : 1,
+            "year"       : 2011,
+            "genres"       : ["Concert", "Epix Originals", "Music"]
+        },
+        {
+            "id"         : "4695",
+            "title"      : "Tyler Perry's Good Deeds",
+            "href"       : "/tyler-perrys-good-deeds/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4695/thumbs/Tyler_Perry_s_Good_Deeds_posters_188687.jpg",
+            "rating"     : "PG-13",
+            "closed_captions"    : 0,
+            "year"       : 2012,
+            "genres"       : ["Drama"]
+        },
+        {
+            "id"         : "1657",
+            "title"      : "Warrior",
+            "href"       : "/warrior/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/1657/thumbs/Warrior_posters_188830.jpg",
+            "rating"     : "PG-13",
+            "closed_captions"    : 0,
+            "year"       : 2011,
+            "genres"       : ["Drama", "Action", "Sports Films"]
+        },
+        {
+            "id"         : "4629",
+            "title"      : "Footloose",
+            "href"       : "/footloose-2011/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4629/thumbs/Footloose_posters_187831.jpg",
+            "rating"     : "PG-13",
+            "closed_captions"    : 0,
+            "year"       : 2011,
+            "genres"       : ["Drama", "Comedy", "Musical"]
+        },
+        {
+            "id"         : "3330",
+            "title"      : "The Lincoln Lawyer",
+            "href"       : "/the-lincoln-lawyer/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/3330/thumbs/The_Lincoln_Lawyer_posters_39287.jpg",
+            "rating"     : "R",
+            "closed_captions"    : 0,
+            "year"       : 2011,
+            "genres"       : ["Drama", "Crime"]
+        },
+        {
+            "id"         : "4647",
+            "title"      : "The Whistleblower",
+            "href"       : "/the-whistleblower/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4647/thumbs/The_Whistleblower_posters_48085.jpg",
+            "rating"     : "R",
+            "closed_captions"    : 1,
+            "year"       : 2011,
+            "genres"       : ["Drama"]
+        },
+        {
+            "id"         : "2101",
+            "title"      : "True Grit",
+            "href"       : "/true-grit/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/2101/thumbs/True_Grit_posters_187849.jpg",
+            "rating"     : "PG-13",
+            "closed_captions"    : 0,
+            "year"       : 2010,
+            "genres"       : ["Drama", "Western"]
+        },
+        {
+            "id"         : "4583",
+            "title"      : "Everything Must Go",
+            "href"       : "/everything-must-go/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4583/thumbs/Everything_Must_Go_posters_45825.jpg",
+            "rating"     : "R",
+            "closed_captions"    : 0,
+            "year"       : 2011,
+            "genres"       : ["Drama", "Comedy"]
+        },
+        {
+            "id"         : "5137",
+            "title"      : "Flashdance",
+            "href"       : "/flashdance/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/5137/thumbs/Flashdance_posters_184005.jpg",
+            "rating"     : "R",
+            "closed_captions"    : 0,
+            "year"       : 1983,
+            "genres"       : ["Drama"]
+        },
+        {
+            "id"         : "5144",
+            "title"      : "Vanilla Sky",
+            "href"       : "/vanilla-sky/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/5144/thumbs/Vanilla_Sky_posters_184290.jpg",
+            "rating"     : "R",
+            "closed_captions"    : 0,
+            "year"       : 2001,
+            "genres"       : ["Drama"]
+        },
+        {
+            "id"         : "4870",
+            "title"      : "Friends With Kids",
+            "href"       : "/friends-with-kids/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4870/thumbs/Friends_With_Kids_posters_109182.jpg",
+            "rating"     : "R",
+            "closed_captions"    : 0,
+            "year"       : 2012,
+            "genres"       : ["Comedy", "Recently Added"]
+        },
+        {
+            "id"         : "4653",
+            "title"      : "Young Adult",
+            "href"       : "/young-adult/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4653/thumbs/Young_Adult_posters_187848.jpg",
+            "rating"     : "R",
+            "closed_captions"    : 1,
+            "year"       : 2011,
+            "genres"       : ["Comedy", "Drama"]
+        },
+        {
+            "id"         : "3609",
+            "title"      : "Tyler Perry's Madea's Big Happy Family",
+            "href"       : "/tyler-perrys-madeas-big-happy-family/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/3609/thumbs/Tyler_Perry_s_Madea_s_Big_Happy_Family_posters_188132.jpg",
+            "rating"     : "PG-13",
+            "closed_captions"    : 0,
+            "year"       : 2011,
+            "genres"       : ["Comedy", "Drama"]
+        },
+        {
+            "id"         : "2092",
+            "title"      : "Rango",
+            "href"       : "/rango/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/2092/thumbs/Rango_posters_187845.jpg",
+            "rating"     : "PG",
+            "closed_captions"    : 0,
+            "year"       : 2011,
+            "genres"       : ["Comedy", "Family", "Animation", "Children"]
+        },
+        {
+            "id"         : "4743",
+            "title"      : "Jeff, Who Lives at Home",
+            "href"       : "/jeff-who-lives-at-home/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4743/thumbs/Jeff__Who_Lives_at_Home_posters_187855.jpg",
+            "rating"     : "R",
+            "closed_captions"    : 0,
+            "year"       : 2012,
+            "genres"       : ["Comedy"]
+        },
+        {
+            "id"         : "4706",
+            "title"      : "Jackass 3: The Director's Cut",
+            "href"       : "/jackass-3-the-directors-cut/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4706/thumbs/Jackass_3D_UNRATED_posters_48301.jpg",
+            "rating"     : "NR",
+            "closed_captions"    : 0,
+            "year"       : 2012,
+            "genres"       : ["Comedy"]
+        },
+        {
+            "id"         : "4696",
+            "title"      : "One For the Money",
+            "href"       : "/one-for-the-money/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/4696/thumbs/One_For_the_Money_posters_188139.jpg",
+            "rating"     : "PG-13",
+            "closed_captions"    : 1,
+            "year"       : 2012,
+            "genres"       : ["Comedy", "Action", "Crime", "Recently Added"]
+        },
+        {
+            "id"         : "1850",
+            "title"      : "Morning Glory",
+            "href"       : "/morning-glory/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/1850/thumbs/Morning_Glory_-_2010_posters_187837.jpg",
+            "rating"     : "PG-13",
+            "closed_captions"    : 0,
+            "year"       : 2010,
+            "genres"       : ["Drama", "Comedy", "Romance"]
+        },
+        {
+            "id"         : "2102",
+            "title"      : "From Prada To Nada",
+            "href"       : "/from-prada-to-nada/",
+            "img"        : "http://content.epixhd.com/webassets/static/movies/images/2102/thumbs/From_Prada_To_Nada_posters_37961.jpg",
+            "rating"     : "PG-13",
+            "closed_captions"    : 0,
+            "year"       : 2011,
+            "genres"       : ["Comedy", "Romance"]
+        },
+        {
+            "id"         : "644",
+            "title"      : "Red Dawn",
+            "href"       : "/red-dawn-2012/",
+            "img"        : "http://content.epixhd.com/3dwall/thumbs/red-dawn-2012.jpg",
+            "rating"     : "R",
+            "closed_captions"    : 0,
+            "year"       : 2012,
+            "genres"       : ["Drama", "Action", "Adventure"]
+        },
+        {
+            "id"         : "13329",
+            "title"      : "Jim Norton: American Degenerate",
+            "href"       : "/jim-norton-american-degenerate/",
+            "img"        : "http://content.epixhd.com/3dwall/thumbs/jim-norton-american-degenerate.jpg",
+            "rating"     : "R",
+            "closed_captions"    : 0,
+            "year"       : 2013,
+            "genres"       : ["Comedy", "Recently Added"]
+        },
+        {
+            "id"         : "4908",
+            "title"      : "Skyfall",
+            "href"       : "/skyfall/",
+            "img"        : "http://content.epixhd.com/3dwall/thumbs/skyfall.jpg",
+            "rating"     : "R",
+            "closed_captions"    : 1,
+            "year"       : 2013,
+            "genres"       : ["Action", "Adventure"]
+        },
+        {
+            "id"         : "13249",
+            "title"      : "Madonna: The MDNA Tour",
+            "href"       : "/madonna-the-mdna-tour/",
+            "img"        : "http://content.epixhd.com/3dwall/thumbs/madonna-the-mdna-tour.jpg",
+            "rating"     : "TV-14",
+            "closed_captions"    : 0,
+            "year"       : 2013,
+            "genres"       : ["Concert", "EPIX Original"]
+        },
+        {
+            "id"         : "4824",
+            "title"      : "What to Expect When You're Expecting",
+            "href"       : "/what-to-expect-when-youre-expecting/",
+            "img"        : "http://content.epixhd.com/3dwall/thumbs/what-to-expect-when-youre-expecting.jpg",
+            "rating"     : "PG-13",
+            "closed_captions"    : 0,
+            "year"       : 2012,
+            "genres"       : ["Comedy"]
+        },
+        {
+            "id"         : "4946",
+            "title"      : "Tyler Perry's Madea's Witness Protection",
+            "href"       : "/tyler-perrys-madeas-witness-protection/",
+            "img"        : "http://content.epixhd.com/3dwall/posters/tyler-perrys-madeas-witness-protection.jpg",
+            "rating"     : "PG-13",
+            "closed_captions"    : 0,
+            "year"       : 2012,
+            "genres"       : ["Comedy", "Recently Added"]
+        },
+        {
+            "id"         : "4775",
+            "title"      : "The Devil Inside",
+            "href"       : "/the-devil-inside/",
+            "img"        : "http://content.epixhd.com/3dwall/thumbs/the-devil-inside.jpg",
+            "rating"     : "R",
+            "closed_captions" : 0,
+            "year"       : 2012,
+            "genres"       : ["Horror"]
+        },
+        {
+            "id"         : "4584",
+            "title"      : "Transformers: Dark of the Moon",
+            "href"       : "/transformers-dark-of-the-moon/",
+            "img"        : "http://content.epixhd.com/3dwall/thumbs/transformers-dark-of-the-moon.jpg",
+            "rating"     : "PG-13",
+            "closed_captions" : 1,
+            "year"       : 2011,
+            "genres"       : ["Science Fiction", "Action", "Adventure"]
+        },
+        {
+            "id"         : "2282",
+            "title"      : "The Bad News Bears",
+            "href"       : "/the-bad-news-bears/",
+            "img"        : "http://content.epixhd.com/3dwall/thumbs/the-bad-news-bears.jpg",
+            "rating"     : "PG",
+            "closed_captions"    : 0,
+            "year"       : 1976,
+            "genres"       : ["Comedy"]
+        },
+        {
+            "id"         : "4692",
+            "title"      : "Hugo",
+            "href"       : "/hugo/",
+            "img"        : "http://content.epixhd.com/3dwall/thumbs/hugo.jpg",
+            "rating"     : "PG",
+            "closed_captions"    : 0,
+            "year"       : 2011,
+            "genres"       : ["Family", "Adventure", "Mystery", "Children"]
+        },
+        {
+            "id"         : "4629",
+            "title"      : "Footloose",
+            "href"       : "/footloose-2011/",
+            "img"        : "http://content.epixhd.com/3dwall/thumbs/footloose-2011.jpg",
+            "rating"     : "PG-13",
+            "closed_captions"    : 0,
+            "year"       : 2011,
+            "genres"       : ["Drama", "Comedy", "Musical"]
+        },
+        {
+            "id"         : "5021",
+            "title"      : "Fun Size",
+            "href"       : "/fun-size/",
+            "img"        : "http://content.epixhd.com/3dwall/thumbs/fun-size.jpg",
+            "rating"     : "PG-13",
+            "closed_captions"    : 0,
+            "year"       : 2013,
+            "genres"       : ["Comedy"]
+        },
+        {
+            "id"         : "4683",
+            "title"      : "The Hunger Games",
+            "href"       : "/the-hunger-games/",
+            "img"        : "http://content.epixhd.com/3dwall/thumbs/the-hunger-games.jpg",
+            "rating"     : "PG-13",
+            "closed_captions"    : 1,
+            "year"       : 2013,
+            "genres"       : ["Drama", "Action", "Adventure", "Fantasy"]
+        },
+        {
+            "id"         : "4624",
+            "title"      : "The Adventures of Tintin",
+            "href"       : "/the-adventures-of-tintin/",
+            "img"        : "http://content.epixhd.com/3dwall/posters/the-adventures-of-tintin.jpg",
+            "rating"     : "PG",
+            "closed_captions"    : 0,
+            "year"       : 2011,
+            "genres"       : ["Fantasy","Family","Adventure","Children"]
+        },
+        {
+            "id"         : "4955",
+            "title"      : "The Bad News Bears in Breaking Training",
+            "href"       : "/the-bad-news-bears-in-breaking-training/",
+            "img"        : "http://content.epixhd.com/3dwall/posters/the-bad-news-bears-in-breaking-training.jpg",
+            "rating"     : "PG",
+            "closed_captions"    : 0,
+            "year"       : 1977,
+            "genres"       : ["Comedy"]
+        },
+        {
+            "id"         : "1663",
+            "title"      : "Super 8",
+            "href"       : "/super-8/",
+            "img"        : "http://content.epixhd.com/3dwall/thumbs/super-8.jpg",
+            "rating"     : "PG-13",
+            "closed_captions"    : 0,
+            "year"       : 2011,
+            "genres"       : ["Science Fiction", "Action", "Adventure"]
+        },
+        {
+            "id"         : "4965",
+            "title"      : "The Bad News Bears Go To Japan",
+            "href"       : "/the-bad-news-bears-go-to-japan/",
+            "img"        : "http://content.epixhd.com/3dwall/thumbs/the-devil-inside.jpg",
+            "rating"     : "PG",
+            "closed_captions" : 0,
+            "year"       : 1978,
+            "genres"       : ["Comedy", "Sports Films"]
+        },
+        {
+            "id"         : "364",
+            "title"      : "From Russia with Love",
+            "href"       : "/from-russia-with-love/",
+            "img"        : "http://content.epixhd.com/3dwall/thumbs/from-russia-with-love.jpg",
+            "rating"     : "PG",
+            "closed_captions" : 1,
+            "year"       : 1963,
+            "genres"       : ["Action", "Adventure"]
+        },
+        {
+            "id"         : "2560",
+            "title"      : "Friday the 13th Part VII: The New Blood",
+            "href"       : "/friday-the-13th-part-vii-the-new-blood/",
+            "img"        : "http://content.epixhd.com/3dwall/thumbs/friday-the-13th-part-vii-the-new-blood.jpg",
+            "rating"     : "R",
+            "closed_captions"    : 0,
+            "year"       : 1988,
+            "genres"       : ["Horror","Thriller"]
+        },
+        {
+            "id"         : "3612",
+            "title"      : "F/X",
+            "href"       : "/fx/",
+            "img"        : "http://content.epixhd.com/3dwall/thumbs/fx.jpg",
+            "rating"     : "R",
+            "closed_captions"    : 0,
+            "year"       : 1986,
+            "genres"       : ["Action", "Thriller"]
+        },
+        {
+            "id"         : "13323",
+            "title"      : "What's Eating Gilbert Grape",
+            "href"       : "/whats-eating-gilbert-grape/",
+            "img"        : "http://content.epixhd.com/3dwall/thumbs/whats-eating-gilbert-grape.jpg",
+            "rating"     : "PG-13",
+            "closed_captions"    : 0,
+            "year"       : 1993,
+            "genres"       : ["Drama", "Comedy"]
+        },
+        {
+            "id"         : "5104",
+            "title"      : "Diana Vreeland: The Eye Has to Travel",
+            "href"       : "/diana-vreeland-the-eye-has-to-travel/",
+            "img"        : "http://content.epixhd.com/3dwall/thumbs/diana-vreeland-the-eye-has-to-travel.jpg",
+            "rating"     : "PG-13",
+            "closed_captions"    : 0,
+            "year"       : 2011,
+            "genres"       : ["Documentary", "EPIX Originals"]
+        },
+        {
+            "id"         : "5188",
+            "title"      : "The Cup",
+            "href"       : "/the-cup/",
+            "img"        : "http://content.epixhd.com/3dwall/thumbs/the-cup.jpg",
+            "rating"     : "PG",
+            "closed_captions"    : 1,
+            "year"       : 2012,
+            "genres"       : ["Family", "Adventure", "Sports Films"]
+        },
+        {
+            "id"         : "4992",
+            "title"      : "Dredd",
+            "href"       : "/dredd/",
+            "img"        : "http://content.epixhd.com/3dwall/thumbs/dredd.jpg",
+            "rating"     : "PG",
+            "closed_captions"    : 0,
+            "year"       : 2012,
+            "genres"       : ["Action"]
+        },
+        {
+            "id"         : "4770",
+            "title"      : "The Avengers",
+            "href"       : "/the-avengers/",
+            "img"        : "http://content.epixhd.com/3dwall/thumbs/the-avengers.jpg",
+            "rating"     : "PG-13",
+            "closed_captions"    : 0,
+            "year"       : 2012,
+            "genres"       : ["Science Fiction", "Action", "Adventure"]
+        }
+    ]
+}

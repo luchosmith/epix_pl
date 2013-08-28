@@ -21,65 +21,13 @@
      background: #000 url(http://content.epixhd.com/styleassets/images/screening-room/bg-iron-man.jpg) no-repeat center top;
  }
 
-#body-content {
+#all-movies-page {
 width: 960px;
 margin: 0 auto;
       
   }
   
-  .carousel {
-      margin: 0 auto;
-      height: 500px;
-      width: 600px;
-  }
-  #carousel-glow {
-      margin: -240px auto 0;
-      height: 200px;
-      width: 1072px;
-      background: url(http://content.epixhd.com/styleassets/images/screening-room/carousel-glow.png) no-repeat 0 0 scroll transparent;
-  }
-  .roundabout-holder {
-      list-style: none;
-      padding: 0 auto;
-      margin: 0 auto;
-      height: 480px;
-      width: 370px;
-      
-  }
-  .roundabout-moveable-item {
-      height: 360px;
-      width: 580px;
-      cursor: pointer;
-  }
-  .roundabout-moveable-item img {
-      width: 100%;
-      opacity: .2 !important;
-  }
-  .roundabout-in-focus img{
-	  opacity: 1 !important;
-  }
   
-  #carousel-controls {
-      margin: 0 auto;
-      height: 20px;
-      margin: -120px auto;
-      position: relative;
-      z-index: 1000;
-  }
-  
-  #carousel-controls span {
-      width: 8px;
-      height: 8px;
-      float: left;
-      margin: 3px;
-      background: url(http://content.epixhd.com/styleassets/images/all-movies/slider-navi.png) no-repeat 0 0;
-      display: block;
-      font-size: 1px;
-  }
-  
-  #carousel-controls span:hover, #carousel-controls span.current {
-      background-position: 0 -8px;
-  }
   
   
   
@@ -127,12 +75,12 @@ margin: 0 auto;
   }
   
   #main-left {
-      width: 730px;
+      width: 220px;
       float: left;
   }
   
   #main-right {
-      width: 230px;
+      width: 745px;
       margin: 0 auto;
       float: left;
   }
@@ -232,14 +180,14 @@ margin: 0 auto;
       list-style: none outside none;
       float: left;
       height: auto;
-      margin: 0 8px 0;
+      margin: 0 14px 0 0;
       /*width: 130px;*/
       display: block;
   }
   
   #collections li img {
       font-size: 12px;
-      width: 120px;
+      width: 132px;
       /*height: 189px;*/
       margin: 0 0 10px 0;
       padding: 0 auto

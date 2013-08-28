@@ -5,17 +5,12 @@ var Movie = Backbone.Model.extend({
     
   defaults: function(){
     return {
-      shortName       : "",
-      href            : "#",  // the movie landing page
-      img             : "" ,   // thumbnail url
-      title           : "",
-      synopsis        : "",
-      mpaaRating      : "",
-      runningTime     : "",
-      genre           : "",
-      userRating      : "",
-      releaseDate     : "",
-      tags            : ""
+      shortName        : "",
+      href             : "#",  // the movie landing page
+      img              : "" ,   // thumbnail url
+      title            : "",
+      genres           : [],
+      releaseYear      : ""
     }
   },
     

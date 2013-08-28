@@ -16,21 +16,18 @@ var MovieView = Backbone.View.extend({
     mouseentered: function() {
       var me = this.el;
       this.timeout = window.setTimeout(function(){
-        $(me).find('div').popover('show');
+        //$(me).find('div').popover('show');
       },1000);
       
     },
 
     mouseleft: function(){
       window.clearTimeout(this.timeout);
-      $(this.el).find('div').popover('hide');
+      //$(this.el).find('div').popover('hide');
     },
       
     initialize: function() {
       this.listenTo(this.model, "change", this.render);
-      $(this.el).find('div').popover({
-        'trigger':'manual'
-      });
     },
     
     render: function() {
