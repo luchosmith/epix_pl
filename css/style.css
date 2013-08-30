@@ -1,14 +1,13 @@
 
 /* boostrap related TODO: delete later */
-body{ padding-top:60px;}
-#epx-top-nav .brand {padding:5px 20px 5px 0px;}
+#epx-top-nav .brand {padding:5px 20px 5px 0px;margin-left:25%}
 #epx-top-nav .brand img {width:65px;}
-
+li.dropdown {display:none;}
 
 
 #all-movies-page {padding-top: 45px;width: 1000px;font-family: 'Lato', sans-serif;color: #898989;}
 #all-movies-page a {color: #898989;}
-#all-movies-page label {color:#FFF;font-size:13px;text-transform:uppercase;}
+#all-movies-page label.search_criteria {color:#FFF;font-size:13px;text-transform:uppercase;}
 
 #main-left {width:220px;margin-right:25px;}
 
@@ -27,7 +26,6 @@ body{ padding-top:60px;}
 
 /* search widgets */
 .ui-simplicity-fancy-select-count {display:none;}
-
 
 
 

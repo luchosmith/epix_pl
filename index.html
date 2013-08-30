@@ -8,7 +8,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
  
-        <link rel="stylesheet" href="js/lib/bootstrap/css/bootstrap.css" type="text/css" media="screen" />
+        <!--  <link rel="stylesheet" href="js/lib/bootstrap/css/bootstrap.css" type="text/css" media="screen" />   -->
 
         <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/themes/base/jquery-ui.css" rel="stylesheet">
         <link href="http://cdn.transparensee.com/simplicity/4.0/simplicity.min.css" rel="stylesheet">
@@ -39,7 +39,6 @@
         <script src="http://cdn.transparensee.com/simplicity/4.0/simplicity.min.js"></script>
         <script src="js/lib/bootstrap/js/bootstrap.js" type="text/javascript"></script>
 
-        
         <script src="js/lib/json2.js"></script>
         <script src="js/lib/underscore.js"></script>
         <script src="js/lib/backbone.js"></script>
@@ -54,130 +53,16 @@
             <link rel="stylesheet" href="http://www.epixhd.com/styleassets/css/ie7.css?v=1904" type="text/css" media="screen" />
         <![endif]-->
         
-        
-
     </head>
     <body id="psr-landing" class="all-movies moviepage">
 
 <div id="epx-top-nav" class="navbar navbar-inverse navbar-fixed-top">
       <div class="navbar-inner">
         <div class="container">
-          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <a class="brand" href="#"><img src="http://content.epixhd.com/styleassets/movie-pages/logo.png" alt="Epix" /></a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active dropdown">
-              	<a href="#"  class="dropdown-toggle" data-toggle="dropdown">Watch Movies</a>
-              	<ul class="dropdown-menu">
-              		<li><a href="http://www.epixhd.com/all-movies/" title="Most Popular">Most Popular</a></li>
-	                <li><a href="http://www.epixhd.com/all-movies/" title="Movies by Genre">Movies by Genre</a></li>
-	                <li><a href="http://www.epixhd.com/all-movies/" title="Recently Added">Recently Added</a></li>
-	                <li><a href="http://www.epixhd.com/all-movies/" title="Movies A-Z">Movies A-Z</a></li>
-	                <li style="display:none;"><a href="/screening-room/" title="Watch With Friends">Watch With Friends</a></li>
-	                <li><a href="http://www.epixhd.com/staffpicks/" title="Staff Picks">Staff Picks</a></li>
-	                <li class="last"><a href="/extras/" title="Movie Extras">Movie Extras</a></li>
-              	</ul>
-			  </li>
-              <li class="dropdown">
-              	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Specials</a>
-                <ul class="dropdown-menu">
-                    <li><a href="/envelope-screening-series/" title="Envelope">Envelope Screening Series</a></li>
-	                <li><a href="/the-hunger-games-interactive/" title="The Hunger Games">The Hunger Games</a></li>
-	                <li><a href="/bellator/" title="Bellator">Bellator</a></li>
-	                <li><a href="/all-movies/?genre=21" title="Docs">Docs</a></li>
-	                <li><a href="/all-movies/?genre=50" title="Originals">Originals</a></li>
-	                <li><a href="/sports/" title="Sports">Sports</a></li>
-	                <li><a href="/epix-live/" title="EPIX Live">EPIX Live</a></li>
-	                <li><a href="/all-movies/?genre=43" title="Comedy">Comedy</a></li>
-	                <li class="last"><a href="/all-movies/?genre=27" title="Concerts">Concerts</a></li>
-                </ul>
-              </li>
-              <li><a href="#contact">On TV</a></li>
-              <li><a href="#">EPIX Apps</a></li>
-              <li class="dropdown">
-              	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Get EPIX</a>
-                <ul class="dropdown-menu">
-	                <li><a href="/devices/" title="Devices">Devices</a></li>
-	                <li><a href="/freetrial" title="Get a Free Trial">Get a Free Trial</a></li>
-	                <li><a href="/epixprofile/?skipauth=1" title="Get EPIX Channel">Get Epix Channel</a></li>
-	                <li class="last"><a href="http://corp.epixhd.com/" title="What is EPIX / FAQ">What is EPIX / FAQ</a></li>
-                </ul>
-              </li>
-              <li class="me hidden"><a href="/epixprofile" title="Me">Me</a></li>
-            </ul>
-            <form class="navbar-form pull-right">
-              <input class="span2" type="text" placeholder="Search">
-              <!-- <input class="span2" type="password" placeholder="Password">
-              <button type="submit" class="btn">Sign in</button> -->
-            </form>
-          </div><!--/.nav-collapse -->
         </div>
       </div>
     </div>
-
-
-            <div id="messagearea"></div>
-            <div id="navigation-wrapper" style="display:none;">
-	<div id="navigation-menu" class="none">
-	    
-
-	    <div class="utilities">
-	        <ul id="userpresence" class="login">
-	         
-	        </ul>
-	        <div id="reg-flow-wrap" class="hidden">
-	            <a class="close-logsign-popup" href="#"><img src="http://content.epixhd.com/styleassets/closebutton.png" alt="" /></a>
-	            <div class="reg-top"></div>
-	            <div id="reg-flow"></div>
-	            <div class="reg-bottom"></div>
-	        </div>
-	        <div class="search">
-	           <form id="search">
-	               <fieldset>
-	               <div id="qs"></div>
-	               <input id="q" name="q" type="text" value="search epix" />
-	               </fieldset>
-	           </form>
-	           <div id="search_results" class="hidden">
-	               <div class="container"><span class="results">Search Results</span>
-	                   <div class="body"></div>
-	               </div>
-	           </div>
-	        </div>
-	    </div>
-	</div>
-</div>
-            <div id="dropdown">
-                <div class="content">
-                    <div>    
-                        <div id="tab_movies" xmlns:tal="http://www.w3.org/1999/xhtml">
-                            <div id="movieTab"><!--RecommendedMovies-->
-<div id="csa_mv" class="featuredMovies"><div class="posters">
-    <h3>Movies We Love</h3>
-    <ul>
-            <li><a href="/the-whistleblower/"><img src="http://content.epixhd.com/webassets/static/movies/images/4647/thumbs/The_Whistleblower_posters_48085.jpg" alt="The Whistleblower" title="The Whistleblower" /></a></li>
-            <li><a href="/the-bad-news-bears/"><img src="http://content.epixhd.com/webassets/static/movies/images/2282/thumbs/The_Bad_News_Bears_posters_32665.jpg" alt="The Bad News Bears" title="The Bad News Bears" /></a></li>
-            <li><a href="/paranormal-activity-3/"><img src="http://content.epixhd.com/webassets/static/movies/images/4694/thumbs/Paranormal_Activity_3_posters_187835.jpg" alt="Paranormal Activity 3" title="Paranormal Activity 3" /></a></li>
-            <li><a href="/the-toxic-avenger/"><img src="http://content.epixhd.com/webassets/static/movies/images/5014/thumbs/The_Toxic_Avenger_posters_114526.jpg" alt="The Toxic Avenger" title="The Toxic Avenger" /></a></li>
-            <li><a href="/captain-america-the-first-avenger/"><img src="http://content.epixhd.com/webassets/static/movies/images/2589/thumbs/Captain_America:_The_First_Avenger_posters_187843.jpg" alt="Captain America: The First Avenger" title="Captain America: The First Avenger" /></a></li>
-            <li><a href="/warrior/"><img src="http://content.epixhd.com/webassets/static/movies/images/1657/thumbs/Warrior_posters_188830.jpg" alt="Warrior" title="Warrior" /></a></li>
-            <li><a href="/conan-the-barbarian/"><img src="http://content.epixhd.com/webassets/static/movies/images/2547/thumbs/Conan_the_Barbarian_posters_47825.jpg" alt="Conan the Barbarian" title="Conan the Barbarian" /></a></li>
-            <li><a href="/small-soldiers/"><img src="http://content.epixhd.com/webassets/static/movies/images/5009/thumbs/Small_Soldiers_posters_114403.jpg" alt="Small Soldiers" title="Small Soldiers" /></a></li>
-        </ul>
-</div></div>
-
-
-<!--catagories--></div>
-<!--movieTab-->
-                        </div>
-                    </div>
-                </div>
-                <div class="bottom"></div>
-            </div>
 
 
     <div class="moviepage" id="psr-content">
@@ -229,7 +114,7 @@
 
 			<form>
 				<fieldset>
-					<label>Genre
+					<label class="search_criteria">Genre
             <select id="genre" name="genre" multiple="multiple" style="display:none;">
               <option value="">Select</option>
               <option value="Action">Action</option>
@@ -278,7 +163,7 @@
 		            </li>
 		        </ul>
 					</div>
-					<label>Year</label>
+					<label class="search_criteria">Year</label>
 					<div id="initialReleaseYear">
 						
 						<div id="initialReleaseYearSlider"></div>
