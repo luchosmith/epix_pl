@@ -1,0 +1,152 @@
+// Global Foundation Settings
+@import "settings";
+
+// Comment out this import if you don't want to use normalize
+@import "normalize";
+
+// Comment out this import if you are customizing you imports below
+@import "foundation";
+
+// Import specific parts of Foundation by commenting the import "foundation"
+// and uncommenting what you want below. You must uncomment the following if customizing
+
+// @import "foundation/components/global"; // *always required
+// @import "foundation/components/grid";
+
+//
+// Use this grid if you want to start using the new Foundation 5 grid early.
+// It will change breakpoints to min-width: 640px and 1024px.
+//
+// @import "foundation/components/grid-5";
+//
+
+// @import "foundation/components/visibility";
+// @import "foundation/components/block-grid";
+// @import "foundation/components/type";
+// @import "foundation/components/buttons";
+// @import "foundation/components/forms"; // *requires components/buttons
+// @import "foundation/components/custom-forms"; // *requires components/buttons, components/forms
+// @import "foundation/components/button-groups"; // *requires components/buttons
+// @import "foundation/components/dropdown-buttons"; // *requires components/buttons
+// @import "foundation/components/split-buttons"; // *requires components/buttons
+// @import "foundation/components/flex-video";
+// @import "foundation/components/section";
+// @import "foundation/components/top-bar";  // *requires components/grid
+// @import "foundation/components/orbit";
+// @import "foundation/components/reveal";
+// @import "foundation/components/joyride";
+// @import "foundation/components/clearing";
+// @import "foundation/components/alert-boxes";
+// @import "foundation/components/breadcrumbs";
+// @import "foundation/components/keystrokes";
+// @import "foundation/components/labels";
+// @import "foundation/components/inline-lists";
+// @import "foundation/components/pagination";
+// @import "foundation/components/panels";
+// @import "foundation/components/pricing-tables";
+// @import "foundation/components/progress-bars";
+// @import "foundation/components/side-nav";
+// @import "foundation/components/sub-nav";
+// @import "foundation/components/switch";
+// @import "foundation/components/magellan";
+// @import "foundation/components/tables";
+// @import "foundation/components/thumbs";
+// @import "foundation/components/tooltips";
+// @import "foundation/components/dropdown";
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+}
+.main {
+  background: none repeat scroll 0 0 #FFFFFF;
+  float: right;
+  margin-left: 0;
+  position: relative;
+  z-index: 1;
+}
+.complementary, .main {
+  display: block;
+  position: relative;
+  transition: all 0.08s ease 0s;
+  z-index: 1;
+}
+.main {  width: 100%;  min-height: 800px;}
+.top-bar .title-area .name img {  width: 80px;}
+
+/* for small top nab */
+header { background-color: #000000; margin-bottom: 25px; padding: 10px 0;}
+#sidebar { background: none repeat scroll 0 0 #333333; box-shadow: -2px 0 8px -1px #111111 inset; height: 100%; padding: 10px 0 0; position: absolute;
+}
+a.sidebar-button img { margin: 3px 0 0 7px; width: 35px;}
+header.show-for-small { height:45px;}
+header.show-for-small #epix-logo-small {float:left;margin:-3px 0 0 10px;}
+header.show-for-small #epix-logo-small img { width:70px;}
+#sidebarButton { float:left;}
+
+.active .complementary {
+    margin-left: 0;
+}
+.active .main {
+    margin-right: -85%;
+}
+
+nav.top-bar{
+ /*margin-bottom:40px;*/
+}
+nav.top-bar .row {
+  max-width:62.5em;
+}
+
+.hidden {display:none;}
+
+/* new header / navigation */
+#reg-flow-wrap {display:none;} /* hide for now */
+#navigation-menu { display: block; margin: 0 auto 0 auto;font: 16px Helvetica, Sans-serif; font-weight: bold; }
+#navigation-menu.sticky { position: fixed; left: 50%; margin-left: -490px; }
+#navigation-menu .logo { float: left; position: relative; top: 2px; margin: 0 30px 0 0;}
+#navigation-menu .logo img { width: 88px; }
+#navigation-menu .logo-small { float: left; position: relative; top: -20px; margin: 10px 61px 32px 0; background: transparent url('http://content.epixhd.com/styleassets/movie-pages/logo-small.png') no-repeat; width: 66px; height: 29px; }
+#navigation-menu ul { padding:13px 0 0 0; margin: 0; }
+#navigation-menu ul:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+#navigation-menu li { position: relative; float: left; list-style-type: none; }
+#navigation-menu li a { display: block; padding: 0; margin: 0 20px 0 0; color: #787777; text-decoration: none; }
+#navigation-menu li a.selected { color: #fff; }
+#navigation-menu li a:hover { color: #fff; }
+#navigation-menu li a:focus { outline: none; text-decoration: underline; }
+#navigation-menu li:first-child a { border-left: none; }
+#navigation-menu li.last a { border-bottom: none; margin-bottom: 10px; }
+#navigation-menu a span { display: block; float: right; margin-left: 5px; }
+#navigation-menu ul ul { display: none; position: absolute; left: -10px; background: transparent url("http://content.epixhd.com/styleassets/movie-pages/nav-bg.png") repeat-x bottom; width: 156px; overflow: hidden; margin: 0; z-index: 900; }
+#navigation-menu ul ul li { float: none; }
+#navigation-menu ul ul a { padding: 5px 0; border-bottom: 1px solid #3c3f3f; font-size: 12px; margin: 0 12px 0 16px; font-weight: normal; color: #fff; }
+#navigation-menu ul ul a:hover { color: #787777; }
+#navigation-menu .utilities { float: right; width: 200px; position: relative; top: -78px;display:none; }
+#navigation-menu .utilities a { color: #787777; font-size: 10px; padding: 0; margin: 0 14px 0 -10px; }
+#navigation-menu .utilities .trial { color: #D6651A; }
+#navigation-menu .utilities .invite a { color: #D6651A; }
+#navigation-menu .utilities .greeting { margin: -1px 10px 0 0; display: inline; }
+#navigation-menu .utilities .profile { color: #FFFFFF; display: inline; margin: 0 0 0 4px; }
+
+#navigation-menu .search { float: right; width: 200px; height: 32px; position: relative;padding-top:10px; }
+#search { position: absolute; z-index: 20; }
+#search input#q { float: left; border: none; background: url(http://content.epixhd.com/styleassets/search-input.png) no-repeat; text-transform: uppercase; color: #7f7e7d; font-family: Arial, sans-serif; font-size: 11px; letter-spacing: 1px; font-weight: bold; outline: 0; padding: 10px 5px 13px 6px; width: 153px; height: 12px; }
+#search #qs {
+  float: left;
+  width: 35px;
+  height: 38px;
+  margin-left: -14px;
+  border: none;
+  background: url(http://content.epixhd.com/styleassets/search-glass.png) no-repeat;
+}
+.search fieldset { margin: 0; padding: 0; border: 0; }
+/* end header */
+
+/* constant width for all content about 1000px */
+.content-wrapper {width:65.2em; margin:0 auto;}
+
+#featured-wall {padding-top:40px;}
+#userpresence {display:none;}
